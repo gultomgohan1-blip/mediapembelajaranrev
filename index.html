@@ -19,7 +19,8 @@
   </script>
 <link href="style.css" rel="stylesheet">
 <link href="materi.css" rel="stylesheet">
-<link href="assessment.css" rel="stylesheet"></head>
+<link href="assessment.css" rel="stylesheet">
+<link href="polish.css" rel="stylesheet"></head>
 <body class="font-sans min-h-screen text-slate-700 dark:text-slate-200 bg-gradient-to-br from-indigo-50 via-slate-50 to-violet-100 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950 transition-colors duration-500">
 <!-- Dekorasi latar blur -->
 <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -119,6 +120,7 @@
 <div>
 <label class="block text-sm font-semibold mb-2" for="kode-siswa">Kode Siswa</label>
 <input autocomplete="off" class="w-full px-5 py-3 rounded-2xl bg-white/80 dark:bg-white/10 border border-slate-200 dark:border-white/10 uppercase outline-none focus:ring-4 focus:ring-indigo-200 dark:focus:ring-indigo-500/30 transition-all duration-300" id="kode-siswa" maxlength="20" placeholder="Contoh: S01 atau NIM/NIS" type="text">
+<p class="field-hint">Huruf atau angka, 2–20 karakter (contoh: S01 atau NIM).</p>
 </div>
 <div>
 <label class="block text-sm font-semibold mb-2" for="kelas-siswa">Kelas</label>
@@ -835,19 +837,6 @@
 <div class="studio-learning-note"><b>Hubungan dengan buku:</b> praktik ini menerapkan unsur garis, bidang, tipografi, warna, dan ruang pada Bab 1 serta eksplorasi warna pada Bab 2 dan prinsip tata letak pada Bab 3.</div>
 <div class="studio-mission-grid">
 <article class="studio-mission-card">
-<span class="studio-eyebrow">MISSION 04 // BAB 04</span>
-<h5>Scan Lab: Dari Sketsa ke Digital</h5>
-<p>Buat sketsa kecil di kertas, lalu pindai menggunakan scanner flatbed. Bila scanner tidak tersedia, gunakan kamera ponsel dengan pencahayaan merata sebagai alternatif latihan digitalisasi.</p>
-<label for="scan-object">Objek yang akan dipindai</label>
-<select id="scan-object"><option value="photo">Foto berwarna</option><option value="sketch">Sketsa / ilustrasi garis</option><option value="text">Dokumen teks</option></select>
-<label for="scan-mode">Mode warna</label>
-<select id="scan-mode"><option value="color">Color</option><option value="grayscale">Grayscale</option><option value="bw">Black &amp; White</option></select>
-<label for="scan-resolution">Resolusi</label>
-<select id="scan-resolution"><option value="150">150 dpi</option><option selected value="300">300 dpi</option><option value="600">600 dpi</option></select>
-<div aria-live="polite" class="studio-result-box" id="scan-advice">Untuk foto berwarna, pilih Color dan 300 dpi sebagai titik awal untuk hasil cetak standar.</div>
-<p class="studio-mission-foot">Setelah mencoba pengaturan, lakukan pemindaian nyata dan simpan file dengan nama yang jelas.</p>
-</article>
-<article class="studio-mission-card">
 <span class="studio-eyebrow">MISSION 05 // BAB 05</span>
 <h5>Asset Hunter: Kelola Aset Desain</h5>
 <p>Temukan satu gambar yang sesuai dengan tema poster. Pastikan sumber dan izinnya jelas, lalu catat agar aset dapat ditelusuri kembali.</p>
@@ -1098,6 +1087,7 @@
 <div class="mt-3 h-1.5 rounded-full bg-slate-200 dark:bg-white/10 overflow-hidden">
 <div class="h-full w-full rounded-full bg-gradient-to-r from-indigo-300 to-violet-400 transition-all duration-1000 ease-linear" id="timer-bar"></div>
 </div>
+<div aria-hidden="true" class="q-dots" id="q-dots"></div>
 <h3 class="mt-6 text-lg sm:text-xl font-bold leading-snug" id="q-text">Teks soal akan tampil di sini.</h3>
 <div class="mt-6 space-y-3" id="q-options">
 <button class="opt-btn w-full flex items-center gap-4 text-left px-5 py-3.5 rounded-2xl bg-white/80 dark:bg-white/10 border border-slate-200 dark:border-white/10 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg" data-opt="A"><span class="w-8 h-8 shrink-0 rounded-xl bg-indigo-100 text-indigo-600 font-bold flex items-center justify-center">A</span><span class="opt-text">Opsi A</span></button>
@@ -1136,6 +1126,7 @@
 <h2 class="text-xl font-extrabold">Angket Kemudahan Penggunaan (SUS)</h2>
 <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Pilih 1 (sangat tidak setuju) sampai 5 (sangat setuju).</p>
 <!-- Tombol skala 1-5 ditambahkan oleh script.js ke setiap <li> -->
+<div class="sus-sticky" id="sus-sticky"><span id="sus-sticky-text">Terjawab 0 dari 10</span><i><b id="sus-sticky-fill"></b></i></div>
 <ol class="mt-6 space-y-6" id="sus-list">
 <li data-sus="1"><p class="font-semibold text-sm">1. Saya merasa bahwa saya akan sering menggunakan media pembelajaran ini.</p></li>
 <li data-sus="2"><p class="font-semibold text-sm">2. Saya merasa media pembelajaran ini terlalu rumit.</p></li>
@@ -1164,6 +1155,7 @@
   <button data-shell-nav="guided" type="button"><span>✳</span><small>Studio</small></button>
   <button data-shell-nav="portfolio" type="button"><span>▧</span><small>Karya</small></button>
   <button data-shell-nav="quiz" type="button"><span>✓</span><small>Kuis</small></button>
+  <button data-shell-nav="sus" type="button"><span>♡</span><small>Angket</small></button>
 </nav>
 <footer class="py-8 text-center text-xs text-slate-400">© 2026 LMS-DKV · Media Pembelajaran Desain Grafis Kelas X DKV</footer>
 <!-- Hubungkan file eksternal di akhir body -->

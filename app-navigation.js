@@ -56,6 +56,7 @@
     sidebar?.classList.toggle('mobile-open', open);
     overlay?.classList.toggle('active', open);
     menuToggle?.setAttribute('aria-expanded', String(open));
+    document.body.classList.toggle('drawer-open', !!open);
   }
   function setActiveNav(key) {
     $$('[data-shell-nav]').forEach(btn => {

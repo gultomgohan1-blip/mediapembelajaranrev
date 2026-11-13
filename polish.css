@@ -1,0 +1,152 @@
+/* ==========================================================================
+   polish.css — animasi masuk, perapian UI/UX, dan perbaikan menu HP
+   Dimuat PALING AKHIR. Tidak mengubah fitur lama; hanya menambah lapisan.
+   ========================================================================== */
+
+/* ---------- 1. MENU SAMPING DI HP: bisa di-scroll sampai "Angket SUS" ----------
+   Penyebab: align-self:start membuat panel fixed setinggi isinya (> layar),
+   sehingga bagian bawah terpotong dan tidak bisa di-scroll. */
+@media (max-width: 860px) {
+  .lms-sidebar {
+    align-self: stretch !important;
+    height: 100vh; height: 100dvh;
+    max-height: 100dvh !important;
+    overflow-x: hidden; overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch; overscroll-behavior: contain;
+    padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .lms-sidebar > * { flex-shrink: 0; }
+  body.drawer-open { overflow: hidden; }
+  .mobile-quick-nav { grid-template-columns: repeat(6, 1fr) !important; left: 8px !important; right: 8px !important; }
+  .mobile-quick-nav button small { font-size: .5rem; }
+}
+
+/* ---------- 2. Kartu misi tunggal setelah Mission 04 dihapus ---------- */
+.studio-mission-grid > .studio-mission-card:only-child { grid-column: 1 / -1; }
+
+/* ---------- 3. Formulir identitas ---------- */
+.field-hint { margin: .4rem .15rem 0; font-size: .72rem; line-height: 1.4; color: #7A7388; }
+html.dark .field-hint { color: #B8B0C9; }
+#section-0 input:focus, #section-0 select:focus { transform: translateY(-1px); }
+
+/* ---------- 4. Kuis: kartu, titik progres, timer ---------- */
+#section-2 > div:first-child { position: relative; overflow: hidden; }
+#section-2 > div:first-child::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 4px;
+  background: linear-gradient(90deg, #5269ED, #A16BCE, #F07869, #35A989);
+}
+.q-dots { display: flex; gap: 5px; margin-top: 1.1rem; }
+.q-dots span { flex: 1 1 0; height: 6px; border-radius: 99px; background: #E3E0EE; transition: background-color .35s ease, transform .35s ease; }
+.q-dots span.is-done { background: #5269ED; }
+.q-dots span.is-current { background: #A9B5FF; transform: scaleY(1.5); }
+html.dark .q-dots span { background: #4A4668; }
+html.dark .q-dots span.is-done { background: #8FA0FF; }
+html.dark .q-dots span.is-current { background: #C3CBFF; }
+
+#section-2.timer-low #timer-bar { background: linear-gradient(90deg, #F07869, #E5484D) !important; }
+#section-2.timer-low #timer-box { color: #B3261E !important; background: #FFE1DE !important; }
+html.dark #section-2.timer-low #timer-box { color: #FFB4AB !important; background: rgba(229,72,77,.22) !important; }
+
+/* ---------- 5. Angket: kartu pernyataan + progres menempel ---------- */
+.sus-sticky {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 74px); z-index: 20;
+  display: flex; align-items: center; gap: .8rem; margin: 1.1rem -.25rem 0; padding: .6rem .9rem;
+  border-radius: 14px; border: 1px solid #DCDFF6; background: rgba(255,255,255,.92); backdrop-filter: blur(8px);
+  box-shadow: 0 6px 18px rgba(60,70,140,.08);
+}
+.sus-sticky span { flex: 0 0 auto; font-size: .78rem; font-weight: 800; color: #3446C9; }
+.sus-sticky i { flex: 1 1 auto; height: 6px; border-radius: 99px; background: #E3E6FA; overflow: hidden; }
+.sus-sticky b { display: block; height: 100%; width: 0; border-radius: inherit; background: linear-gradient(90deg, #5269ED, #35A989); transition: width .4s cubic-bezier(.2,.8,.2,1); }
+html.dark .sus-sticky { background: rgba(35,33,58,.92); border-color: #4C4A74; }
+html.dark .sus-sticky span { color: #B9C3FF; }
+html.dark .sus-sticky i { background: #4A4668; }
+
+#sus-list > li { position: relative; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+#sus-list > li:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(60,70,140,.10); }
+#sus-list > li.is-answered::after {
+  content: "✓"; position: absolute; top: .7rem; right: .8rem; width: 1.5rem; height: 1.5rem;
+  display: grid; place-items: center; border-radius: 50%; font-size: .8rem; font-weight: 800;
+  color: #fff; background: #35A989; box-shadow: 0 0 0 4px rgba(53,169,137,.18);
+}
+
+/* ---------- 6. Tombol: respons sentuhan & fokus yang jelas ---------- */
+button:not(:disabled):active { transform: scale(.98) !important; }
+:where(button, a, input, select, [tabindex]):focus-visible { outline: 3px solid rgba(82,105,237,.55); outline-offset: 2px; }
+
+/* ---------- 7. ANIMASI (hanya bila pengguna tidak membatasi gerak) ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes riseIn   { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+  @keyframes slideIn  { from { opacity: 0; transform: translateX(-14px); } to { opacity: 1; transform: none; } }
+  @keyframes popIn    { 0% { opacity: 0; transform: scale(.9); } 60% { transform: scale(1.03); } 100% { opacity: 1; transform: none; } }
+  @keyframes floaty   { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-10px) rotate(6deg); } }
+  @keyframes drift    { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(14px,-12px) scale(1.08); } }
+  @keyframes spinSlow { to { transform: rotate(360deg); } }
+  @keyframes timerPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+  @keyframes shine    { to { background-position: 200% 0; } }
+
+  /* Masuk halaman: setiap bagian naik pelan-pelan saat ditampilkan */
+  .page:not(.hidden) > * { animation: riseIn .55s cubic-bezier(.2,.8,.2,1) both; }
+  .page:not(.hidden) > *:nth-child(2) { animation-delay: .08s; }
+  .page:not(.hidden) > *:nth-child(3) { animation-delay: .16s; }
+  .page:not(.hidden) > *:nth-child(4) { animation-delay: .24s; }
+
+  /* Halaman identitas: kolom formulir muncul berurutan, bintang berputar */
+  #section-0:not(.hidden) .identity-card > * { animation: riseIn .6s cubic-bezier(.2,.8,.2,1) both; }
+  #section-0:not(.hidden) .identity-card > :nth-child(2) { animation-delay: .06s; }
+  #section-0:not(.hidden) .identity-card > :nth-child(3) { animation-delay: .12s; }
+  #section-0:not(.hidden) .identity-card > :nth-child(4) { animation-delay: .18s; }
+  #section-0:not(.hidden) .identity-card > :nth-child(5) { animation-delay: .24s; }
+  #section-0:not(.hidden) .identity-card .space-y-5 > * { animation: riseIn .55s cubic-bezier(.2,.8,.2,1) both; }
+  #section-0:not(.hidden) .identity-card .space-y-5 > :nth-child(1) { animation-delay: .30s; }
+  #section-0:not(.hidden) .identity-card .space-y-5 > :nth-child(2) { animation-delay: .38s; }
+  #section-0:not(.hidden) .identity-card .space-y-5 > :nth-child(3) { animation-delay: .46s; }
+  #section-0:not(.hidden) .identity-card .space-y-5 > :nth-child(4) { animation-delay: .54s; }
+  .identity-spark { display: inline-block; animation: spinSlow 14s linear infinite; }
+  #btn-mulai:not(:disabled) { background-size: 200% 100%; animation: shine 3s linear infinite; }
+
+  /* Kuis: pertanyaan dan opsi masuk berurutan setiap ganti soal */
+  #section-2.q-anim #q-text { animation: riseIn .45s cubic-bezier(.2,.8,.2,1) both; }
+  #section-2.q-anim #q-options .opt-btn { animation: slideIn .45s cubic-bezier(.2,.8,.2,1) both; }
+  #section-2.q-anim #q-options .opt-btn:nth-child(1) { animation-delay: .05s; }
+  #section-2.q-anim #q-options .opt-btn:nth-child(2) { animation-delay: .10s; }
+  #section-2.q-anim #q-options .opt-btn:nth-child(3) { animation-delay: .15s; }
+  #section-2.q-anim #q-options .opt-btn:nth-child(4) { animation-delay: .20s; }
+  #section-2.q-anim #q-options .opt-btn:nth-child(5) { animation-delay: .25s; }
+  .q-pembahasan:not(.hidden), .q-status.is-ok, .q-status.is-bad { animation: riseIn .4s cubic-bezier(.2,.8,.2,1) both; }
+  #section-2 #q-options .opt-btn.is-picked { animation: popIn .4s ease both; }
+  #section-2.timer-low #timer-box { animation: timerPulse 1s ease-in-out infinite; }
+
+  /* Hiasan melayang di balik kartu kuis & angket (seperti pada dasbor masuk) */
+  #section-2, #section-3 { position: relative; isolation: isolate; }
+  #section-2::before, #section-2::after, #section-3::before, #section-3::after {
+    content: ""; position: absolute; z-index: -1; pointer-events: none; border-radius: 50%;
+  }
+  #section-2::before, #section-3::before { width: 190px; height: 190px; top: -30px; right: -50px; background: radial-gradient(circle at 35% 35%, rgba(255,225,124,.7), rgba(255,225,124,0) 70%); animation: drift 9s ease-in-out infinite; }
+  #section-2::after, #section-3::after { width: 150px; height: 150px; bottom: 6%; left: -50px; border: 2px dashed rgba(82,105,237,.28); animation: spinSlow 30s linear infinite; }
+
+  /* Angket: pernyataan masuk berurutan */
+  #section-3:not(.hidden) #sus-list > li { animation: riseIn .5s cubic-bezier(.2,.8,.2,1) both; }
+  #sus-list > li:nth-child(1) { animation-delay: .05s !important; } #sus-list > li:nth-child(2) { animation-delay: .10s !important; }
+  #sus-list > li:nth-child(3) { animation-delay: .15s !important; } #sus-list > li:nth-child(4) { animation-delay: .20s !important; }
+  #sus-list > li:nth-child(5) { animation-delay: .25s !important; } #sus-list > li:nth-child(n+6) { animation-delay: .30s !important; }
+  #sus-list > li.is-answered::after { animation: popIn .35s ease both; }
+  #sus-list .sus-btn[aria-pressed='true'] { animation: popIn .3s ease both; }
+
+  /* Skor kuis: kartu muncul dengan pop */
+  #card-skor-kuis { animation: popIn .6s cubic-bezier(.2,.8,.2,1) both; }
+  #skor-kuis { display: inline-block; font-variant-numeric: tabular-nums; }
+
+  /* Menu samping: item masuk berurutan saat dibuka */
+  body.app-active .sidebar-link, .lms-sidebar.mobile-open .sidebar-link { animation: slideIn .45s cubic-bezier(.2,.8,.2,1) both; }
+  .sidebar-menu > :nth-child(1) { animation-delay: .04s !important; } .sidebar-menu > :nth-child(2) { animation-delay: .08s !important; }
+  .sidebar-menu > :nth-child(4) { animation-delay: .12s !important; } .sidebar-menu > :nth-child(5) { animation-delay: .16s !important; }
+  .sidebar-menu > :nth-child(6) { animation-delay: .20s !important; } .sidebar-menu > :nth-child(7) { animation-delay: .24s !important; }
+  .sidebar-menu > :nth-child(8) { animation-delay: .28s !important; } .sidebar-menu > :nth-child(9) { animation-delay: .32s !important; }
+  .sidebar-menu > :nth-child(10) { animation-delay: .36s !important; }
+  .sidebar-link { transition: transform .2s ease, background-color .2s ease; }
+  .sidebar-link:hover { transform: translateX(3px); }
+}
+
+#section-2, #section-3 { overflow-x: clip; }
+
+html.dark #section-2::before, html.dark #section-3::before { opacity: .4; }

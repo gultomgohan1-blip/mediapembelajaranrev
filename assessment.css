@@ -9,7 +9,7 @@
 #section-2 #q-options { display: grid !important; grid-template-columns: 1fr; gap: .8rem; }
 
 #section-2 #q-options .opt-btn {
-  display: flex !important; align-items: center; flex-wrap: wrap; gap: .85rem 1rem;
+  display: grid !important; grid-template-columns: 2.6rem minmax(0, 1fr); align-items: center; gap: .5rem 1rem;
   width: 100% !important; min-height: 64px; box-sizing: border-box;
   margin: 0; padding: .85rem 1.1rem !important;
   text-align: left !important; cursor: pointer;
@@ -20,10 +20,10 @@
   transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease !important;
 }
 #section-2 #q-options .opt-btn > span:first-child {
-  flex: 0 0 2.6rem; width: 2.6rem; height: 2.6rem; font-size: 1.05rem; font-weight: 800;
+  grid-column: 1; grid-row: 1; width: 2.6rem; height: 2.6rem; font-size: 1.05rem; font-weight: 800;
   display: grid !important; place-items: center; border-radius: 12px !important;
 }
-#section-2 #q-options .opt-btn .opt-text { flex: 1 1 0; min-width: 0; overflow-wrap: anywhere; }
+#section-2 #q-options .opt-btn .opt-text { grid-column: 2; grid-row: 1; min-width: 0; overflow-wrap: anywhere; }
 
 #section-2 #q-options .opt-btn:hover:not(:disabled),
 #section-2 #q-options .opt-btn:focus-visible:not(:disabled) {
@@ -34,8 +34,8 @@
 
 /* Tanda "Pilihanmu / Jawaban benar" */
 #section-2 #q-options .opt-flag {
-  flex: 0 0 auto; margin-left: auto; padding: .3rem .7rem; border-radius: 999px;
-  font-size: .78rem; font-weight: 800; letter-spacing: .01em; white-space: nowrap;
+  grid-column: 2; grid-row: 2; justify-self: start; max-width: 100%; margin: 0; padding: .3rem .7rem; border-radius: 10px;
+  font-size: .78rem; font-weight: 800; letter-spacing: .01em; white-space: normal;
   color: #fff; background: #475569;
 }
 
@@ -77,8 +77,7 @@ html.dark #section-2 p.q-status.is-ok { color: #8EE8A8 !important; }
 html.dark #section-2 p.q-status.is-bad { color: #FF9B90 !important; }
 
 @media (max-width: 480px) {
-  #section-2 #q-options .opt-btn { padding: .8rem .9rem !important; }
-  #section-2 #q-options .opt-flag { margin-left: 3.45rem; }
+  #section-2 #q-options .opt-btn { padding: .8rem .9rem !important; column-gap: .8rem; }
 }
 
 /* ---------- ANGKET SUS: skala 1-5 ---------- */
