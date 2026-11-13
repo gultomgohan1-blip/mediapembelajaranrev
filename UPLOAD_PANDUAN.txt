@@ -1,0 +1,27 @@
+PANDUAN UPLOAD — KREASI DKV / 2 MISI + PORTOFOLIO CONTRAST FIX
+
+1. Download dan ekstrak ZIP.
+2. Buka repository GitHub Pages.
+3. Masuk ke tab Code.
+4. Pilih Add file > Upload files.
+5. Pilih file berikut dari folder hasil ekstrak dan unggah langsung ke root repository:
+   - index.html
+   - style.css
+   - script.js
+   - studio.js
+   - mission-hub.js
+   - fix-this-design.js
+   - app-navigation.js
+   - portfolio.js
+6. Jangan membuat subfolder saat mengunggah.
+7. Klik Commit changes.
+8. Tunggu status deployment GitHub Pages berhasil.
+9. Buka website dan tekan Ctrl+Shift+R.
+
+CATATAN
+- script.js harus tetap menggunakan file dari paket ini. Isinya identik dengan versi sebelumnya.
+- Jangan mengunggah PORTFOLIO_APPS_SCRIPT.gs sebagai file web.
+- Endpoint pengiriman kuis/SUS tidak diubah.
+- Progres Creative Quest dan portofolio lokal tersimpan per browser/perangkat.
+
+Versi ini hanya menampilkan dua misi aktif. Upload semua file frontend dari ZIP langsung ke root repository. Jangan upload file backend/rahasia atau endpoint administrator ke repository publik.
