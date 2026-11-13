@@ -134,3 +134,11 @@ html.dark #notice-belum-kuis p { color: #FFE9B0 !important; }
 @media (prefers-reduced-motion: reduce) {
   #section-2 #q-options .opt-btn, #sus-list .sus-btn { transition: none !important; }
 }
+
+/* ---------- Pembahasan per soal ---------- */
+#section-2 .q-pembahasan { margin-top: 1rem; padding: 1rem 1.1rem; border-radius: 14px; border: 2px solid #C9D2FF; border-left: 6px solid #5269ED; background: #F1F3FF; }
+#section-2 .q-pembahasan b { display: block; margin-bottom: .25rem; font-size: .78rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #3446C9; }
+#section-2 .q-pembahasan p { margin: 0; font-size: .95rem; line-height: 1.55; color: #2B2740 !important; }
+html.dark #section-2 .q-pembahasan { background: #2C2A4A; border-color: #5A5A99; border-left-color: #9AA8FF; }
+html.dark #section-2 .q-pembahasan b { color: #B9C3FF; }
+html.dark #section-2 .q-pembahasan p { color: #F2EEF8 !important; }
