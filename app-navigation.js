@@ -11,7 +11,14 @@
   const chapterLabels = {'tab-1':'Unsur tata letak','tab-2':'Warna','tab-3':'Prinsip layout','tab-4':'Scanner','tab-5':'Data internet'};
   const visited = new Set();
   let done = new Set();
-  let quizCompleted = false;
+  const assess = () => window.LMSAssessment;
+  function renderStudentCard() {
+    const id = assess()?.identitas?.() || {};
+    const nameEl = $('#sidebar-student-code');
+    const classEl = $('#sidebar-student-class');
+    if (nameEl) nameEl.textContent = id.nama || studentKey();
+    if (classEl) classEl.textContent = [studentKey() !== 'GUEST' ? studentKey() : '', id.kelas || 'Kelas DKV'].filter(Boolean).join(' · ');
+  }
 
   function studentKey() { return ($('#kode-siswa')?.value || 'guest').trim().toUpperCase() || 'guest'; }
   function progressKey() { return `kreasi-dkv-completed-${studentKey()}`; }
@@ -38,10 +45,7 @@
   function setPage(id) {
     pageIds.forEach(pid => $('#'+pid)?.classList.toggle('hidden', pid !== id));
     document.body.classList.toggle('app-active', id !== 'section-0');
-    if (id !== 'section-0') {
-      $('#sidebar-student-code').textContent = studentKey();
-      $('#sidebar-student-class').textContent = $('#kelas-siswa')?.value || 'Kelas DKV';
-    }
+    if (id !== 'section-0') renderStudentCard();
     const bar = $('#progress-bar');
     if (bar) bar.style.width = `${(pageIds.indexOf(id)+1)*25}%`;
     $$('.step').forEach(step => step.classList.toggle('text-indigo-500', Number(step.dataset.step) <= pageIds.indexOf(id)));
@@ -100,6 +104,7 @@
   }
   function navigate(key) {
     openSidebar(false);
+    if (currentPage() === 'section-2' && key !== 'quiz') assess()?.jeda();
     if (key === 'overview') { setPage('section-1'); setActiveNav(key); scrollToTarget('course-overview'); return; }
     if (key === 'materials') { setPage('section-1'); setActiveNav(key); $('.tab-btn[data-tab="tab-1"]')?.click(); scrollToTarget('course-chapters'); return; }
     if (key === 'guided' || key === 'challenge' || key === 'portfolio') {
@@ -108,17 +113,18 @@
       clickStudio(panel); return;
     }
     if (key === 'quiz') {
+      const A = assess();
       if (currentPage() === 'section-2') { setActiveNav('quiz'); return; }
-      if (currentPage() === 'section-3' || quizCompleted) { setPage('section-3'); setActiveNav('sus'); showToast('Kuis sudah selesai. Hasil dan angket SUS tersedia di halaman ini.'); return; }
-      setPage('section-1');
-      const next = $('#btn-to-kuis');
-      if (next && !next.disabled) { next.click(); setActiveNav('quiz'); }
-      else { setActiveNav('challenge'); clickStudio('studio-challenge-panel'); scrollToTarget('btn-to-kuis'); showToast('Selesaikan Design Challenge terlebih dahulu untuk membuka kuis.'); }
+      if (A?.kuisSelesai()) { A.siapkanSUS(); setPage('section-3'); setActiveNav('sus'); showToast('Kuis sudah selesai. Hasil dan angket SUS tersedia di halaman ini.'); return; }
+      if (A) { A.bukaKuis(); setActiveNav('quiz'); return; }
+      showToast('Kuis belum termuat. Muat ulang halaman dan coba kembali.');
       return;
     }
     if (key === 'sus') {
-      if (currentPage() === 'section-3' || quizCompleted) { setPage('section-3'); setActiveNav('sus'); scrollToTarget('sus-list'); }
-      else { showToast('Selesaikan kuis terlebih dahulu. Angket SUS akan terbuka setelah kuis.'); navigate('quiz'); }
+      const A = assess();
+      if (!A) { showToast('Angket belum termuat. Muat ulang halaman dan coba kembali.'); return; }
+      A.siapkanSUS(); setPage('section-3'); setActiveNav('sus');
+      requestAnimationFrame(() => scrollToTarget('sus-list'));
     }
   }
   function updateShellState() {
@@ -128,7 +134,7 @@
     shell?.classList.toggle('is-learning', page !== 'section-0');
     if (page === 'section-0') openSidebar(false);
     if (page === 'section-2') setActiveNav('quiz');
-    if (page === 'section-3') { quizCompleted = true; setActiveNav('sus'); }
+    if (page === 'section-3') setActiveNav('sus');
     if (page === 'section-1' && !$$('[data-shell-nav].is-active').length) setActiveNav('overview');
   }
 
@@ -162,6 +168,6 @@
     if(contextTitle && currentPage()==='section-1')contextTitle.textContent=names[id]||'Materi & Pembahasan';
   }));
   // Student code is already validated by the original login form.
-  $('#btn-mulai')?.addEventListener('click',()=>{loadDone();$('#sidebar-student-code').textContent=studentKey();$('#sidebar-student-class').textContent=$('#kelas-siswa')?.value||'Kelas DKV';setActiveNav('overview')});
+  $('#btn-mulai')?.addEventListener('click',()=>{loadDone();renderStudentCard();setActiveNav('overview')});
   loadDone(); updateProgress(); updateShellState();
 })();

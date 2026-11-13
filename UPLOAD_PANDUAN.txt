@@ -29,3 +29,24 @@ CATATAN
   "kurangi gerakan" (prefers-reduced-motion), sehingga GIF tidak bergerak.
 - Untuk kembali ke tampilan lama: hapus baris <link href="materi.css"> di
   index.html dan pakai index.html dari paket sebelumnya.
+
+
+========================================================================
+PEMBARUAN: IDENTITAS, KUIS/ANGKET, SPREADSHEET
+========================================================================
+FILE YANG WAJIB DIUNGGAH KE GITHUB (root repository)
+  - index.html, script.js, app-navigation.js
+  - assessment.css   (BARU)
+
+JANGAN DIUNGGAH KE GITHUB
+  - APPS_SCRIPT_Code.gs  (khusus Google Apps Script)
+
+MEMPERBARUI GOOGLE APPS SCRIPT (agar spreadsheet berformat baru)
+  1. Buka Google Sheets tujuan > Extensions > Apps Script.
+  2. Ganti isi Code.gs dengan isi APPS_SCRIPT_Code.gs, lalu Save.
+  3. Deploy > Manage deployments > ikon pensil > Version: New version > Deploy.
+     URL /exec tetap sama; API_URL di script.js tidak perlu diganti.
+  4. Hasil: sheet "Angket SUS" (Kode | Nama | Pernyataan | 1 | 2 | 3 | 4 | 5)
+     dan sheet "Rekap Skor" (Kode | Nama | Kelas | Skor Kuis | Skor SUS | Waktu).
+  Selama Apps Script lama belum diganti, pengiriman tetap berjalan seperti
+  sebelumnya (data tambahan diabaikan), tetapi format baru belum muncul.

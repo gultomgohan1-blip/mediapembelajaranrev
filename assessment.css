@@ -1,0 +1,136 @@
+/* ==========================================================================
+   assessment.css — Kuis & Angket SUS
+   Dimuat PALING AKHIR (setelah style.css dan materi.css).
+   Memperbaiki: opsi kuis kecil/ikut panjang teks, pilihan jawaban tidak
+   terlihat jelas, dan skala 1-5 angket SUS yang terlalu kecil.
+   ========================================================================== */
+
+/* ---------- KUIS: daftar opsi ---------- */
+#section-2 #q-options { display: grid !important; grid-template-columns: 1fr; gap: .8rem; }
+
+#section-2 #q-options .opt-btn {
+  display: flex !important; align-items: center; flex-wrap: wrap; gap: .85rem 1rem;
+  width: 100% !important; min-height: 64px; box-sizing: border-box;
+  margin: 0; padding: .85rem 1.1rem !important;
+  text-align: left !important; cursor: pointer;
+  font-size: 1rem; font-weight: 600; line-height: 1.45;
+  border: 2px solid #E3D8CE !important; border-radius: 16px !important;
+  color: #332E46 !important; background: #FFF7F0 !important;
+  box-shadow: none !important; opacity: 1 !important;
+  transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease !important;
+}
+#section-2 #q-options .opt-btn > span:first-child {
+  flex: 0 0 2.6rem; width: 2.6rem; height: 2.6rem; font-size: 1.05rem; font-weight: 800;
+  display: grid !important; place-items: center; border-radius: 12px !important;
+}
+#section-2 #q-options .opt-btn .opt-text { flex: 1 1 0; min-width: 0; overflow-wrap: anywhere; }
+
+#section-2 #q-options .opt-btn:hover:not(:disabled),
+#section-2 #q-options .opt-btn:focus-visible:not(:disabled) {
+  border-color: #5269ED !important; background: #EEF0FF !important; transform: translateY(-2px) !important;
+  box-shadow: 0 8px 18px rgba(82,105,237,.14) !important; outline: none;
+}
+#section-2 #q-options .opt-btn:disabled { cursor: default; opacity: 1 !important; transform: none !important; }
+
+/* Tanda "Pilihanmu / Jawaban benar" */
+#section-2 #q-options .opt-flag {
+  flex: 0 0 auto; margin-left: auto; padding: .3rem .7rem; border-radius: 999px;
+  font-size: .78rem; font-weight: 800; letter-spacing: .01em; white-space: nowrap;
+  color: #fff; background: #475569;
+}
+
+/* Jawaban benar (tidak dipilih): hijau jelas */
+#section-2 #q-options .opt-btn.is-correct {
+  color: #14361F !important; background: #E2F6D5 !important;
+  border-color: #3FA25B !important; border-style: dashed !important;
+}
+#section-2 #q-options .opt-btn.is-correct .opt-flag { background: #2F8A4B; }
+
+/* Pilihan siswa — benar */
+#section-2 #q-options .opt-btn.is-picked.is-correct {
+  background: #C9EEB3 !important; border-style: solid !important; border-width: 3px !important;
+  box-shadow: 0 0 0 4px rgba(63,162,91,.28) !important;
+}
+/* Pilihan siswa — salah */
+#section-2 #q-options .opt-btn.is-picked.is-wrong {
+  color: #5A1F27 !important; background: #FFD9D4 !important;
+  border-color: #D9483B !important; border-width: 3px !important;
+  box-shadow: 0 0 0 4px rgba(217,72,59,.26) !important;
+}
+#section-2 #q-options .opt-btn.is-picked.is-wrong .opt-flag { background: #C23A2E; }
+/* Opsi lain yang tidak dipilih setelah dijawab: redup supaya pilihan menonjol */
+#section-2 #q-options .opt-btn:disabled:not(.is-picked):not(.is-correct) { opacity: .62 !important; }
+
+/* Status di bawah opsi */
+.q-status { min-height: 1.5rem; margin-top: 1rem; font-weight: 800; font-size: .95rem; }
+#section-2 p.q-status.is-ok { color: #1F7A3E !important; }
+#section-2 p.q-status.is-bad { color: #B93427 !important; }
+
+/* Mode gelap — kuis */
+html.dark #section-2 #q-options .opt-btn { color: #FFF8F0 !important; background: #34304E !important; border-color: #5A5478 !important; }
+html.dark #section-2 #q-options .opt-btn:hover:not(:disabled),
+html.dark #section-2 #q-options .opt-btn:focus-visible:not(:disabled) { background: #3E3A5E !important; border-color: #8FA0FF !important; }
+html.dark #section-2 #q-options .opt-btn.is-correct { color: #E8FBE0 !important; background: #1F4A2E !important; border-color: #5ED27F !important; }
+html.dark #section-2 #q-options .opt-btn.is-picked.is-correct { background: #27613B !important; box-shadow: 0 0 0 4px rgba(94,210,127,.3) !important; }
+html.dark #section-2 #q-options .opt-btn.is-picked.is-wrong { color: #FFE9E6 !important; background: #6B2A2B !important; border-color: #FF8A7D !important; box-shadow: 0 0 0 4px rgba(255,138,125,.3) !important; }
+html.dark #section-2 p.q-status.is-ok { color: #8EE8A8 !important; }
+html.dark #section-2 p.q-status.is-bad { color: #FF9B90 !important; }
+
+@media (max-width: 480px) {
+  #section-2 #q-options .opt-btn { padding: .8rem .9rem !important; }
+  #section-2 #q-options .opt-flag { margin-left: 3.45rem; }
+}
+
+/* ---------- ANGKET SUS: skala 1-5 ---------- */
+#sus-list .sus-scale { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .55rem; margin-top: .85rem; }
+#sus-list .sus-btn {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .1rem;
+  min-width: 0; min-height: 54px; padding: .4rem 0; cursor: pointer;
+  font-size: 1.2rem; font-weight: 800; line-height: 1;
+  color: #554E64 !important; background: #fff !important;
+  border: 2px solid #D9CFE0 !important; border-radius: 14px !important;
+  box-shadow: none !important; transform: none !important;
+  transition: background-color .18s ease, border-color .18s ease, box-shadow .18s ease !important;
+}
+#sus-list .sus-btn:hover, #sus-list .sus-btn:focus-visible {
+  color: #3446C9 !important; background: #EEF0FF !important; border-color: #5269ED !important;
+  transform: none !important; box-shadow: 0 4px 12px rgba(82,105,237,.16) !important; outline: none;
+}
+#sus-list .sus-btn[aria-pressed='true'] {
+  color: #fff !important; background: #4157E0 !important; border-color: #2338B5 !important;
+  box-shadow: 0 0 0 4px rgba(82,105,237,.3) !important;
+}
+#sus-list .sus-btn[aria-pressed='true']::after { content: '✓ dipilih'; font-size: .62rem; font-weight: 800; letter-spacing: .02em; }
+
+#sus-list .sus-legend { display: flex; justify-content: space-between; gap: .75rem; margin-top: .45rem; font-size: .72rem; font-weight: 700; color: #7A7388; }
+#sus-list li.is-answered { border-left-color: #35A989 !important; }
+
+.sus-progress { margin-top: 1.5rem; margin-bottom: .9rem; font-weight: 800; font-size: .9rem; color: #5269ED; text-align: center; }
+#section-3 p.sus-progress { color: #4157E0 !important; }
+
+html.dark #sus-list .sus-btn { color: #F2EEF8 !important; background: #2A2740 !important; border-color: #5A5478 !important; }
+html.dark #sus-list .sus-btn:hover, html.dark #sus-list .sus-btn:focus-visible { color: #fff !important; background: #3B3860 !important; border-color: #9AA8FF !important; }
+html.dark #sus-list .sus-btn[aria-pressed='true'] { color: #fff !important; background: #5B72FF !important; border-color: #C3CBFF !important; box-shadow: 0 0 0 4px rgba(155,170,255,.35) !important; }
+html.dark #sus-list .sus-legend { color: #B8B0C9; }
+html.dark #section-3 p.sus-progress { color: #A9B6FF !important; }
+
+@media (max-width: 480px) {
+  #sus-list .sus-scale { gap: .4rem; }
+  #sus-list .sus-btn { min-height: 52px; font-size: 1.1rem; }
+  #sus-list .sus-btn[aria-pressed='true']::after { content: '✓'; font-size: .8rem; }
+}
+
+/* ---------- Pemberitahuan "kuis belum dikerjakan" ---------- */
+#notice-belum-kuis { border: 2px solid #E8B64F; background: #FFF4D6; color: #4A3608; }
+#notice-belum-kuis p { color: #4A3608 !important; }
+#btn-kerjakan-kuis { color: #fff; background: #4157E0; border: 0; cursor: pointer; }
+#btn-kerjakan-kuis:hover { background: #3446C9; }
+html.dark #notice-belum-kuis { border-color: #C9962C; background: #3D3118; }
+html.dark #notice-belum-kuis p { color: #FFE9B0 !important; }
+
+/* ---------- Formulir identitas: jarak antar-field ---------- */
+#section-0 #nama-siswa { text-transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  #section-2 #q-options .opt-btn, #sus-list .sus-btn { transition: none !important; }
+}

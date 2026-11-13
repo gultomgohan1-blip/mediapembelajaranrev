@@ -115,3 +115,25 @@ GIF demo (dibuat dengan Python/Pillow, 640x480 atau 640x400, 75-420 KB)
 - anim-scanner : pemindaian gambar menjadi piksel (Bab 4)
 - anim-aset    : unduh berkas lalu simpan di folder aset (Bab 5)
 Setiap GIF punya poster statis (*-still.png) untuk prefers-reduced-motion.
+
+
+========================================================================
+PEMBARUAN: IDENTITAS, SPREADSHEET, KUIS/ANGKET, AKSES BEBAS
+========================================================================
+CATATAN: script.js dan app-navigation.js SENGAJA diubah pada pembaruan ini
+(pernyataan "script.js byte-for-byte" di atas berlaku untuk paket lama).
+Rumus SUS, 15 soal, timer 45 detik, dan API_URL tidak diubah.
+
+1. Identitas: ditambah kolom Nama Lengkap; pilihan kelas ditambah
+   "Mahasiswa PTIK". Kode siswa tetap berformat S01-S999.
+2. Spreadsheet: payload kini membawa nama, kelas, dan jawabanSus (no,
+   pernyataan, poin). Pasang APPS_SCRIPT_Code.gs di Apps Script (lihat
+   UPLOAD_PANDUAN.txt) agar sheet berformat: Kode | Nama | Pernyataan | 1-5.
+3. Kuis: opsi selalu selebar kartu; jawaban yang dipilih diberi tanda
+   "Pilihanmu", jawaban benar diberi tanda hijau, ditambah pesan status.
+   Angket SUS: tombol 1-5 lebih besar dengan tanda "dipilih" dan penghitung
+   jawaban terisi.
+4. Akses bebas: menu Kuis dan Angket SUS di sidebar dapat dibuka kapan saja
+   tanpa menyelesaikan Design Challenge. Angket yang dibuka sebelum kuis
+   tetap bisa dikirim (skor kuis tercatat kosong); setelah kuis selesai,
+   data dapat dikirim ulang dan baris yang sama diperbarui.
