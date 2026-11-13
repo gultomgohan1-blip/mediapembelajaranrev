@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html class="scroll-smooth" lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="description" content="Media pembelajaran desain grafis DKV dengan materi visual, praktik terpandu, tantangan, dan portofolio siswa.">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="utf-8"/>
+<meta content="Media pembelajaran desain grafis DKV dengan materi visual, praktik terpandu, tantangan, dan portofolio siswa." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>KREASI DKV — Creative Learning Academy</title>
 <!-- Fonts: Plus Jakarta Sans + DM Sans + Fraunces + Space Grotesk -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS via CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -17,7 +18,7 @@
       theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] } } }
     };
   </script>
-<link href="style.css" rel="stylesheet"></head>
+<link href="style.css?v=20261113-uiux-polish" rel="stylesheet"/></head>
 <body class="font-sans min-h-screen text-slate-700 dark:text-slate-200 bg-gradient-to-br from-indigo-50 via-slate-50 to-violet-100 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950 transition-colors duration-500">
 <!-- Dekorasi latar blur -->
 <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -28,7 +29,7 @@
 <header class="sticky top-0 z-50 px-4 pt-4">
 <nav class="site-topnav max-w-none mx-auto flex items-center justify-between gap-3 px-5 py-3 rounded-3xl bg-white/70 backdrop-blur-md dark:bg-black/75 border border-white/60 dark:border-white/10 shadow-sm">
 <div class="flex items-center gap-3">
-<button aria-label="Buka navigasi" aria-expanded="false" class="mobile-menu-toggle" id="mobile-menu-toggle" type="button"><span></span><span></span><span></span></button>
+<button aria-expanded="false" aria-label="Buka navigasi" class="mobile-menu-toggle" id="mobile-menu-toggle" type="button"><span></span><span></span><span></span></button>
 <div class="brand-mark"><span>K</span><i>✳</i></div>
 <span class="brand-wordmark">KREASI<span>DKV.</span></span>
 </div>
@@ -54,38 +55,38 @@
 </div>
 <main class="lms-workspace" id="lms-workspace">
 <aside aria-label="Navigasi pembelajaran" class="lms-sidebar" id="lms-sidebar">
-  <div class="sidebar-brandline"><span class="sidebar-brand-icon">K</span><div><b>KREASI DKV</b><small>CREATIVE ACADEMY</small></div></div>
-  <div class="sidebar-student" id="sidebar-student-card"><span class="student-avatar">✳</span><div><b id="sidebar-student-code">SISWA DKV</b><small id="sidebar-student-class">Kelas X DKV</small></div></div>
-  <div class="sidebar-caption">RUANG BELAJAR</div>
-  <nav class="sidebar-menu" aria-label="Menu utama">
-    <button class="sidebar-link is-active" data-shell-nav="overview" type="button"><span class="sidebar-link-icon">⌂</span><span>Ringkasan</span><small>01</small></button>
-    <button class="sidebar-link" data-shell-nav="materials" type="button"><span class="sidebar-link-icon">▤</span><span>Materi &amp; Pembahasan</span><small>02</small></button>
-    <div class="sidebar-chapter-list" aria-label="Daftar bab">
-      <button data-shell-chapter="tab-1" type="button"><span>01</span> Unsur tata letak</button>
-      <button data-shell-chapter="tab-2" type="button"><span>02</span> Warna</button>
-      <button data-shell-chapter="tab-3" type="button"><span>03</span> Prinsip layout</button>
-      <button data-shell-chapter="tab-4" type="button"><span>04</span> Scanner</button>
-      <button data-shell-chapter="tab-5" type="button"><span>05</span> Data internet</button>
-    </div>
-    <div class="sidebar-caption sidebar-caption-spaced">RUANG PRAKTIK</div>
-    <button class="sidebar-link" data-shell-nav="guided" type="button"><span class="sidebar-link-icon">✳</span><span>Guided Practice</span><small>03</small></button>
-    <button class="sidebar-link" data-shell-nav="challenge" type="button"><span class="sidebar-link-icon">⚡</span><span>Design Challenge</span><small>04</small></button>
-    <button class="sidebar-link" data-shell-nav="portfolio" type="button"><span class="sidebar-link-icon">▧</span><span>Project &amp; Portfolio</span><small>05</small></button>
-    <div class="sidebar-caption sidebar-caption-spaced">EVALUASI</div>
-    <button class="sidebar-link" data-shell-nav="quiz" type="button"><span class="sidebar-link-icon">✓</span><span>Kuis</span><small>06</small></button>
-    <button class="sidebar-link" data-shell-nav="sus" type="button"><span class="sidebar-link-icon">♡</span><span>Angket SUS</span><small>07</small></button>
-  </nav>
-  <div class="sidebar-progress-card">
-    <div class="sidebar-progress-head"><b>Progres materi</b><span id="sidebar-progress-count">0/5</span></div>
-    <div class="sidebar-progress-track"><span id="sidebar-progress-fill"></span></div>
-    <p> Tandai bab selesai setelah kamu mempelajarinya.</p>
-  </div>
-  <div class="sidebar-footer-note">OBSERVE · LEARN · EXPLORE · CREATE</div>
+<div class="sidebar-brandline"><span class="sidebar-brand-icon">K</span><div><b>KREASI DKV</b><small>CREATIVE ACADEMY</small></div></div>
+<div class="sidebar-student" id="sidebar-student-card"><span class="student-avatar">✳</span><div><b id="sidebar-student-code">SISWA DKV</b><small id="sidebar-student-class">Kelas X DKV</small></div></div>
+<div class="sidebar-caption">RUANG BELAJAR</div>
+<nav aria-label="Menu utama" class="sidebar-menu">
+<button class="sidebar-link is-active" data-shell-nav="overview" type="button"><span class="sidebar-link-icon">⌂</span><span>Ringkasan</span><small>01</small></button>
+<button class="sidebar-link" data-shell-nav="materials" type="button"><span class="sidebar-link-icon">▤</span><span>Materi &amp; Pembahasan</span><small>02</small></button>
+<div aria-label="Daftar bab" class="sidebar-chapter-list">
+<button data-shell-chapter="tab-1" type="button"><span>01</span> Unsur tata letak</button>
+<button data-shell-chapter="tab-2" type="button"><span>02</span> Warna</button>
+<button data-shell-chapter="tab-3" type="button"><span>03</span> Prinsip layout</button>
+<button data-shell-chapter="tab-4" type="button"><span>04</span> Scanner</button>
+<button data-shell-chapter="tab-5" type="button"><span>05</span> Data internet</button>
+</div>
+<div class="sidebar-caption sidebar-caption-spaced">RUANG PRAKTIK</div>
+<button class="sidebar-link" data-shell-nav="guided" type="button"><span class="sidebar-link-icon">✳</span><span>Guided Practice</span><small>03</small></button>
+<button class="sidebar-link" data-shell-nav="challenge" type="button"><span class="sidebar-link-icon">⚡</span><span>Design Challenge</span><small>04</small></button>
+<button class="sidebar-link" data-shell-nav="portfolio" type="button"><span class="sidebar-link-icon">▧</span><span>Project &amp; Portfolio</span><small>05</small></button>
+<div class="sidebar-caption sidebar-caption-spaced">EVALUASI</div>
+<button class="sidebar-link" data-shell-nav="quiz" type="button"><span class="sidebar-link-icon">✓</span><span>Kuis</span><small>06</small></button>
+<button class="sidebar-link" data-shell-nav="sus" type="button"><span class="sidebar-link-icon">♡</span><span>Angket SUS</span><small>07</small></button>
+</nav>
+<div class="sidebar-progress-card">
+<div class="sidebar-progress-head"><b>Progres materi</b><span id="sidebar-progress-count">0/5</span></div>
+<div class="sidebar-progress-track"><span id="sidebar-progress-fill"></span></div>
+<p> Tandai bab selesai setelah kamu mempelajarinya.</p>
+</div>
+<div class="sidebar-footer-note">OBSERVE · LEARN · EXPLORE · CREATE</div>
 </aside>
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
 <div class="lms-main-column" id="lms-main-column">
-  <div class="mobile-contextbar" id="mobile-contextbar"><div><span>CREATIVE LEARNING PATH</span><b id="mobile-context-title">Ringkasan belajar</b></div><span class="mobile-context-index">DKV / X</span></div>
-  <div class="page-content" id="lms-page-content">
+<div class="mobile-contextbar" id="mobile-contextbar"><div><span>CREATIVE LEARNING PATH</span><b id="mobile-context-title">Ringkasan belajar</b></div><span class="mobile-context-index">DKV / X</span></div>
+<div class="page-content" id="lms-page-content">
 <!-- ================= SECTION 0 : IDENTITAS ================= -->
 <section class="page" id="section-0">
 <div class="welcome-layout">
@@ -93,15 +94,14 @@
 <div class="welcome-promo-top"><span class="welcome-kicker">CREATIVE LEARNING STUDIO</span><span class="welcome-edition">VOL. 01 / DKV</span></div>
 <div class="welcome-copy">
 <p class="welcome-label">RUANG UNTUK IDE BESAR</p>
-<h1>Belajar desain.<br><em>Bikin sesuatu.</em></h1>
+<h1>Belajar desain.<br/><em>Bikin sesuatu.</em></h1>
 <p class="welcome-lede">Temukan bahasa visualmu melalui warna, bentuk, tipografi, komposisi, dan praktik kreatif.</p>
 </div>
 <div aria-label="Kolase poster dan elemen grafis berwarna" class="welcome-art">
-<img alt="Kolase kreatif berisi poster, palet warna, pensil, dan bentuk desain" class="welcome-art-illustration" src="assets/login-creative-collage.png">
-<div class="welcome-art-paper welcome-paper-one"><span>COLOR<br>YOUR<br>IDEAS</span><b>01</b></div>
-<div class="welcome-art-paper welcome-paper-two"><i></i><strong>FORM<br>FOLLOWS<br>MESSAGE</strong></div>
+<div class="welcome-art-paper welcome-paper-one"><span>COLOR<br/>YOUR<br/>IDEAS</span><b>01</b></div>
+<div class="welcome-art-paper welcome-paper-two"><i></i><strong>FORM<br/>FOLLOWS<br/>MESSAGE</strong></div>
 <div class="welcome-art-disc"></div><div class="welcome-art-star">✳</div><div class="welcome-art-orbit"></div>
-<span class="welcome-art-note">MAKE IT<br>VISUAL.</span>
+<span class="welcome-art-note">MAKE IT<br/>VISUAL.</span>
 </div>
 <div class="welcome-promo-bottom"><span>01 — OBSERVE</span><span>02 — EXPLORE</span><span>03 — CREATE</span></div>
 </aside>
@@ -113,7 +113,7 @@
 <div class="mt-8 space-y-5">
 <div>
 <label class="block text-sm font-semibold mb-2" for="kode-siswa">Kode Siswa</label>
-<input autocomplete="off" class="w-full px-5 py-3 rounded-2xl bg-white/80 dark:bg-white/10 border border-slate-200 dark:border-white/10 uppercase outline-none focus:ring-4 focus:ring-indigo-200 dark:focus:ring-indigo-500/30 transition-all duration-300" id="kode-siswa" maxlength="5" placeholder="Contoh: S01" type="text">
+<input autocomplete="off" class="w-full px-5 py-3 rounded-2xl bg-white/80 dark:bg-white/10 border border-slate-200 dark:border-white/10 uppercase outline-none focus:ring-4 focus:ring-indigo-200 dark:focus:ring-indigo-500/30 transition-all duration-300" id="kode-siswa" maxlength="5" placeholder="Contoh: S01" type="text"/>
 </div>
 <div>
 <label class="block text-sm font-semibold mb-2" for="kelas-siswa">Kelas</label>
@@ -124,7 +124,7 @@
 <option value="X DKV 3">X DKV 3</option>
 </select>
 </div>
-<button class="w-full py-3.5 rounded-2xl font-bold text-white bg-gradient-to-r from-indigo-300 to-violet-400 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none" disabled id="btn-mulai">
+<button class="w-full py-3.5 rounded-2xl font-bold text-white bg-gradient-to-r from-indigo-300 to-violet-400 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none" disabled="" id="btn-mulai">
             Mulai Belajar
           </button>
 </div>
@@ -137,10 +137,10 @@
 <div class="course-hero-grid">
 <div class="course-hero-copy">
 <div class="course-eyebrow-row">
-<p class="lesson-kicker">LMS DKV / CREATIVE LEARNING LAB</p>
+<p class="lesson-kicker">KREASI DKV / CREATIVE LEARNING LAB</p>
 <span class="course-pill">FASE E · DESAIN GRAFIS</span>
 </div>
-<h2 class="course-hero-title">Belajar melihat.<br><em>Berani membuat.</em></h2>
+<h2 class="course-hero-title">Belajar melihat.<br/><em>Berani membuat.</em></h2>
 <p class="course-hero-lede">Ruang belajar visual untuk memahami unsur desain, bereksperimen dengan warna, menyusun layout, dan menghasilkan karya grafis yang komunikatif.</p>
 <div class="course-hero-actions">
 <a class="course-cta course-cta-primary" href="#course-chapters">Jelajahi materi <span>↘</span></a>
@@ -154,13 +154,13 @@
 </div>
 <div aria-label="Kolase inspirasi studio desain grafis" class="course-hero-art">
 <div class="hero-art-photo hero-art-photo-main">
-<img alt="Kolase poster pameran mahasiswa dengan tipografi eksperimental dan warna cerah" loading="lazy" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png">
+<img alt="Kolase poster pameran mahasiswa dengan tipografi eksperimental dan warna cerah" loading="lazy" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png"/>
 <span class="hero-photo-caption">DESIGN IN PROGRESS / 01</span>
 </div>
 <div class="hero-art-sticker hero-art-sticker-blue"><span>IDEA</span><b>→</b><span>VISUAL</span></div>
-<div class="hero-art-sticker hero-art-sticker-lime">MAKE<br>IT CLEAR.</div>
+<div class="hero-art-sticker hero-art-sticker-lime">MAKE<br/>IT CLEAR.</div>
 <div class="hero-art-mini">
-<span class="mini-lines"></span><span class="mini-disc"></span><b>FORM<br>FOLLOWS<br>MESSAGE</b>
+<span class="mini-lines"></span><span class="mini-disc"></span><b>FORM<br/>FOLLOWS<br/>MESSAGE</b>
 </div>
 <span class="hero-art-index">DKV—X / 2026</span>
 </div>
@@ -173,15 +173,15 @@
 </div>
 <div class="course-visual-strip course-reference-strip">
 <a class="course-visual-card" href="https://www.csulb.edu/school-of-art/article/insights-2023-school-art-student-show" rel="noopener noreferrer" target="_blank">
-<img alt="Poster pameran mahasiswa dengan komposisi warna dan tipografi eksperimental" loading="lazy" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png">
+<img alt="Poster pameran mahasiswa dengan komposisi warna dan tipografi eksperimental" loading="lazy" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png"/>
 <span>Karya poster pameran mahasiswa</span>
 </a>
 <a class="course-visual-card" href="https://buzzvel.com/blog/the-psychology-of-colors-in-uiux" rel="noopener noreferrer" target="_blank">
-<img alt="Infografik teori warna, roda warna, dan relasi kombinasi" loading="lazy" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://buzzvel.com/storage/color_theory-min.jpg">
+<img alt="Infografik teori warna, roda warna, dan relasi kombinasi" loading="lazy" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://buzzvel.com/storage/color_theory-min.jpg"/>
 <span>Roda warna dan kombinasi</span>
 </a>
 <a class="course-visual-card" href="https://www.behance.net/gallery/173354975/TYPOGRAPHIC-POSTER-DESIGN-FOR-SALT" rel="noopener noreferrer" target="_blank">
-<img alt="Seri poster tipografi eksperimental dengan bidang dan warna kontras" loading="lazy" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/141488173354975.648f1b4a6af1d.png">
+<img alt="Seri poster tipografi eksperimental dengan bidang dan warna kontras" loading="lazy" onerror="this.style.display='none'" referrerpolicy="no-referrer" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/141488173354975.648f1b4a6af1d.png"/>
 <span>Poster tipografi eksperimental</span>
 </a>
 </div>
@@ -193,7 +193,7 @@
 <p class="visual-credit-note">Referensi visual berasal dari CSULB, Behance, Buzzvel, Presentation Team, dan sumber terkait yang ditautkan pada tiap gambar. Karya dipakai sebagai bahan pengamatan; hak cipta tetap pada pemilik masing-masing.</p>
 </div>
 </div>
-<div class="course-route-callout"><div><span class="course-route-label">YOUR CREATIVE JOURNEY</span><b>Belajar dengan urutan yang jelas, tetapi tetap bebas mengeksplorasi.</b><small>Mulai dari materi, ikuti latihan, coba tantangan, lalu simpan karya. Kamu boleh mengulang bab kapan saja.</small></div><div class="route-stats"><span><b>05</b><small>Bab</small></span><span><b>03</b><small>Praktik</small></span><span><b>01</b><small>Portofolio</small></span></div></div>
+<div class="visual-learning-note"><span class="visual-learning-note-icon">✳</span><div><b>Belajar dengan mata, bukan hanya membaca.</b><span>Setiap bab kini diawali peta visual. Buka bagian yang ingin kamu pelajari, amati diagramnya, lalu coba terapkan pada karya.</span></div><div class="visual-learning-note-stamp">LOOK<br/>·<br/>MAKE</div></div><div class="course-route-callout"><div><span class="course-route-label">YOUR CREATIVE JOURNEY</span><b>Belajar dengan urutan yang jelas, tetapi tetap bebas mengeksplorasi.</b><small>Mulai dari materi, ikuti latihan, coba tantangan, lalu simpan karya. Kamu boleh mengulang bab kapan saja.</small></div><div class="route-stats"><span><b>05</b><small>Bab</small></span><span><b>03</b><small>Praktik</small></span><span><b>01</b><small>Portofolio</small></span></div></div>
 <div class="chapter-nav-wrap" id="course-chapters">
 <div class="chapter-nav-intro"><div><span class="chapter-nav-kicker">THE LEARNING PATH</span><h3>Pilih bab, bangun kemampuan.</h3></div><p>Ikuti urutan materi dari dasar visual sampai pengelolaan aset digital.</p></div>
 <!-- Navigasi bab sesuai urutan buku sumber -->
@@ -209,16 +209,18 @@
 <article class="tab-panel discussion-panel p-8 rounded-3xl" id="tab-1">
 <span class="discussion-kicker text-xs font-bold uppercase tracking-widest">BAB 01 · UNSUR-UNSUR TATA LETAK</span>
 <h3 class="mt-2 text-xl sm:text-2xl font-extrabold">Membuat Unsur Tata Letak secara Elektronik</h3>
-<p class="mt-3 leading-relaxed">Tata letak (layout) adalah cara menyusun berbagai unsur visual pada suatu bidang kerja. Unsur tersebut dapat berupa garis, bidang, ilustrasi, tipografi, warna, gelap-terang, tekstur, dan ruang. Setiap unsur memiliki karakter dan fungsi. Saat digabungkan, unsur-unsur itu membantu membangun pesan, mengatur perhatian, dan membuat karya lebih mudah dipahami.</p><figure class="chapter-visual"><img alt="Poster tipografi eksperimental sebagai contoh garis, bidang, teks, tekstur, dan warna" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/141488173354975.648f1b4a6af1d.png"><figcaption><span>Contoh poster tipografi dengan warna cerah</span><a href="https://www.behance.net/gallery/173354975/TYPOGRAPHIC-POSTER-DESIGN-FOR-SALT" rel="noopener noreferrer" target="_blank">Referensi visual: SALT Typographic Poster Series — Behance</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://www.csulb.edu/school-of-art/article/insights-2023-school-art-student-show" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Poster pameran dengan permainan huruf, bidang, tekstur, dan warna" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png"></div>
+<p class="mt-3 leading-relaxed">Tata letak (layout) adalah cara menyusun berbagai unsur visual pada suatu bidang kerja. Unsur tersebut dapat berupa garis, bidang, ilustrasi, tipografi, warna, gelap-terang, tekstur, dan ruang. Setiap unsur memiliki karakter dan fungsi. Saat digabungkan, unsur-unsur itu membantu membangun pesan, mengatur perhatian, dan membuat karya lebih mudah dipahami.</p><div aria-label="Peta visual unsur tata letak" class="lesson-visual-hero lesson-visual--elements">
+<div class="lesson-visual-copy"><span class="lesson-visual-kicker">VISUAL MAP · BAB 01</span><strong>Unsur kecil,<br/><em>pesan besar.</em></strong><p>Susun garis, bentuk, gambar, huruf, dan ruang menjadi satu komposisi yang mudah dibaca.</p><div class="lesson-visual-tags"><span>GARIS</span><span>BIDANG</span><span>TIPOGRAFI</span><span>RUANG</span></div></div>
+<div class="lesson-visual-art"><svg aria-labelledby="elTitle elDesc" role="img" viewBox="0 0 520 330"><title id="elTitle">Kolase unsur desain grafis</title><desc id="elDesc">Poster ilustratif dengan teks, garis, bentuk geometris, dan susunan grid.</desc><defs><lineargradient id="elBg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#FFD56E"></stop><stop offset=".53" stop-color="#F47F72"></stop><stop offset="1" stop-color="#8B79E8"></stop></lineargradient><pattern height="18" id="elGrid" patternunits="userSpaceOnUse" width="18"><path d="M18 0H0V18" fill="none" stroke="#29243D" stroke-opacity=".12" stroke-width="1"></path></pattern></defs><rect fill="url(#elBg)" height="314" rx="28" width="504" x="8" y="8"></rect><rect fill="url(#elGrid)" height="268" rx="18" width="450" x="35" y="30"></rect><g class="art-float" transform="rotate(-5 230 160)"><rect fill="#29243D" height="205" rx="12" width="250" x="88" y="57"></rect><text fill="#FFF8F1" font-family="Arial" font-size="42" font-weight="900" x="111" y="124">MAKE</text><text fill="#D8F39A" font-family="Arial" font-size="42" font-weight="900" x="111" y="165">IT</text><text fill="#FFF8F1" font-family="Arial" font-size="42" font-weight="900" x="111" y="206">CLEAR.</text><path d="M112 224H294" stroke="#FFD56E" stroke-linecap="round" stroke-width="5"></path></g><circle class="art-bobble" cx="394" cy="92" fill="#4F61E8" r="49"></circle><path d="M377 92h34m-17-17v34" stroke="#FFF8F1" stroke-linecap="round" stroke-width="5"></path><path d="M387 243c31-48 64-48 95 0" fill="none" stroke="#FFF8F1" stroke-linecap="round" stroke-width="8"></path><rect fill="#D8F39A" height="67" rx="12" transform="rotate(8 410 220)" width="88" x="366" y="186"></rect><path d="M25 267l28-28 28 28-28 28z" fill="#57C9BD"></path><text fill="#29243D" font-size="10" font-weight="900" x="39" y="278">DKV</text><circle cx="470" cy="42" fill="#FFF8F1" r="8"></circle><circle cx="448" cy="55" fill="#29243D" r="4"></circle></svg><span class="lesson-art-caption">FORM / TYPE / SPACE</span></div>
+</div><figure class="chapter-visual"><img alt="Poster tipografi eksperimental sebagai contoh garis, bidang, teks, tekstur, dan warna" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/141488173354975.648f1b4a6af1d.png"/><figcaption><span>Contoh poster tipografi dengan warna cerah</span><a href="https://www.behance.net/gallery/173354975/TYPOGRAPHIC-POSTER-DESIGN-FOR-SALT" rel="noopener noreferrer" target="_blank">Referensi visual: SALT Typographic Poster Series — Behance</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://www.csulb.edu/school-of-art/article/insights-2023-school-art-student-show" rel="noopener noreferrer" target="_blank">
+<div class="chapter-swatch-image"><img alt="Poster pameran dengan permainan huruf, bidang, tekstur, dan warna" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png"/></div>
 <span>CSULB · INSIGHTS 2023</span><small>Poster pameran dengan permainan huruf, bidang, tekstur, dan warna</small>
 </a><a class="chapter-swatch-card" href="https://www.presentationteam.com/bitmap-and-vector-graphics-in-presentations/" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Perbandingan karakter gambar vektor dan bitmap" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.presentationteam.com/wp-content/uploads/StickerYou_Blog_Vector-vs-Bitmap_600x400.jpg"></div>
+<div class="chapter-swatch-image"><img alt="Perbandingan karakter gambar vektor dan bitmap" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.presentationteam.com/wp-content/uploads/StickerYou_Blog_Vector-vs-Bitmap_600x400.jpg"/></div>
 <span>Presentation Team · Vector vs Bitmap</span><small>Perbandingan karakter gambar vektor dan bitmap</small>
 </a></div></div>
 <div class="discussion-highlight mt-5 p-5 rounded-2xl"><p class="font-bold">Mengapa unsur perlu dipahami?</p><p class="mt-2 text-sm">Sebelum menghias desain, tentukan dahulu informasi yang paling penting. Pilih unsur yang mendukung pesan. Elemen yang terlalu banyak, tidak teratur, atau saling berebut perhatian dapat membuat karya terasa penuh dan membingungkan.</p></div>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">1. Garis (line)</h4>
+<h4 class="lesson-topic-heading">1. Garis (line)</h4><details class="lesson-accordion" open="open"><summary><span class="lesson-accordion-index">01</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Garis dapat dipahami sebagai jejak titik yang memanjang ke suatu arah. Garis memiliki panjang, arah, ketebalan, dan karakter. Dalam desain grafis, garis dapat menjadi batas, pemisah, penghubung, penunjuk arah, kerangka ilustrasi, atau aksen yang membentuk irama.</p>
 <div class="mt-4 grid sm:grid-cols-2 gap-3">
 <div class="discussion-card p-4 rounded-2xl">
@@ -234,7 +236,7 @@
 </div>
 <div class="discussion-card p-4 rounded-2xl">
 <h5 class="font-bold">Contoh karakter garis</h5>
-<svg aria-label="Contoh garis horizontal, vertikal, diagonal, lengkung dan zig-zag" class="book-visual mt-3" role="img" viewbox="0 0 420 170">
+<svg aria-label="Contoh garis horizontal, vertikal, diagonal, lengkung dan zig-zag" class="book-visual mt-3" role="img" viewBox="0 0 420 170">
 <path d="M18 28 H185" stroke="#39ff14" stroke-linecap="round" stroke-width="7"></path>
 <path d="M220 14 V43" stroke="#00f0ff" stroke-linecap="round" stroke-width="8"></path>
 <path d="M245 44 L315 10" stroke="#ff3cac" stroke-linecap="round" stroke-width="8"></path>
@@ -247,9 +249,8 @@
 </div>
 </div>
 <div class="lesson-check mt-4 p-5 rounded-2xl"><p class="font-bold">Cara menerapkan garis</p><p class="mt-2 text-sm">Gunakan line, pen, atau freehand tool pada aplikasi grafis. Tentukan titik awal dan akhir, lalu atur ketebalan (stroke), warna, ujung garis, serta pola garis. Gunakan garis seperlunya agar tidak membuat layout terlalu ramai.</p></div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">2. Bidang dan bentuk (shape)</h4>
+</div></details>
+<h4 class="lesson-topic-heading">2. Bidang dan bentuk (shape)</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">02</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Bidang adalah area dua dimensi yang terutama memiliki panjang dan lebar. Bentuk tiga dimensi memiliki tambahan kedalaman atau volume. Bidang dapat terbentuk dari garis tertutup, pertemuan beberapa bentuk, perbedaan warna, atau batas tekstur.</p>
 <div class="mt-4 grid sm:grid-cols-2 gap-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Geometris</h5><p class="mt-2 text-sm">Memiliki bentuk yang teratur, misalnya lingkaran, persegi, persegi panjang, segitiga, atau poligon. Sering dipakai untuk susunan yang terasa terukur dan terstruktur.</p></div>
@@ -257,7 +258,7 @@
 </div>
 <div class="discussion-card p-4 rounded-2xl mt-3">
 <h5 class="font-bold">Contoh bidang geometris dan organis</h5>
-<svg aria-label="Perbandingan bidang geometris dan organis" class="book-visual mt-3" role="img" viewbox="0 0 420 160">
+<svg aria-label="Perbandingan bidang geometris dan organis" class="book-visual mt-3" role="img" viewBox="0 0 420 160">
 <circle cx="48" cy="55" fill="#00f0ff" r="29"></circle><rect fill="#39ff14" height="58" rx="5" width="58" x="95" y="27"></rect><polygon fill="#ff3cac" points="195,25 228,83 162,83"></polygon>
 <polygon fill="#ffcc00" points="278,28 314,44 307,82 271,91 245,62"></polygon>
 <path d="M40 128 C10 103 47 94 59 110 C76 91 101 111 80 132 C61 154 50 148 40 128Z" fill="#39ff14"></path>
@@ -267,18 +268,16 @@
 </svg>
 <p class="mt-2 text-xs">Pada aplikasi grafis, bentuk dapat dibuat dengan shape tool, lalu diubah melalui pengaturan node/kurva dan diberi fill atau outline.</p>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">3. Ilustrasi</h4>
+</div></details>
+<h4 class="lesson-topic-heading">3. Ilustrasi</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">03</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Ilustrasi adalah gambar yang digunakan untuk memperjelas, menjelaskan, atau memperkuat pesan. Ilustrasi dapat dibuat secara manual, digambar langsung pada aplikasi, dibentuk dari objek vektor, atau memakai foto yang sesuai. Ilustrasi bukan sekadar hiasan: pilih gambar yang membantu pembaca memahami topik.</p>
 <div class="mt-4 grid sm:grid-cols-2 gap-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Bitmap / raster</h5><p class="mt-2 text-sm">Dibentuk oleh kumpulan piksel. Cocok untuk foto dan gambar dengan gradasi atau detail warna yang kompleks. Ketika diperbesar terlalu jauh, piksel dapat terlihat dan tepi gambar tampak pecah.</p><div aria-label="Ilustrasi piksel bitmap" class="pixel-demo mt-3"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
-<div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Vektor</h5><p class="mt-2 text-sm">Dibangun dari garis, kurva, dan bentuk matematis. Cocok untuk logo, ikon, simbol, dan ilustrasi yang perlu diperbesar atau diperkecil tanpa kehilangan ketajaman tepi.</p><svg aria-label="Ilustrasi bentuk vektor" class="book-visual mt-3" role="img" viewbox="0 0 280 112"><path d="M30 84 L72 20 L114 84 Z" fill="#00f0ff" stroke="#39ff14" stroke-width="5"></path><circle cx="177" cy="53" fill="#ff3cac" r="34" stroke="#ffcc00" stroke-width="5"></circle><path d="M224 84 C236 10 255 10 266 84" fill="none" stroke="#39ff14" stroke-linecap="round" stroke-width="8"></path></svg></div>
+<div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Vektor</h5><p class="mt-2 text-sm">Dibangun dari garis, kurva, dan bentuk matematis. Cocok untuk logo, ikon, simbol, dan ilustrasi yang perlu diperbesar atau diperkecil tanpa kehilangan ketajaman tepi.</p><svg aria-label="Ilustrasi bentuk vektor" class="book-visual mt-3" role="img" viewBox="0 0 280 112"><path d="M30 84 L72 20 L114 84 Z" fill="#00f0ff" stroke="#39ff14" stroke-width="5"></path><circle cx="177" cy="53" fill="#ff3cac" r="34" stroke="#ffcc00" stroke-width="5"></circle><path d="M224 84 C236 10 255 10 266 84" fill="none" stroke="#39ff14" stroke-linecap="round" stroke-width="8"></path></svg></div>
 </div>
 <div class="discussion-highlight mt-4 p-5 rounded-2xl"><p class="font-bold">Memilih ilustrasi yang tepat</p><p class="mt-2 text-sm">Untuk foto produk atau suasana, gunakan gambar raster dengan resolusi memadai. Untuk logo dan ikon, pilih vektor bila tersedia. Pastikan gambar relevan, jelas, tidak terdistorsi, dan mempunyai izin penggunaan yang sesuai.</p></div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">4. Tipografi</h4>
+</div></details>
+<h4 class="lesson-topic-heading">4. Tipografi</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">04</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Tipografi adalah pengaturan huruf dan teks sebagai bagian dari komunikasi visual. Desainer tidak hanya memilih jenis huruf, tetapi juga menetapkan ukuran, ketebalan, jarak antarhuruf, jarak antarbaris, perataan, dan penempatannya. Tipografi yang baik membantu pembaca mengenali informasi sekaligus merasakan karakter desain.</p>
 <div class="discussion-card p-4 rounded-2xl mt-3">
 <h5 class="font-bold">Bagian teks yang sering muncul dalam layout</h5>
@@ -293,19 +292,17 @@
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Legibility (kejelasan huruf)</h5><p class="mt-2 text-sm">Seberapa mudah pembaca membedakan bentuk tiap karakter. Jenis huruf, ukuran, bentuk, dan kualitas tampilan memengaruhinya.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Readability (kenyamanan baca)</h5><p class="mt-2 text-sm">Seberapa nyaman sebuah susunan teks dibaca sebagai kalimat atau paragraf. Panjang baris, spasi, kontras, dan pengaturan paragraf ikut menentukan.</p></div>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">5. Warna</h4>
+</div></details>
+<h4 class="lesson-topic-heading">5. Warna</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">05</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Warna dapat menarik perhatian, membedakan kelompok informasi, membentuk identitas, dan menciptakan suasana. Di dalam layout, warna perlu diterapkan dengan tujuan. Penggunaan terlalu banyak warna tanpa aturan dapat membuat perhatian pembaca terpecah. Pembahasan teori warna, model RGB/CMYK, dan karakter warna dijelaskan lebih lengkap pada Bab 2.</p>
 <div aria-label="Contoh palet warna desain" class="color-strip mt-3"><span></span><span></span><span></span><span></span><span></span></div>
-</section>
+</div></details>
 <section class="mt-7 grid sm:grid-cols-3 gap-3">
 <div class="discussion-card p-4 rounded-2xl"><h4 class="font-bold">6. Gelap-terang</h4><p class="mt-2 text-sm">Perbedaan nilai terang dan gelap membantu memisahkan objek dari latar, memberi kesan volume, membentuk kedalaman, dan menegaskan fokus. Atur highlight dan bayangan dengan tetap menjaga detail.</p><div class="value-strip mt-3"><i></i><i></i><i></i><i></i><i></i></div></div>
 <div class="discussion-card p-4 rounded-2xl"><h4 class="font-bold">7. Tekstur</h4><p class="mt-2 text-sm">Tekstur adalah kesan permukaan, misalnya halus, kasar, berpori, berbulu, atau berkilau. Dalam desain dua dimensi tekstur sering dibuat secara visual untuk menambah karakter, tetapi jangan sampai mengganggu keterbacaan.</p><div class="texture-demo mt-3"></div></div>
 <div class="discussion-card p-4 rounded-2xl"><h4 class="font-bold">8. Ruang</h4><p class="mt-2 text-sm">Ruang adalah area yang ditempati objek maupun area kosong di sekitarnya. Ruang positif berisi elemen; ruang negatif memberi jeda agar informasi tidak saling bertumpuk.</p><div class="space-demo mt-3"><b>OBJEK</b></div></div>
 </section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">Alur sederhana membuat unsur secara digital</h4>
+<h4 class="lesson-topic-heading">Alur sederhana membuat unsur secara digital</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">06</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <ol class="mt-3 space-y-2 text-sm list-decimal pl-5 leading-relaxed">
 <li>Tentukan pesan, ukuran bidang kerja, dan media akhir (layar atau cetak).</li>
 <li>Buat sketsa awal untuk memutuskan posisi garis, bidang, teks, gambar, dan ruang kosong.</li>
@@ -315,7 +312,7 @@
 <li>Atur gelap-terang, tekstur, dan ruang agar komposisi jelas.</li>
 <li>Simpan file kerja yang dapat diedit dan ekspor salinan sesuai kebutuhan.</li>
 </ol>
-</section>
+</div></details>
 <div class="lesson-check mt-7 p-5 rounded-2xl"><p class="font-bold">Latihan pengamatan</p><p class="mt-2 text-sm">Ambil satu poster atau sampul. Catat contoh garis, bidang, ilustrasi, tipografi, warna, gelap-terang, tekstur, dan ruang yang terlihat. Jelaskan fungsi masing-masing unsur, bukan hanya menyebut namanya.</p></div>
 <p class="mt-5 text-xs text-slate-400">Acuan buku: Bab 1, halaman cetak 11–44 (unsur garis, bidang, ilustrasi, tipografi, warna, gelap-terang, tekstur, dan ruang).</p>
 <div class="chapter-completion-bar"><div><span class="completion-overline">CHECKPOINT / BAB 01</span><b>Sudah memahami unsur tata letak?</b><small>Tandai bab ini selesai. Kamu tetap bisa membukanya kembali kapan saja.</small></div><button class="mark-chapter-btn" data-mark-chapter="tab-1" type="button">Tandai selesai ✓</button></div></article>
@@ -323,15 +320,17 @@
 <article class="tab-panel discussion-panel hidden p-8 rounded-3xl" id="tab-2">
 <span class="discussion-kicker text-xs font-bold uppercase tracking-widest">BAB 02 · FUNGSI, KOMPONEN, DAN MODEL WARNA</span>
 <h3 class="mt-2 text-xl sm:text-2xl font-extrabold">Memahami Warna untuk Kebutuhan Desain dan Cetak</h3>
-<p class="mt-3 leading-relaxed">Warna merupakan unsur penting dalam desain grafis karena dapat membantu sebuah karya dikenali, memberi tanda, membangun suasana, dan menarik perhatian. Pemilihan warna tidak cukup hanya berdasarkan warna yang disukai. Desainer perlu memahami bagaimana warna terlihat, bagaimana warna dicampur, serta bagaimana hasilnya berubah saat ditampilkan di layar atau dicetak.</p><figure class="chapter-visual"><img alt="Infografik roda warna, karakter warna, dan hubungan kombinasi" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://buzzvel.com/storage/color_theory-min.jpg"><figcaption><span>Infografik roda warna</span><a href="https://buzzvel.com/blog/the-psychology-of-colors-in-uiux" rel="noopener noreferrer" target="_blank">Referensi visual: Buzzvel — Colour Theory Infographic</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://buzzvel.com/blog/the-psychology-of-colors-in-uiux" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Roda warna, relasi warna, dan variasi karakter palet" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://buzzvel.com/storage/color_theory-min.jpg"></div>
+<p class="mt-3 leading-relaxed">Warna merupakan unsur penting dalam desain grafis karena dapat membantu sebuah karya dikenali, memberi tanda, membangun suasana, dan menarik perhatian. Pemilihan warna tidak cukup hanya berdasarkan warna yang disukai. Desainer perlu memahami bagaimana warna terlihat, bagaimana warna dicampur, serta bagaimana hasilnya berubah saat ditampilkan di layar atau dicetak.</p><div aria-label="Peta visual model warna" class="lesson-visual-hero lesson-visual--color">
+<div class="lesson-visual-copy"><span class="lesson-visual-kicker">COLOR LAB · BAB 02</span><strong>Warna punya<br/><em>cara kerja.</em></strong><p>Kenali hubungan warna, cahaya RGB, dan tinta CMYK sebelum memilih palet untuk layar atau cetak.</p><div class="lesson-visual-tags"><span>HUE</span><span>SATURATION</span><span>RGB</span><span>CMYK</span></div></div>
+<div class="lesson-visual-art"><svg aria-labelledby="coTitle coDesc" role="img" viewBox="0 0 520 330"><title id="coTitle">Lingkaran warna dan campuran cahaya</title><desc id="coDesc">Roda warna di samping tiga lingkaran merah hijau dan biru yang saling bertumpuk.</desc><defs><lineargradient id="coBg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#F9D777"></stop><stop offset=".55" stop-color="#FF998C"></stop><stop offset="1" stop-color="#7E8AF0"></stop></lineargradient></defs><rect fill="url(#coBg)" height="314" rx="28" width="504" x="8" y="8"></rect><g class="art-orbit" transform="translate(166 164)"><circle fill="none" r="112" stroke="#FFF8F1" stroke-dasharray="5 8" stroke-opacity=".55" stroke-width="2"></circle><path d="M0-94A94 94 0 0 1 81.4-47L40.7-23.5A47 47 0 0 0 0-47Z" fill="#FF665E"></path><path d="M81.4-47A94 94 0 0 1 81.4 47L40.7 23.5A47 47 0 0 0 40.7-23.5Z" fill="#FFD35E"></path><path d="M81.4 47A94 94 0 0 1 0 94V47A47 47 0 0 0 40.7 23.5Z" fill="#C9EC78"></path><path d="M0 94A94 94 0 0 1-81.4 47L-40.7 23.5A47 47 0 0 0 0 47Z" fill="#57C9BD"></path><path d="M-81.4 47A94 94 0 0 1-81.4-47L-40.7-23.5A47 47 0 0 0-40.7 23.5Z" fill="#6583EF"></path><path d="M-81.4-47A94 94 0 0 1 0-94V-47A47 47 0 0 0-40.7-23.5Z" fill="#AD91F4"></path><circle fill="#FFF8F1" r="35"></circle><text fill="#29243D" font-size="13" font-weight="900" text-anchor="middle" x="0" y="5">HUE</text></g><g class="art-float"><circle cx="354" cy="111" fill="#F33D4D" fill-opacity=".85" r="67"></circle><circle cx="414" cy="111" fill="#42C88A" fill-opacity=".78" r="67"></circle><circle cx="384" cy="166" fill="#4167EB" fill-opacity=".78" r="67"></circle></g><rect fill="#29243D" height="40" rx="20" width="130" x="327" y="250"></rect><text fill="#FFF8F1" font-size="16" font-weight="900" text-anchor="middle" x="392" y="275">RGB / CMYK</text></svg><span class="lesson-art-caption">LIGHT / PIGMENT / HARMONY</span></div>
+</div><figure class="chapter-visual"><img alt="Infografik roda warna, karakter warna, dan hubungan kombinasi" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://buzzvel.com/storage/color_theory-min.jpg"/><figcaption><span>Infografik roda warna</span><a href="https://buzzvel.com/blog/the-psychology-of-colors-in-uiux" rel="noopener noreferrer" target="_blank">Referensi visual: Buzzvel — Colour Theory Infographic</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://buzzvel.com/blog/the-psychology-of-colors-in-uiux" rel="noopener noreferrer" target="_blank">
+<div class="chapter-swatch-image"><img alt="Roda warna, relasi warna, dan variasi karakter palet" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://buzzvel.com/storage/color_theory-min.jpg"/></div>
 <span>Buzzvel · Colour Theory</span><small>Roda warna, relasi warna, dan variasi karakter palet</small>
 </a><a class="chapter-swatch-card" href="https://www.csulb.edu/school-of-art/article/insights-2023-school-art-student-show" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Contoh penggunaan palet cerah untuk menarik perhatian" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png"></div>
+<div class="chapter-swatch-image"><img alt="Contoh penggunaan palet cerah untuk menarik perhatian" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png"/></div>
 <span>CSULB · Student Poster</span><small>Contoh penggunaan palet cerah untuk menarik perhatian</small>
 </a></div></div>
-<section class="mt-6">
-<h4 class="text-lg font-extrabold">1. Bagaimana warna dapat terlihat?</h4>
+<h4 class="lesson-topic-heading">1. Bagaimana warna dapat terlihat?</h4><details class="lesson-accordion" open="open"><summary><span class="lesson-accordion-index">01</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Penglihatan warna melibatkan tiga unsur yang saling berkaitan: sumber cahaya, benda yang berinteraksi dengan cahaya, dan pengamat. Cahaya mengenai benda; sebagian panjang gelombang diserap dan sebagian dipantulkan atau diteruskan. Mata menerima cahaya yang sampai kepadanya, lalu otak menafsirkannya sebagai warna. Karena itu, pencahayaan dan warna di sekeliling objek dapat memengaruhi kesan warna yang kita lihat.</p>
 <div class="discussion-card p-4 rounded-2xl mt-3">
 <div class="grid grid-cols-3 gap-2 text-center items-center">
@@ -343,9 +342,8 @@
 <div class="max-w-xs mx-auto text-center"><div class="color-node eye-node">◉</div><p class="mt-2 text-xs font-bold">Pengamat (mata)</p></div>
 </div>
 <p class="mt-3 text-sm">Contoh: benda putih dapat terlihat berbeda di bawah lampu kekuningan dibandingkan di bawah cahaya putih. Untuk pekerjaan cetak, kondisi cahaya saat menilai hasil cetak juga perlu diperhatikan.</p>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">2. Jenis dan hubungan warna</h4>
+</div></details>
+<h4 class="lesson-topic-heading">2. Jenis dan hubungan warna</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">02</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Lingkaran warna membantu desainer memahami hubungan ant warna. Dalam pengenalan warna tradisional, warna dibagi menjadi primer, sekunder, dan tersier. Hubungan di dalam roda warna juga dapat dipakai untuk membuat kombinasi yang serasi atau kontras.</p>
 <div class="discussion-card p-4 rounded-2xl mt-3">
 <div class="grid sm:grid-cols-[190px_1fr] gap-4 items-center">
@@ -365,15 +363,14 @@
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Kombinasi analogus</h5><div class="swatch-row mt-3"><i style="background:#ffcc00"></i><i style="background:#ff8b24"></i><i style="background:#ff3c55"></i><i style="background:#dc3c93"></i></div><p class="mt-2 text-sm">Warna berdekatan memberi alur yang relatif harmonis. Cocok untuk suasana yang menyatu.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Kombinasi komplementer</h5><div class="swatch-row mt-3"><i style="background:#00a8d6"></i><i style="background:#f04a35"></i><i style="background:#39ff14"></i><i style="background:#ff3cac"></i></div><p class="mt-2 text-sm">Pasangan yang berseberangan dapat membuat elemen lebih menonjol. Atur proporsi supaya kontras tetap nyaman.</p></div>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">3. Warna aditif dan warna subtraktif</h4>
+</div></details>
+<h4 class="lesson-topic-heading">3. Warna aditif dan warna subtraktif</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">03</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Ada perbedaan antara pencampuran cahaya dan pencampuran pigmen atau tinta. Perbedaan ini penting ketika menyiapkan desain untuk layar dan untuk dicetak.</p>
 <div class="grid sm:grid-cols-2 gap-3 mt-4">
 <div class="discussion-card p-4 rounded-2xl">
 <h5 class="font-bold">Aditif — RGB</h5>
 <p class="mt-2 text-sm">Red, Green, Blue adalah tiga kanal cahaya yang digunakan pada monitor, televisi, kamera, dan layar digital. Ketika cahaya merah, hijau, dan biru ditambahkan dengan intensitas tinggi secara bersamaan, hasilnya mendekati putih. Model ini cocok untuk karya yang ditampilkan di layar.</p>
-<svg aria-label="Diagram pencampuran warna cahaya RGB" class="book-visual mt-3" role="img" viewbox="0 0 300 170">
+<svg aria-label="Diagram pencampuran warna cahaya RGB" class="book-visual mt-3" role="img" viewBox="0 0 300 170">
 <defs><filter id="rgbglow"><fegaussianblur stddeviation="2"></fegaussianblur></filter></defs>
 <circle cx="112" cy="72" fill="#ff2020" fill-opacity=".78" r="53"></circle><circle cx="166" cy="72" fill="#24f54a" fill-opacity=".72" r="53"></circle><circle cx="139" cy="112" fill="#287dff" fill-opacity=".78" r="53"></circle>
 <text fill="#ff7777" font-size="12" font-weight="700" x="40" y="18">RED</text><text fill="#8cff9a" font-size="12" font-weight="700" x="214" y="18">GREEN</text><text fill="#8bbcff" font-size="12" font-weight="700" x="132" y="165">BLUE</text>
@@ -383,7 +380,7 @@
 <div class="discussion-card p-4 rounded-2xl">
 <h5 class="font-bold">Subtraktif — CMYK</h5>
 <p class="mt-2 text-sm">Cyan, Magenta, Yellow, dan Key/Black digunakan pada tinta cetak. Pigmen menyerap sebagian cahaya dan memantulkan sisanya. Campuran CMY secara teori dapat menghasilkan gelap, tetapi tinta hitam ditambahkan agar teks dan area gelap lebih tegas serta proses cetak lebih terkontrol.</p>
-<svg aria-label="Diagram pencampuran warna tinta CMY dengan hitam" class="book-visual mt-3" role="img" viewbox="0 0 300 170">
+<svg aria-label="Diagram pencampuran warna tinta CMY dengan hitam" class="book-visual mt-3" role="img" viewBox="0 0 300 170">
 <circle cx="112" cy="72" fill="#00c8e8" fill-opacity=".72" r="53" style="mix-blend-mode:multiply"></circle><circle cx="166" cy="72" fill="#f51b9b" fill-opacity=".68" r="53" style="mix-blend-mode:multiply"></circle><circle cx="139" cy="112" fill="#ffe500" fill-opacity=".78" r="53" style="mix-blend-mode:multiply"></circle>
 <text fill="#00d9f4" font-size="12" font-weight="700" x="40" y="18">CYAN</text><text fill="#ff70c6" font-size="12" font-weight="700" x="214" y="18">MAGENTA</text><text fill="#ffe500" font-size="12" font-weight="700" x="132" y="165">YELLOW</text>
 <rect fill="#111827" height="30" rx="4" width="30" x="250" y="58"></rect><text fill="#dbeafe" font-size="10" x="255" y="105">K</text>
@@ -399,9 +396,8 @@
 </tbody></table>
 </div>
 <div class="discussion-highlight mt-4 p-5 rounded-2xl"><p class="font-bold">Ingat sebelum mencetak</p><p class="mt-2 text-sm">Warna di layar dan di kertas tidak selalu sama. Rentang warna yang dapat dihasilkan sebuah perangkat disebut <b>gamut</b>. Monitor, printer, tinta, dan kertas memiliki kemampuan warna yang berbeda. Karena itu, periksa pengaturan warna dan buat proof/tes cetak untuk pekerjaan penting.</p></div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">4. Model warna: RGB, CMYK, HSL, dan Lab</h4>
+</div></details>
+<h4 class="lesson-topic-heading">4. Model warna: RGB, CMYK, HSL, dan Lab</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">04</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <div class="grid sm:grid-cols-2 gap-3 mt-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">RGB</h5><p class="mt-2 text-sm">Menyatakan warna dengan nilai tiga kanal cahaya merah, hijau, dan biru. Perangkat layar menggunakan kombinasi nilai tersebut untuk menampilkan warna.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">CMYK</h5><p class="mt-2 text-sm">Menyatakan warna berdasarkan persentase cyan, magenta, yellow, dan black. Digunakan saat menyiapkan berkas untuk banyak proses cetak.</p></div>
@@ -409,16 +405,14 @@
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Lab</h5><p class="mt-2 text-sm">Model tiga komponen: <b>L</b> untuk lightness, <b>a</b> pada sumbu hijau–merah, dan <b>b</b> pada sumbu biru–kuning. Model Lab berguna dalam pengelolaan dan perbandingan warna.</p></div>
 </div>
 <p class="mt-3 text-sm">Model warna adalah cara mendeskripsikan warna, bukan empat jenis tinta yang harus digunakan bersamaan. Pilih model berdasarkan kebutuhan output dan fitur aplikasi yang dipakai.</p>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">5. Warna proses dan warna khusus (spot color)</h4>
+</div></details>
+<h4 class="lesson-topic-heading">5. Warna proses dan warna khusus (spot color)</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">05</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <div class="grid sm:grid-cols-2 gap-3 mt-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Warna proses</h5><p class="mt-2 text-sm">Warna dibentuk dari kombinasi beberapa tinta proses, umumnya CMYK. Cara ini cocok untuk banyak gambar berwarna dan foto yang memiliki variasi warna luas.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Spot color</h5><p class="mt-2 text-sm">Warna khusus yang dicetak menggunakan tinta yang telah ditentukan sebagai warna tersendiri. Dipilih ketika warna merek atau warna tertentu perlu dijaga konsistensinya sesuai spesifikasi produksi.</p></div>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">6. Fungsi dan karakter warna</h4>
+</div></details>
+<h4 class="lesson-topic-heading">6. Fungsi dan karakter warna</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">06</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Warna dapat menjalankan beberapa peran dalam komunikasi visual. Peran ini bergantung pada konteks, kombinasi, budaya, target pembaca, dan media yang dipakai.</p>
 <div class="grid sm:grid-cols-2 gap-3 mt-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Identitas</h5><p class="mt-2 text-sm">Warna membantu membedakan merek, organisasi, kelompok, atau jenis informasi.</p></div>
@@ -427,7 +421,7 @@
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Alamiah dan estetis</h5><p class="mt-2 text-sm">Warna dapat meniru karakter objek di alam dan sekaligus membentuk daya tarik serta kualitas visual karya.</p></div>
 </div>
 <p class="mt-3 text-sm">Buku memberi contoh asosiasi warna seperti hitam, putih, abu-abu, merah, kuning, biru, hijau, ungu, oranye, dan cokelat. Gunakan contoh itu sebagai bahan pertimbangan, bukan aturan yang berlaku untuk semua orang atau semua budaya.</p>
-</section>
+</div></details>
 <div class="lesson-check mt-7 p-5 rounded-2xl"><p class="font-bold">Latihan penerapan</p><p class="mt-2 text-sm">Pilih satu karya yang akan ditampilkan di layar dan satu karya yang akan dicetak. Tentukan model warna yang sesuai untuk masing-masing. Buat dua palet berbeda, lalu jelaskan alasan pemilihan warna, hubungan antarwarna, dan kemungkinan perubahan saat dicetak.</p></div>
 <p class="mt-5 text-xs text-slate-400">Acuan buku: Bab 2, halaman cetak 45–70 (pengertian warna, jenis kombinasi, warna aditif/subtraktif, model warna, gamut, spot/process color, serta fungsi dan karakter warna).</p>
 <div class="chapter-completion-bar"><div><span class="completion-overline">CHECKPOINT / BAB 02</span><b>Sudah memahami fungsi, komponen, dan model warna?</b><small>Tandai bab ini selesai. Kamu tetap bisa membukanya kembali kapan saja.</small></div><button class="mark-chapter-btn" data-mark-chapter="tab-2" type="button">Tandai selesai ✓</button></div></article>
@@ -435,19 +429,21 @@
 <article class="tab-panel discussion-panel hidden p-8 rounded-3xl" id="tab-3">
 <span class="discussion-kicker text-xs font-bold uppercase tracking-widest">BAB 03 · PRINSIP TATA LETAK</span>
 <h3 class="mt-2 text-xl sm:text-2xl font-extrabold">Menyusun Layout dengan Proporsi, Keseimbangan, Irama, Kontras, Kesatuan, dan Harmoni</h3>
-<p class="mt-3 leading-relaxed">Unsur desain adalah bahan pembentuk karya, sedangkan prinsip tata letak merupakan pedoman untuk mengatur hubungan antarunsur tersebut. Prinsip membantu desainer membangun komposisi yang mudah dibaca, memiliki arah perhatian, dan terasa menyatu. Prinsip tidak harus dipakai secara kaku; pilih penerapan yang sesuai dengan tujuan karya.</p><figure class="chapter-visual"><img alt="Kolase contoh desain grid asimetris dan tata letak editorial" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.webdesign-journal.de/wp-content/uploads/2021/03/grafik-design-trend-break-the-grid-asymmetrische-designs-2048x1860.jpg"><figcaption><span>Contoh desain grid asimetris</span><a href="https://www.webdesign-journal.de/grafik-design-trends-stile/" rel="noopener noreferrer" target="_blank">Referensi visual: Webdesign Journal — Broken-grid design examples</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://www.webdesign-journal.de/grafik-design-trends-stile/" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Contoh layout asimetris dan eksperimen grid" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.webdesign-journal.de/wp-content/uploads/2021/03/grafik-design-trend-break-the-grid-asymmetrische-designs-2048x1860.jpg"></div>
+<p class="mt-3 leading-relaxed">Unsur desain adalah bahan pembentuk karya, sedangkan prinsip tata letak merupakan pedoman untuk mengatur hubungan antarunsur tersebut. Prinsip membantu desainer membangun komposisi yang mudah dibaca, memiliki arah perhatian, dan terasa menyatu. Prinsip tidak harus dipakai secara kaku; pilih penerapan yang sesuai dengan tujuan karya.</p><div aria-label="Peta visual prinsip tata letak" class="lesson-visual-hero lesson-visual--layout">
+<div class="lesson-visual-copy"><span class="lesson-visual-kicker">COMPOSITION LAB · BAB 03</span><strong>Atur fokus.<br/><em>Pandu mata.</em></strong><p>Proporsi, keseimbangan, irama, kontras, kesatuan, dan harmoni membantu komposisi terasa terarah.</p><div class="lesson-visual-tags"><span>GRID</span><span>BALANCE</span><span>RHYTHM</span><span>CONTRAST</span></div></div>
+<div class="lesson-visual-art"><svg aria-labelledby="laTitle laDesc" role="img" viewBox="0 0 520 330"><title id="laTitle">Contoh komposisi poster berbasis grid</title><desc id="laDesc">Poster eksperimental dengan grid, ukuran teks berbeda, dan elemen visual seimbang.</desc><defs><pattern height="34" id="laGrid" patternunits="userSpaceOnUse" width="34"><path d="M34 0H0V34" fill="none" stroke="#6D6583" stroke-opacity=".28" stroke-width="1"></path></pattern></defs><rect fill="#D7E4FF" height="314" rx="28" width="504" x="8" y="8"></rect><rect fill="#FFF8F1" height="274" rx="15" width="436" x="42" y="28"></rect><rect fill="url(#laGrid)" height="274" rx="15" width="436" x="42" y="28"></rect><g class="art-float"><rect fill="#4F61E8" height="190" rx="9" width="191" x="68" y="55"></rect><text fill="#FFF8F1" font-family="Arial" font-size="36" font-weight="900" x="85" y="114">MAKE</text><text fill="#D8F39A" font-family="Arial" font-size="36" font-weight="900" x="85" y="151">SPACE</text><text fill="#FFF8F1" font-family="Arial" font-size="36" font-weight="900" x="85" y="188">MATTER</text><path d="M85 211H230" stroke="#FFD46B" stroke-width="5"></path></g><circle class="art-bobble" cx="353" cy="111" fill="#F36F61" r="55"></circle><path d="M307 201h135" stroke="#29243D" stroke-linecap="round" stroke-width="8"></path><path d="M307 221h102" stroke="#57C9BD" stroke-linecap="round" stroke-width="8"></path><path d="M307 241h119" stroke="#AD91F4" stroke-linecap="round" stroke-width="8"></path><circle cx="442" cy="254" fill="#FFD46B" r="18"></circle><path class="layout-dash" d="M260 29V301M42 165H478" stroke="#F36F61" stroke-dasharray="5 8" stroke-width="2"></path></svg><span class="lesson-art-caption">GRID / SCALE / HIERARCHY</span></div>
+</div><figure class="chapter-visual"><img alt="Kolase contoh desain grid asimetris dan tata letak editorial" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.webdesign-journal.de/wp-content/uploads/2021/03/grafik-design-trend-break-the-grid-asymmetrische-designs-2048x1860.jpg"/><figcaption><span>Contoh desain grid asimetris</span><a href="https://www.webdesign-journal.de/grafik-design-trends-stile/" rel="noopener noreferrer" target="_blank">Referensi visual: Webdesign Journal — Broken-grid design examples</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://www.webdesign-journal.de/grafik-design-trends-stile/" rel="noopener noreferrer" target="_blank">
+<div class="chapter-swatch-image"><img alt="Contoh layout asimetris dan eksperimen grid" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.webdesign-journal.de/wp-content/uploads/2021/03/grafik-design-trend-break-the-grid-asymmetrische-designs-2048x1860.jpg"/></div>
 <span>Webdesign Journal · Broken Grid</span><small>Contoh layout asimetris dan eksperimen grid</small>
 </a><a class="chapter-swatch-card" href="https://warriorsstudio.com/projects/graphic-design-festival-scotland-2016-identity" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Eksplorasi poster dengan grid, arah, dan potongan bidang" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://warriorsstudio.com/media/pages/projects/graphic-design-festival-scotland-2016-identity/683791599-1600851099/gdfs-16-id-lite-poster-layouts-a5.jpg"></div>
+<div class="chapter-swatch-image"><img alt="Eksplorasi poster dengan grid, arah, dan potongan bidang" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://warriorsstudio.com/media/pages/projects/graphic-design-festival-scotland-2016-identity/683791599-1600851099/gdfs-16-id-lite-poster-layouts-a5.jpg"/></div>
 <span>Warriors Studio · Graphic Design Festival</span><small>Eksplorasi poster dengan grid, arah, dan potongan bidang</small>
 </a></div></div>
-<section class="mt-6">
-<h4 class="text-lg font-extrabold">1. Proporsi (proportion)</h4>
+<h4 class="lesson-topic-heading">1. Proporsi (proportion)</h4><details class="lesson-accordion" open="open"><summary><span class="lesson-accordion-index">01</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Proporsi adalah hubungan ukuran antara satu unsur dengan unsur lain, antara unsur dan bidang tempatnya berada, maupun antara bagian-bagian dalam satu objek. Proporsi memengaruhi prioritas. Judul yang sangat kecil akan kalah dari foto yang sangat besar; sebaliknya, judul yang terlalu dominan bisa menenggelamkan informasi lainnya.</p>
 <div class="discussion-card p-4 rounded-2xl mt-3">
 <h5 class="font-bold">Ilustrasi pembagian bidang</h5>
-<svg aria-label="Ilustrasi pembagian bidang berdasarkan proporsi" class="book-visual mt-3" role="img" viewbox="0 0 420 200">
+<svg aria-label="Ilustrasi pembagian bidang berdasarkan proporsi" class="book-visual mt-3" role="img" viewBox="0 0 420 200">
 <rect fill="none" height="176" stroke="#cbd5e1" stroke-width="3" width="396" x="12" y="12"></rect>
 <rect fill="#00f0ff" fill-opacity=".72" height="176" width="245" x="12" y="12"></rect>
 <rect fill="#39ff14" fill-opacity=".82" height="102" width="151" x="257" y="12"></rect>
@@ -460,18 +456,16 @@
 </div>
 <div class="discussion-highlight mt-4 p-5 rounded-2xl"><p class="font-bold">Golden ratio / rasio emas</p><p class="mt-2 text-sm">Buku memperkenalkan rasio emas sekitar <b>1,618</b> sebagai salah satu pendekatan untuk membagi bidang secara proporsional. Rasio ini dapat menjadi panduan eksplorasi, bukan kewajiban. Layout yang baik tetap perlu dinilai dari kejelasan pesan dan kesesuaiannya dengan media.</p></div>
 <p class="mt-3 text-sm">Cara sederhana mengatur proporsi: tentukan unsur utama, tetapkan ukuran bidang, berikan porsi terbesar pada bagian yang paling penting, lalu atur elemen pendukung supaya tidak bersaing dengan fokus utama.</p>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">2. Keseimbangan (balance)</h4>
+</div></details>
+<h4 class="lesson-topic-heading">2. Keseimbangan (balance)</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">02</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Keseimbangan adalah pembagian bobot visual agar komposisi tidak terasa berat sebelah. Bobot visual tidak hanya ditentukan ukuran, tetapi juga warna, kontras, kepadatan, bentuk, dan posisi suatu elemen.</p>
 <div class="grid sm:grid-cols-2 gap-3 mt-3">
-<div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Simetris</h5><svg aria-label="Contoh keseimbangan simetris" class="book-visual mt-3" role="img" viewbox="0 0 280 120"><line stroke="#ffcc00" stroke-dasharray="5 5" stroke-width="2" x1="140" x2="140" y1="5" y2="115"></line><rect fill="#00f0ff" height="62" rx="8" width="85" x="25" y="28"></rect><rect fill="#00f0ff" height="62" rx="8" width="85" x="170" y="28"></rect><circle cx="67" cy="59" fill="#0b0f19" r="13"></circle><circle cx="212" cy="59" fill="#0b0f19" r="13"></circle></svg><p class="mt-2 text-sm">Unsur di kiri dan kanan atau atas dan bawah disusun dengan bobot yang relatif setara. Kesan yang muncul sering lebih formal, teratur, dan stabil.</p></div>
-<div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Asimetris</h5><svg aria-label="Contoh keseimbangan asimetris" class="book-visual mt-3" role="img" viewbox="0 0 280 120"><rect fill="#39ff14" height="72" rx="8" width="72" x="20" y="23"></rect><circle cx="183" cy="57" fill="#ff3cac" r="34"></circle><circle cx="236" cy="83" fill="#00f0ff" r="14"></circle><path d="M140 5 V115" stroke="#ffcc00" stroke-dasharray="5 5" stroke-width="2"></path></svg><p class="mt-2 text-sm">Unsur kiri dan kanan tidak sama persis, tetapi bobot visualnya tetap terasa seimbang. Kesan dapat lebih dinamis dan tidak monoton.</p></div>
+<div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Simetris</h5><svg aria-label="Contoh keseimbangan simetris" class="book-visual mt-3" role="img" viewBox="0 0 280 120"><line stroke="#ffcc00" stroke-dasharray="5 5" stroke-width="2" x1="140" x2="140" y1="5" y2="115"></line><rect fill="#00f0ff" height="62" rx="8" width="85" x="25" y="28"></rect><rect fill="#00f0ff" height="62" rx="8" width="85" x="170" y="28"></rect><circle cx="67" cy="59" fill="#0b0f19" r="13"></circle><circle cx="212" cy="59" fill="#0b0f19" r="13"></circle></svg><p class="mt-2 text-sm">Unsur di kiri dan kanan atau atas dan bawah disusun dengan bobot yang relatif setara. Kesan yang muncul sering lebih formal, teratur, dan stabil.</p></div>
+<div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Asimetris</h5><svg aria-label="Contoh keseimbangan asimetris" class="book-visual mt-3" role="img" viewBox="0 0 280 120"><rect fill="#39ff14" height="72" rx="8" width="72" x="20" y="23"></rect><circle cx="183" cy="57" fill="#ff3cac" r="34"></circle><circle cx="236" cy="83" fill="#00f0ff" r="14"></circle><path d="M140 5 V115" stroke="#ffcc00" stroke-dasharray="5 5" stroke-width="2"></path></svg><p class="mt-2 text-sm">Unsur kiri dan kanan tidak sama persis, tetapi bobot visualnya tetap terasa seimbang. Kesan dapat lebih dinamis dan tidak monoton.</p></div>
 </div>
 <p class="mt-3 text-sm">Saat menguji keseimbangan, lihat keseluruhan bidang, bukan hanya satu objek. Coba kecilkan atau perbesar elemen, ubah posisinya, dan amati apakah salah satu sisi terasa terlalu berat.</p>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">3. Irama (rhythm)</h4>
+</div></details>
+<h4 class="lesson-topic-heading">3. Irama (rhythm)</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">03</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Irama terbentuk melalui pengulangan unsur visual sehingga mata dapat mengikuti alur komposisi. Pengulangan yang konsisten memberi keteraturan; pengulangan dengan variasi ukuran, bentuk, warna, atau jarak dapat memberi kesan lebih dinamis.</p>
 <div class="discussion-card p-4 rounded-2xl mt-3">
 <div class="grid sm:grid-cols-2 gap-3">
@@ -480,36 +474,31 @@
 </div>
 </div>
 <p class="mt-3 text-sm">Pada majalah, brosur beberapa halaman, atau materi presentasi, pengulangan posisi judul, nomor halaman, margin, dan gaya gambar membantu membentuk identitas yang konsisten.</p>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">4. Kontras (contrast)</h4>
+</div></details>
+<h4 class="lesson-topic-heading">4. Kontras (contrast)</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">04</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Kontras adalah perbedaan yang sengaja dibuat agar elemen mudah dibedakan dan bagian penting lebih menonjol. Kontras dapat dibentuk melalui ukuran, tebal-tipis huruf, warna, bentuk, tekstur, posisi, atau ruang.</p>
 <div class="discussion-card p-4 rounded-2xl mt-3">
 <h5 class="font-bold">Contoh kontras dalam poster</h5>
-<div class="contrast-demo mt-3"><span>INFO SEKOLAH</span><strong>HEMAT<br>ENERGI!</strong><p>Matikan lampu saat ruangan kosong.</p></div>
+<div class="contrast-demo mt-3"><span>INFO SEKOLAH</span><strong>HEMAT<br/>ENERGI!</strong><p>Matikan lampu saat ruangan kosong.</p></div>
 <p class="mt-3 text-sm">Judul berukuran besar dan tebal menjadi fokus. Keterangan ditampilkan lebih kecil. Perbedaan ini membantu pembaca mengenali urutan informasi.</p>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">5. Kesatuan (unity)</h4>
+</div></details>
+<h4 class="lesson-topic-heading">5. Kesatuan (unity)</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">05</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Kesatuan terjadi saat semua unsur terlihat sebagai bagian dari satu rancangan, bukan potongan yang berdiri sendiri. Kesatuan dapat dibangun dengan mengulang palet warna, jenis huruf, gaya ilustrasi, bentuk, aturan jarak, dan perataan. Kedekatan (proximity) juga membantu: informasi yang saling berhubungan ditempatkan berdekatan.</p>
 <div class="discussion-card p-4 rounded-2xl mt-3"><div class="unity-demo"><div class="unity-head">IDENTITAS KAMPANYE</div><div class="unity-body"><span></span><div><b>Judul utama</b><i></i><i></i></div></div><div class="unity-foot">INFO TAMBAHAN</div></div><p class="mt-3 text-sm">Warna, sudut kotak, gaya huruf, dan jarak yang diulang membuat bagian-bagian tampak memiliki hubungan.</p></div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">6. Keselarasan (harmony)</h4>
+</div></details>
+<h4 class="lesson-topic-heading">6. Keselarasan (harmony)</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">06</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Harmoni adalah keserasian antarunsur, baik dari segi bentuk maupun warna. Elemen tidak harus sama, tetapi harus saling mendukung. Misalnya, desain bertema alam dapat menggunakan bentuk yang lembut, warna yang dekat dengan alam, dan tipografi yang cocok dengan suasananya.</p>
 <div class="grid sm:grid-cols-2 gap-3 mt-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Harmoni bentuk</h5><p class="mt-2 text-sm">Gunakan bentuk dan gaya ilustrasi yang memiliki karakter sejalan. Bentuk geometris tegas dapat dipadukan secara terencana dengan bentuk organik, bukan secara acak.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Harmoni warna</h5><p class="mt-2 text-sm">Pilih kombinasi warna yang saling mendukung. Warna analogus dapat terasa lembut; warna komplementer dapat memberi kontras yang lebih kuat.</p></div>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">Grid system untuk layout halaman</h4>
+</div></details>
+<h4 class="lesson-topic-heading">Grid system untuk layout halaman</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">07</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Grid adalah kerangka bantu yang membagi bidang kerja menjadi kolom, baris, margin, dan ruang antar-kolom (gutter). Grid membantu menjaga perataan, keteraturan, dan konsistensi. Grid bukan batas mutlak; desainer dapat membuat variasi selama keterbacaan dan hubungan antarbagian tetap jelas.</p>
-<div class="discussion-card p-4 rounded-2xl mt-3"><svg aria-label="Diagram layout dengan margin dan tiga kolom" class="book-visual" role="img" viewbox="0 0 420 210"><rect fill="#0b0f19" height="186" stroke="#00f0ff" stroke-width="3" width="384" x="18" y="12"></rect><rect fill="none" height="142" stroke="#ffcc00" stroke-dasharray="6 5" stroke-width="2" width="336" x="42" y="34"></rect><rect fill="#39ff14" fill-opacity=".75" height="122" width="100" x="52" y="44"></rect><rect fill="#00f0ff" fill-opacity=".75" height="122" width="100" x="160" y="44"></rect><rect fill="#ff3cac" fill-opacity=".75" height="122" width="100" x="268" y="44"></rect><text fill="#dbeafe" font-size="11" x="51" y="190">margin</text><text fill="#dbeafe" font-size="11" x="157" y="190">gutter</text></svg><p class="mt-2 text-xs">Contoh skema: area luar adalah halaman, garis putus-putus menandai area aman, dan tiga kolom menjadi acuan penempatan isi.</p></div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">Persiapan layout untuk barang cetakan</h4>
+<div class="discussion-card p-4 rounded-2xl mt-3"><svg aria-label="Diagram layout dengan margin dan tiga kolom" class="book-visual" role="img" viewBox="0 0 420 210"><rect fill="#0b0f19" height="186" stroke="#00f0ff" stroke-width="3" width="384" x="18" y="12"></rect><rect fill="none" height="142" stroke="#ffcc00" stroke-dasharray="6 5" stroke-width="2" width="336" x="42" y="34"></rect><rect fill="#39ff14" fill-opacity=".75" height="122" width="100" x="52" y="44"></rect><rect fill="#00f0ff" fill-opacity=".75" height="122" width="100" x="160" y="44"></rect><rect fill="#ff3cac" fill-opacity=".75" height="122" width="100" x="268" y="44"></rect><text fill="#dbeafe" font-size="11" x="51" y="190">margin</text><text fill="#dbeafe" font-size="11" x="157" y="190">gutter</text></svg><p class="mt-2 text-xs">Contoh skema: area luar adalah halaman, garis putus-putus menandai area aman, dan tiga kolom menjadi acuan penempatan isi.</p></div>
+</div></details>
+<h4 class="lesson-topic-heading">Persiapan layout untuk barang cetakan</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">08</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <ol class="mt-3 space-y-2 text-sm list-decimal pl-5 leading-relaxed">
 <li>Tentukan ukuran halaman, orientasi, serta jumlah halaman.</li>
 <li>Tetapkan margin, kolom, dan grid agar teks serta gambar memiliki acuan.</li>
@@ -519,7 +508,7 @@
 <li>Periksa ejaan, resolusi gambar, font, warna, margin aman, dan halaman, lalu ekspor PDF sesuai kebutuhan output.</li>
 </ol>
 <div class="discussion-highlight mt-4 p-5 rounded-2xl"><p class="font-bold">Catatan istilah</p><p class="mt-2 text-sm"><b>Margin</b> adalah jarak aman dari tepi halaman; <b>gutter</b> adalah jarak di antara kolom; <b>bleed</b> adalah area gambar yang sengaja dilebihkan melewati garis potong agar tidak muncul garis putih setelah pemotongan.</p></div>
-</section>
+</div></details>
 <div class="lesson-check mt-7 p-5 rounded-2xl"><p class="font-bold">Latihan evaluasi layout</p><p class="mt-2 text-sm">Bandingkan dua poster. Catat bagian yang menjadi fokus, apakah komposisinya simetris atau asimetris, pola pengulangannya, bentuk kontrasnya, serta cara warna, huruf, dan ilustrasi membangun kesatuan dan harmoni.</p></div>
 <p class="mt-5 text-xs text-slate-400">Acuan buku: Bab 3, halaman cetak 71–98 (proporsi, golden section, keseimbangan, irama, kontras, kesatuan, harmoni, grid system, margin, kolom, master page, dan bleed).</p>
 <div class="chapter-completion-bar"><div><span class="completion-overline">CHECKPOINT / BAB 03</span><b>Sudah memahami prinsip tata letak?</b><small>Tandai bab ini selesai. Kamu tetap bisa membukanya kembali kapan saja.</small></div><button class="mark-chapter-btn" data-mark-chapter="tab-3" type="button">Tandai selesai ✓</button></div></article>
@@ -527,16 +516,18 @@
 <article class="tab-panel discussion-panel hidden p-8 rounded-3xl" id="tab-4">
 <span class="discussion-kicker text-xs font-bold uppercase tracking-widest">BAB 04 · PEMINDAIAN GAMBAR / ILUSTRASI / TEKS</span>
 <h3 class="mt-2 text-xl sm:text-2xl font-extrabold">Mengenal Scanner dan Proses Digitalisasi Gambar</h3>
-<p class="mt-3 leading-relaxed">Scanner adalah perangkat untuk mengambil informasi visual dari objek fisik, seperti foto, gambar, atau dokumen, lalu mengubahnya menjadi data digital. Di bidang desain grafis, scanner berguna ketika bahan awal berupa karya tangan, foto cetak, sketsa, atau dokumen yang perlu diolah kembali di komputer.</p><figure class="chapter-visual"><img alt="Karya cat air yang sedang dipindai menggunakan scanner flatbed" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://s.ceedo.com/static/uploads/2026/04/color-accuracy-in-scanners-for-artwork-01_750x500.webp"><figcaption><span>Proses pemindaian ilustrasi</span><a href="https://www.ceedo.com/color-accuracy-in-scanners-for-artwork/" rel="noopener noreferrer" target="_blank">Referensi visual: Ceedo — Colour accuracy in scanners for artwork</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://www.ceedo.com/color-accuracy-in-scanners-for-artwork/" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Contoh proses digitalisasi ilustrasi dengan scanner flatbed" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://s.ceedo.com/static/uploads/2026/04/color-accuracy-in-scanners-for-artwork-01_750x500.webp"></div>
+<p class="mt-3 leading-relaxed">Scanner adalah perangkat untuk mengambil informasi visual dari objek fisik, seperti foto, gambar, atau dokumen, lalu mengubahnya menjadi data digital. Di bidang desain grafis, scanner berguna ketika bahan awal berupa karya tangan, foto cetak, sketsa, atau dokumen yang perlu diolah kembali di komputer.</p><div aria-label="Peta visual proses pemindaian" class="lesson-visual-hero lesson-visual--scanner">
+<div class="lesson-visual-copy"><span class="lesson-visual-kicker">DIGITALIZE LAB · BAB 04</span><strong>Dari kertas<br/><em>ke piksel.</em></strong><p>Ikuti proses pemindaian: siapkan objek, atur kualitas, lakukan scan, lalu simpan file sesuai kebutuhan.</p><div class="lesson-visual-tags"><span>FLATBED</span><span>DPI</span><span>RGB</span><span>FILE</span></div></div>
+<div class="lesson-visual-art"><svg aria-labelledby="scTitle scDesc" role="img" viewBox="0 0 520 330"><title id="scTitle">Ilustrasi scanner flatbed</title><desc id="scDesc">Scanner membuka tutup, memindai poster, lalu menghasilkan gambar digital di layar.</desc><defs><lineargradient id="scBg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#C9EC78"></stop><stop offset=".52" stop-color="#6BD2C4"></stop><stop offset="1" stop-color="#7085EE"></stop></lineargradient></defs><rect fill="url(#scBg)" height="314" rx="28" width="504" x="8" y="8"></rect><g transform="translate(42 42)"><path d="M45 85L93 22Q101 12 115 19L251 83" fill="#29243D"></path><path d="M50 93L104 34L238 92" fill="#FFF8F1" stroke="#29243D" stroke-width="7"></path><rect fill="#29243D" height="142" rx="22" width="275" x="30" y="87"></rect><rect fill="#E8E7F7" height="93" rx="10" width="239" x="48" y="103"></rect><rect fill="#F36F61" height="66" rx="6" width="78" x="67" y="116"></rect><circle cx="105" cy="149" fill="#FFD46B" r="22"></circle><path d="M157 122h103M157 140h83M157 158h91" stroke="#4F61E8" stroke-linecap="round" stroke-width="7"></path><path d="M52 196h230" stroke="#57C9BD" stroke-width="6"></path></g><path class="scanbeam" d="M72 170H335" stroke="#FFF8F1" stroke-linecap="round" stroke-width="5"></path><g class="art-float"><rect fill="#FFF8F1" height="153" rx="14" width="124" x="344" y="79"></rect><rect fill="#F36F61" height="73" rx="8" width="96" x="358" y="94"></rect><circle cx="406" cy="130" fill="#FFD46B" r="24"></circle><path d="M359 184h90M359 198h66" stroke="#4F61E8" stroke-linecap="round" stroke-width="6"></path><path d="M309 157h27m-9-9 9 9-9 9" fill="none" stroke="#29243D" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path></g><text fill="#29243D" font-size="13" font-weight="900" x="349" y="258">DIGITAL FILE</text></svg><span class="lesson-art-caption">OBJECT / SCAN / DIGITAL FILE</span></div>
+</div><figure class="chapter-visual"><img alt="Karya cat air yang sedang dipindai menggunakan scanner flatbed" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://s.ceedo.com/static/uploads/2026/04/color-accuracy-in-scanners-for-artwork-01_750x500.webp"/><figcaption><span>Proses pemindaian ilustrasi</span><a href="https://www.ceedo.com/color-accuracy-in-scanners-for-artwork/" rel="noopener noreferrer" target="_blank">Referensi visual: Ceedo — Colour accuracy in scanners for artwork</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://www.ceedo.com/color-accuracy-in-scanners-for-artwork/" rel="noopener noreferrer" target="_blank">
+<div class="chapter-swatch-image"><img alt="Contoh proses digitalisasi ilustrasi dengan scanner flatbed" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://s.ceedo.com/static/uploads/2026/04/color-accuracy-in-scanners-for-artwork-01_750x500.webp"/></div>
 <span>Ceedo · Artwork Scanning</span><small>Contoh proses digitalisasi ilustrasi dengan scanner flatbed</small>
 </a><a class="chapter-swatch-card" href="https://print.xtrme.com/preserving-the-original-how-professional-art-reproduction-brings-artwork-to-life" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Perangkat flatbed scanner untuk memindai karya dua dimensi" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://lirp.cdn-website.com/e9383d2e/dms3rep/multi/opt/scan-1920w.jpg"></div>
+<div class="chapter-swatch-image"><img alt="Perangkat flatbed scanner untuk memindai karya dua dimensi" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://lirp.cdn-website.com/e9383d2e/dms3rep/multi/opt/scan-1920w.jpg"/></div>
 <span>Xtrme · Art Reproduction</span><small>Perangkat flatbed scanner untuk memindai karya dua dimensi</small>
 </a></div></div>
 <div class="discussion-highlight mt-5 p-5 rounded-2xl"><p class="font-bold">Tujuan pemindaian</p><p class="mt-2 text-sm">Menghasilkan salinan digital yang dapat disimpan, diperbaiki (retouch), digabungkan ke layout, dibagikan, atau disiapkan untuk proses produksi. Scanner bukan hanya untuk arsip; hasilnya juga dapat menjadi bahan ilustrasi atau elemen desain.</p></div>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">1. Jenis-jenis scanner</h4>
+<h4 class="lesson-topic-heading">1. Jenis-jenis scanner</h4><details class="lesson-accordion" open="open"><summary><span class="lesson-accordion-index">01</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Buku menjelaskan beberapa jenis scanner berdasarkan bentuk dan cara pemakaiannya. Setiap jenis memiliki keunggulan dan batas penggunaan. Pilih perangkat berdasarkan ukuran objek, jumlah dokumen, kualitas yang dibutuhkan, serta anggaran.</p>
 <div class="grid sm:grid-cols-2 gap-3 mt-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Flatbed</h5><p class="mt-2 text-sm">Dokumen atau foto diletakkan di atas kaca pemindai dan tutup diturunkan. Cocok untuk penggunaan umum, foto, ilustrasi, dan dokumen satuan.</p><div class="scanner-icon flatbed mt-3"><span></span><i></i></div></div>
@@ -548,9 +539,8 @@
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Copydot scanner</h5><p class="mt-2 text-sm">Digunakan dalam industri percetakan untuk mengubah film separasi menjadi data digital. Ini merupakan teknologi khusus pada alur kerja praproduksi cetak.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Pemindai barcode</h5><p class="mt-2 text-sm">Membaca pola kode pada label untuk mengidentifikasi barang atau data. Fungsinya berbeda dari scanner flatbed yang memindai gambar atau dokumen.</p></div>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">2. Komponen dan cara kerja scanner</h4>
+</div></details>
+<h4 class="lesson-topic-heading">2. Komponen dan cara kerja scanner</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">02</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Pada scanner flatbed, beberapa bagian penting bekerja bersama. Kaca menjadi tempat objek; sumber cahaya menerangi objek; sistem optik mengarahkan pantulan cahaya ke sensor; sensor menangkap informasi; kemudian rangkaian elektronik dan perangkat lunak mengubahnya menjadi berkas digital. Model scanner pada buku membahas sensor CCD (Charge-Coupled Device) dan motor penggerak kepala pemindai.</p>
 <div class="discussion-card p-4 rounded-2xl mt-3">
 <h5 class="font-bold">Alur sederhana proses pemindaian</h5>
@@ -561,9 +551,8 @@
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Bagian perangkat keras</h5><ul class="mt-2 space-y-1 text-sm list-disc pl-5"><li>Kaca pemindai untuk meletakkan objek.</li><li>Sumber cahaya untuk menerangi objek.</li><li>Sistem cermin/lensa untuk mengarahkan cahaya.</li><li>Sensor gambar, misalnya CCD pada model tertentu.</li><li>Motor dan mekanisme gerak kepala scanner.</li></ul></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Perangkat lunak</h5><ul class="mt-2 space-y-1 text-sm list-disc pl-5"><li>Driver agar komputer dapat berkomunikasi dengan scanner.</li><li>Antarmuka untuk memilih mode dan kualitas.</li><li>Pratinjau, pemotongan, koreksi warna, dan penyimpanan.</li><li>OCR jika dokumen teks ingin diubah menjadi teks yang dapat dicari atau diedit.</li></ul></div>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">3. Pengaturan yang memengaruhi hasil scan</h4>
+</div></details>
+<h4 class="lesson-topic-heading">3. Pengaturan yang memengaruhi hasil scan</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">03</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <div class="grid sm:grid-cols-2 gap-3 mt-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Mode warna</h5><p class="mt-2 text-sm"><b>Color/RGB</b> untuk foto atau ilustrasi berwarna; <b>Grayscale</b> untuk gambar bernuansa abu-abu; <b>Black &amp; White</b> untuk teks atau garis sederhana yang membutuhkan dua warna utama.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Resolusi</h5><p class="mt-2 text-sm">Menentukan banyaknya detail yang direkam. Resolusi tinggi menghasilkan file lebih besar. Pilih berdasarkan ukuran akhir dan kebutuhan: arsip ringan, dokumen baca, atau reproduksi/cetak.</p></div>
@@ -571,9 +560,8 @@
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Warna dan koreksi</h5><p class="mt-2 text-sm">Atur exposure/brightness, contrast, saturation, serta white point/black point jika tersedia. Gunakan seperlunya supaya hasil tetap mendekati objek asli.</p></div>
 </div>
 <div class="discussion-highlight mt-4 p-5 rounded-2xl"><p class="font-bold">Memahami resolusi</p><p class="mt-2 text-sm">Semakin banyak piksel yang direkam untuk ukuran yang sama, semakin banyak detail yang dapat tersedia, tetapi ukuran file juga meningkat. Untuk materi cetak, 300 ppi pada ukuran akhir sering dijadikan titik awal umum untuk gambar foto; kebutuhan sebenarnya mengikuti jenis gambar, ukuran cetak, jarak pandang, dan spesifikasi percetakan.</p></div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">4. Langkah umum memindai gambar</h4>
+</div></details>
+<h4 class="lesson-topic-heading">4. Langkah umum memindai gambar</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">04</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <ol class="mt-3 space-y-2 text-sm list-decimal pl-5 leading-relaxed">
 <li>Periksa kabel, daya, koneksi, dan driver scanner. Pasang perangkat lunak dari sumber resmi produsen bila dibutuhkan.</li>
 <li>Bersihkan kaca pemindai dengan bahan yang aman; pastikan tidak ada debu, sidik jari, staples, atau benda yang dapat menggores kaca.</li>
@@ -583,9 +571,8 @@
 <li>Jalankan scan. Periksa hasilnya; lakukan koreksi seperlunya tanpa menghilangkan detail penting.</li>
 <li>Simpan file dengan nama yang jelas dan format sesuai keperluan.</li>
 </ol>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">5. Memilih format file hasil scan</h4>
+</div></details>
+<h4 class="lesson-topic-heading">5. Memilih format file hasil scan</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">05</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <div class="table-wrap mt-3"><table class="lesson-table"><thead><tr><th>Format</th><th>Karakter umum</th><th>Contoh penggunaan</th></tr></thead><tbody>
 <tr><td>JPEG / JPG</td><td>Kompresi lossy; ukuran cenderung lebih kecil</td><td>Foto untuk dibagikan atau digunakan pada web</td></tr>
 <tr><td>TIFF</td><td>Dapat menyimpan detail dengan kompresi lossless atau tanpa kompresi</td><td>Arsip dan proses pengolahan gambar berkualitas</td></tr>
@@ -594,7 +581,7 @@
 <tr><td>PDF</td><td>Wadah dokumen; dapat berisi gambar dan teks hasil OCR</td><td>Dokumen multi-halaman untuk dibaca atau dibagikan</td></tr>
 </tbody></table></div>
 <p class="mt-3 text-sm">Untuk teks yang ingin dicari atau diedit, OCR (Optical Character Recognition) dapat mengenali bentuk huruf pada hasil scan dan mengubahnya menjadi teks digital. Hasil OCR tetap perlu diperiksa karena kesalahan pengenalan dapat terjadi.</p>
-</section>
+</div></details>
 <div class="lesson-check mt-7 p-5 rounded-2xl"><p class="font-bold">Latihan praktik scanner</p><p class="mt-2 text-sm">Pindai satu sketsa atau foto yang kamu miliki dengan izin pemiliknya. Catat jenis scanner, mode warna, resolusi, format file, serta perubahan yang terlihat setelah disimpan. Bandingkan hasilnya saat ditampilkan di layar.</p></div>
 <p class="mt-5 text-xs text-slate-400">Acuan buku: Bab 4, halaman cetak 100–125 (jenis scanner, tujuan, fungsi, komponen, cara kerja, kualitas/model, teknik penggunaan, dan penyimpanan hasil scan).</p>
 <div class="chapter-completion-bar"><div><span class="completion-overline">CHECKPOINT / BAB 04</span><b>Sudah memahami proses pemindaian dengan scanner?</b><small>Tandai bab ini selesai. Kamu tetap bisa membukanya kembali kapan saja.</small></div><button class="mark-chapter-btn" data-mark-chapter="tab-4" type="button">Tandai selesai ✓</button></div></article>
@@ -602,32 +589,32 @@
 <article class="tab-panel discussion-panel hidden p-8 rounded-3xl" id="tab-5">
 <span class="discussion-kicker text-xs font-bold uppercase tracking-widest">BAB 05 · DATA DIGITAL MELALUI INTERNET</span>
 <h3 class="mt-2 text-xl sm:text-2xl font-extrabold">Mengunduh, Mengunggah, dan Mengelola Aset Desain</h3>
-<p class="mt-3 leading-relaxed">Internet menghubungkan perangkat dan jaringan di berbagai tempat sehingga pengguna dapat bertukar informasi. Dalam pekerjaan desain grafis, internet membantu mencari referensi, mengunduh bahan visual yang boleh digunakan, mengirim file ke guru atau klien, bekerja bersama, serta menyimpan cadangan karya.</p><figure class="chapter-visual"><img alt="Papan identitas visual sebagai contoh aset desain yang dikelola" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://vanturadigital.com/assets/Brand-C5gfoydt.png"><figcaption><span>Papan aset desain digital</span><a href="https://vanturadigital.com/" rel="noopener noreferrer" target="_blank">Referensi visual: Vantura Digital — Brand Identity Workspace</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://rebeccastephany.com/" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Kolase poster dan aset untuk membangun moodboard digital" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://rebeccastephany.com/images/45_K3000.webp"></div>
+<p class="mt-3 leading-relaxed">Internet menghubungkan perangkat dan jaringan di berbagai tempat sehingga pengguna dapat bertukar informasi. Dalam pekerjaan desain grafis, internet membantu mencari referensi, mengunduh bahan visual yang boleh digunakan, mengirim file ke guru atau klien, bekerja bersama, serta menyimpan cadangan karya.</p><div aria-label="Peta visual pengelolaan aset digital melalui internet" class="lesson-visual-hero lesson-visual--internet">
+<div class="lesson-visual-copy"><span class="lesson-visual-kicker">ASSET FLOW · BAB 05</span><strong>Temukan aset.<br/><em>Kelola rapi.</em></strong><p>Gunakan internet untuk mencari, mengunduh, mengunggah, dan menyimpan aset desain secara bertanggung jawab.</p><div class="lesson-visual-tags"><span>SEARCH</span><span>DOWNLOAD</span><span>UPLOAD</span><span>BACKUP</span></div></div>
+<div class="lesson-visual-art"><svg aria-labelledby="inTitle inDesc" role="img" viewBox="0 0 520 330"><title id="inTitle">Ilustrasi alur aset digital dan cloud</title><desc id="inDesc">Laptop, folder aset, dan cloud dihubungkan panah untuk menggambarkan download dan upload.</desc><defs><lineargradient id="inBg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#FFD46B"></stop><stop offset=".52" stop-color="#FF998C"></stop><stop offset="1" stop-color="#AD91F4"></stop></lineargradient></defs><rect fill="url(#inBg)" height="314" rx="28" width="504" x="8" y="8"></rect><g class="art-float"><path d="M111 112c0-22 18-40 40-40 14 0 27 7 34 18 8-7 19-11 31-11 27 0 49 22 49 49s-22 49-49 49H151c-22 0-40-18-40-40 0-9 3-18 8-25z" fill="#FFF8F1"></path><path d="M216 116v58m-19-19 19 19 19-19" fill="none" stroke="#4F61E8" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path><rect fill="#29243D" height="22" rx="8" width="188" x="56" y="224"></rect><path d="M73 220V135h154v85" fill="#DCE6FF" stroke="#29243D" stroke-width="8"></path><rect fill="#F36F61" height="45" rx="7" width="53" x="89" y="152"></rect><circle cx="164" cy="173" fill="#FFD46B" r="22"></circle><path d="M87 207h127" stroke="#57C9BD" stroke-width="7"></path></g><g class="art-bobble"><path d="M332 116h108l27 28v102H305V144z" fill="#FFD46B" stroke="#29243D" stroke-linejoin="round" stroke-width="7"></path><path d="M332 116v28h135" fill="none" stroke="#29243D" stroke-width="7"></path><rect fill="#F36F61" height="48" rx="6" width="39" x="327" y="162"></rect><rect fill="#57C9BD" height="48" rx="6" width="39" x="377" y="162"></rect><rect fill="#AD91F4" height="48" rx="6" width="25" x="427" y="162"></rect></g><path d="M247 146h53m-14-13 14 13-14 13" fill="none" stroke="#29243D" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M281 264h139" stroke="#FFF8F1" stroke-dasharray="4 10" stroke-linecap="round" stroke-width="6"></path><circle cx="280" cy="264" fill="#FFF8F1" r="9"></circle></svg><span class="lesson-art-caption">SEARCH / TRANSFER / ORGANIZE</span></div>
+</div><figure class="chapter-visual"><img alt="Papan identitas visual sebagai contoh aset desain yang dikelola" loading="lazy" onerror="this.closest('figure').classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://vanturadigital.com/assets/Brand-C5gfoydt.png"/><figcaption><span>Papan aset desain digital</span><a href="https://vanturadigital.com/" rel="noopener noreferrer" target="_blank">Referensi visual: Vantura Digital — Brand Identity Workspace</a></figcaption></figure><div class="chapter-swatch-gallery"><div class="chapter-swatch-heading"><span>VISUAL REFERENCE / LOOK CLOSER</span><span>OPEN SOURCE ↗</span></div><div class="chapter-swatch-grid"><a class="chapter-swatch-card" href="https://rebeccastephany.com/" rel="noopener noreferrer" target="_blank">
+<div class="chapter-swatch-image"><img alt="Kolase poster dan aset untuk membangun moodboard digital" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://rebeccastephany.com/images/45_K3000.webp"/></div>
 <span>Rebecca Stephany · Poster Archive</span><small>Kolase poster dan aset untuk membangun moodboard digital</small>
 </a><a class="chapter-swatch-card" href="https://www.csulb.edu/school-of-art/article/insights-2023-school-art-student-show" rel="noopener noreferrer" target="_blank">
-<div class="chapter-swatch-image"><img alt="Contoh aset visual yang perlu dikelola dan diberi sumber" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png"></div>
+<div class="chapter-swatch-image"><img alt="Contoh aset visual yang perlu dikelola dan diberi sumber" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()" referrerpolicy="no-referrer" src="https://www.csulb.edu/sites/default/files/images/2023-05/insights_2023_poster.png"/></div>
 <span>CSULB · Student Exhibition</span><small>Contoh aset visual yang perlu dikelola dan diberi sumber</small>
 </a></div></div>
-<section class="mt-6">
-<h4 class="text-lg font-extrabold">1. Pengertian singkat dan perkembangan internet</h4>
+<h4 class="lesson-topic-heading">1. Pengertian singkat dan perkembangan internet</h4><details class="lesson-accordion" open="open"><summary><span class="lesson-accordion-index">01</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Internet merupakan jaringan dari jaringan (interconnected networks) yang memungkinkan komputer dan perangkat lain bertukar data menggunakan seperangkat aturan komunikasi. Buku menjelaskan perkembangan awal dari riset jaringan ARPA/ARPANET, penggunaan packet switching, berkembangnya protokol TCP/IP, dan hadirnya World Wide Web (WWW) yang membuat halaman web lebih mudah diakses.</p>
 <div class="discussion-card p-4 rounded-2xl mt-3">
 <div class="internet-timeline"><div><b>ARPANET</b><span>Riset jaringan komputer</span></div><i>→</i><div><b>TCP/IP</b><span>Aturan komunikasi jaringan</span></div><i>→</i><div><b>WWW</b><span>Halaman web saling terhubung</span></div><i>→</i><div><b>Internet kini</b><span>Informasi dan layanan digital</span></div></div>
 <p class="mt-3 text-xs">Garis waktu ini menyederhanakan perkembangan yang dibahas buku; sejarah internet berlangsung melalui banyak riset dan kontribusi.</p>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">2. Manfaat internet untuk belajar dan desain</h4>
+</div></details>
+<h4 class="lesson-topic-heading">2. Manfaat internet untuk belajar dan desain</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">02</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <div class="grid sm:grid-cols-2 gap-3 mt-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Pendidikan</h5><p class="mt-2 text-sm">Mengakses materi pembelajaran, tutorial, jurnal, katalog, dan sumber belajar; mengirim tugas; serta berkomunikasi dengan guru atau teman.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Pekerjaan</h5><p class="mt-2 text-sm">Mencari referensi, berbagi file desain, mengirim proof, menerima masukan, dan berkolaborasi dengan anggota tim atau percetakan.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Komunikasi</h5><p class="mt-2 text-sm">Mengirim pesan, email, dan dokumen; melakukan diskusi atau konsultasi jarak jauh.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Layanan digital</h5><p class="mt-2 text-sm">Menggunakan penyimpanan awan, perpustakaan digital, platform desain, serta layanan publik dan komersial.</p></div>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">3. Browser dan bagian-bagiannya</h4>
+</div></details>
+<h4 class="lesson-topic-heading">3. Browser dan bagian-bagiannya</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">03</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Browser atau peramban adalah aplikasi yang digunakan untuk membuka halaman web dan berinteraksi dengan layanan internet. Contohnya antara lain Chrome, Firefox, Edge, Safari, dan peramban lain. Tampilan setiap browser dapat berbeda, tetapi fungsi utamanya serupa.</p>
 <div class="browser-demo mt-4">
 <div class="browser-top"><span></span><span></span><span></span><b>Tab / judul halaman</b></div>
@@ -641,9 +628,8 @@
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Tombol navigasi</h5><p class="mt-2 text-sm">Back, forward, dan refresh membantu berpindah atau memuat ulang halaman.</p></div>
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Area halaman dan scrollbar</h5><p class="mt-2 text-sm">Area halaman menampilkan isi situs; scrollbar membantu bergerak ke bagian atas atau bawah.</p></div>
 </div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">4. Memahami istilah dasar internet</h4>
+</div></details>
+<h4 class="lesson-topic-heading">4. Memahami istilah dasar internet</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">04</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <div class="table-wrap mt-3"><table class="lesson-table"><thead><tr><th>Istilah</th><th>Makna dalam penggunaan</th></tr></thead><tbody>
 <tr><td>URL</td><td>Alamat lengkap sumber atau halaman di internet.</td></tr>
 <tr><td>Browser</td><td>Aplikasi untuk membuka dan menampilkan halaman web.</td></tr>
@@ -655,9 +641,8 @@
 <tr><td>Online / offline</td><td>Terhubung atau tidak sedang terhubung ke jaringan.</td></tr>
 </tbody></table></div>
 <p class="mt-3 text-sm">Akhiran domain dapat memberi petunjuk jenis organisasi atau wilayah, misalnya .com, .org, .edu, .gov, .id, .ac.id, dan .sch.id. Namun, akhiran domain saja bukan jaminan bahwa suatu situs tepercaya; periksa pemilik situs, alamat, isi, dan sumber informasinya.</p>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">5. Download aset gambar untuk kebutuhan desain</h4>
+</div></details>
+<h4 class="lesson-topic-heading">5. Download aset gambar untuk kebutuhan desain</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">05</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Download adalah proses mengunduh file dari internet ke komputer atau perangkat. Untuk pekerjaan desain, aset yang dicari dapat berupa foto, ilustrasi, ikon, tekstur, font, template, atau dokumen referensi. Jangan hanya memilih gambar yang menarik; pastikan kualitas, relevansi, dan hak penggunaannya sesuai.</p>
 <ol class="mt-3 space-y-2 text-sm list-decimal pl-5 leading-relaxed">
 <li>Tentukan jenis aset dan kata kunci yang spesifik, misalnya "daun tropis latar putih" atau "ikon daur ulang vektor".</li>
@@ -668,9 +653,8 @@
 <li>Simpan pada folder proyek, ubah nama file agar mudah dikenali, dan catat URL sumber serta informasi lisensinya.</li>
 </ol>
 <div class="discussion-highlight mt-4 p-5 rounded-2xl"><p class="font-bold">Etika dan hak cipta</p><p class="mt-2 text-sm">Tidak semua gambar yang muncul di hasil pencarian bebas digunakan. Jangan menganggap gambar dapat dipakai hanya karena bisa diunduh. Hormati pemilik karya, gunakan aset berlisensi atau karya sendiri, dan simpan bukti lisensi/kredit sesuai ketentuannya.</p></div>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">6. Upload dan penyimpanan data digital</h4>
+</div></details>
+<h4 class="lesson-topic-heading">6. Upload dan penyimpanan data digital</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">06</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <p class="mt-2 leading-relaxed">Upload adalah kebalikan dari download: file dikirim dari perangkat ke layanan atau server di internet. Desainer dapat mengunggah hasil kerja untuk dikumpulkan, ditinjau, dibagikan kepada tim, atau disimpan sebagai cadangan. Perhatikan nama file, ukuran, format, dan hak akses sebelum mengunggah.</p>
 <div class="grid sm:grid-cols-2 gap-3 mt-3">
 <div class="discussion-card p-4 rounded-2xl"><h5 class="font-bold">Download</h5><div class="file-flow mt-3"><div>Internet / sumber</div><span>↓</span><div>Komputer / perangkat</div></div><p class="mt-2 text-sm">File bergerak dari layanan internet ke perangkatmu.</p></div>
@@ -679,9 +663,8 @@
 <h5 class="font-bold mt-5">Contoh struktur folder proyek</h5>
 <div class="folder-tree mt-3"><p>📁 Poster_Kampanye</p><p class="indent">📁 01_Referensi</p><p class="indent">📁 02_Aset_Asli</p><p class="indent">📁 03_File_Kerja</p><p class="indent">📁 04_Ekspor</p><p class="indent">📁 05_Lisensi_dan_Kredit</p><p class="indent">📄 catatan_proyek.txt</p></div>
 <p class="mt-3 text-sm">Gunakan penamaan yang konsisten, misalnya <b>poster_hemat-energi_v01</b>, <b>poster_hemat-energi_v02</b>, dan <b>poster_hemat-energi_final</b>. Simpan file sumber yang dapat diedit dan file final secara terpisah. Cadangkan pekerjaan pada media lain atau penyimpanan awan.</p>
-</section>
-<section class="mt-7">
-<h4 class="text-lg font-extrabold">7. Keamanan saat mengambil dan menyimpan file</h4>
+</div></details>
+<h4 class="lesson-topic-heading">7. Keamanan saat mengambil dan menyimpan file</h4><details class="lesson-accordion"><summary><span class="lesson-accordion-index">07</span><span class="lesson-accordion-title">Buka penjelasan dan contoh</span><span class="lesson-accordion-hint">Jelajahi submateri</span><span class="lesson-accordion-icon">+</span></summary><div class="lesson-accordion-body">
 <ul class="mt-3 space-y-2 text-sm leading-relaxed list-disc pl-5">
 <li>Unduh dari situs atau layanan yang dikenal dan periksa kembali alamatnya.</li>
 <li>Jangan membuka file program atau lampiran yang tidak diharapkan; periksa ekstensi dan sumbernya.</li>
@@ -691,7 +674,7 @@
 <li>Pastikan salinan cadangan dapat dibuka dan tidak hanya mengandalkan satu perangkat.</li>
 </ul>
 <div class="discussion-highlight mt-4 p-5 rounded-2xl"><p class="font-bold">Pembaruan terhadap contoh buku</p><p class="mt-2 text-sm">Buku tahun 2013 menampilkan contoh situs dan aplikasi download yang populer pada masanya. Layanan dan tampilannya dapat berubah atau sudah tidak digunakan. Untuk praktik sekarang, gunakan fitur download resmi dari situs sumber atau browser; jangan memakai layanan pihak ketiga untuk melewati pembatasan atau ketentuan hak cipta platform.</p></div>
-</section>
+</div></details>
 <div class="lesson-check mt-7 p-5 rounded-2xl"><p class="font-bold">Latihan pengelolaan aset</p><p class="mt-2 text-sm">Cari satu gambar yang lisensinya mengizinkan penggunaan untuk tugas. Catat nama pembuat, sumber, jenis lisensi, format, dan resolusinya. Unduh, simpan dalam folder proyek, lalu buat satu catatan singkat tentang alasan gambar tersebut sesuai dengan tema desainmu.</p></div>
 <p class="mt-5 text-xs text-slate-400">Acuan buku: Bab 5, halaman cetak 127–149 (internet, manfaat, browser, download, upload, penyimpanan digital, dan nama ranah/domain). Contoh layanan tahun 2013 telah diperbarui secara konseptual agar aman dan relevan untuk praktik saat ini.</p>
 <p class="image-usage-note">Gambar pada bagian ini digunakan sebagai referensi pembelajaran dan tetap menjadi hak pemilik/sumber aslinya. Untuk karya siswa, periksa izin dan lisensi sebelum menggunakan kembali aset.</p><div class="chapter-completion-bar"><div><span class="completion-overline">CHECKPOINT / BAB 05</span><b>Sudah memahami pengelolaan data digital?</b><small>Tandai bab ini selesai. Kamu tetap bisa membukanya kembali kapan saja.</small></div><button class="mark-chapter-btn" data-mark-chapter="tab-5" type="button">Tandai selesai ✓</button></div></article>
@@ -731,10 +714,10 @@
 </div>
 </div>
 <!-- DESIGN STUDIO: praktik terpandu, tantangan, dan portofolio -->
-<section class="practice-path-strip" aria-label="Alur praktik">
-  <div><span>01</span><b>Guided Practice</b><small>Ikuti contoh dan tutorial</small></div><i>→</i>
-  <div><span>02</span><b>Design Challenge</b><small>Uji keputusan desain</small></div><i>→</i>
-  <div><span>03</span><b>Project &amp; Portfolio</b><small>Buat dan kumpulkan karya</small></div>
+<section aria-label="Alur praktik" class="practice-path-strip">
+<div><span>01</span><b>Guided Practice</b><small>Ikuti contoh dan tutorial</small></div><i>→</i>
+<div><span>02</span><b>Design Challenge</b><small>Uji keputusan desain</small></div><i>→</i>
+<div><span>03</span><b>Project &amp; Portfolio</b><small>Buat dan kumpulkan karya</small></div>
 </section>
 <section class="design-studio-shell p-6 sm:p-8 rounded-3xl space-y-6" id="design-studio">
 <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
@@ -746,12 +729,12 @@
 <div class="studio-status-chip"><span class="studio-live-dot"></span> CREATIVE WORKSPACE // READY</div>
 </div>
 <div aria-label="Area Design Studio" class="studio-tabs" role="tablist">
-<button aria-selected="true" class="studio-tab is-active" data-studio-tab="studio-guided-panel" aria-controls="studio-guided-panel" role="tab" type="button"><span>01</span> Guided Practice</button>
-<button aria-selected="false" class="studio-tab" data-studio-tab="studio-challenge-panel" aria-controls="studio-challenge-panel" role="tab" type="button"><span>02</span> Design Challenge</button>
-<button aria-selected="false" class="studio-tab" data-studio-tab="studio-project-panel" aria-controls="studio-project-panel" role="tab" type="button"><span>03</span> Project &amp; Portfolio</button>
+<button aria-controls="studio-guided-panel" aria-selected="true" class="studio-tab is-active" data-studio-tab="studio-guided-panel" role="tab" type="button"><span>01</span> Guided Practice</button>
+<button aria-controls="studio-challenge-panel" aria-selected="false" class="studio-tab" data-studio-tab="studio-challenge-panel" role="tab" type="button"><span>02</span> Design Challenge</button>
+<button aria-controls="studio-project-panel" aria-selected="false" class="studio-tab" data-studio-tab="studio-project-panel" role="tab" type="button"><span>03</span> Project &amp; Portfolio</button>
 </div>
 <!-- AREA 1: GUIDED PRACTICE -->
-<div class="studio-panel" id="studio-guided-panel" role="tabpanel" aria-hidden="false">
+<div aria-hidden="false" class="studio-panel" id="studio-guided-panel" role="tabpanel">
 <div class="studio-section-heading">
 <div><span class="studio-eyebrow">STEP-BY-STEP WORKSHOP · BAB 01–03</span><h4>01 / Guided Practice — Rancang poster kampanye</h4><p>Mulai dari contoh sederhana. Ubah teks, warna, dan komposisi untuk melihat bagaimana keputusan desain memengaruhi hasil akhir.</p></div>
 <span class="studio-chapter-tag">BAB 01–03</span>
@@ -769,16 +752,16 @@
 <div class="studio-controls">
 <div class="studio-step-label"><span>01</span><div><b>Tentukan pesan</b><small>Judul harus singkat dan mudah diingat.</small></div></div>
 <label for="poster-brief">Pilih tema / creative brief</label><select id="poster-brief"><option value="environment">Kurangi plastik sekali pakai</option><option value="water">Hemat air</option><option value="energy">Hemat energi</option><option value="literacy">Literasi digital</option><option value="health">Hidup sehat</option><option value="anti-bullying">Sekolah ramah tanpa perundungan</option><option value="culture">Bangga budaya lokal</option><option value="recycling">Pilah sampah</option><option value="reading">Ayo membaca</option><option value="clean-school">Sekolah bersih</option><option value="custom">Brief sendiri / bebas</option></select><p class="studio-field-hint">Pilih tema untuk mengisi contoh teks otomatis, lalu edit sesuai ide sendiri.</p><label for="poster-title-input">Headline poster</label>
-<input id="poster-title-input" maxlength="46" type="text" value="KURANGI PLASTIK SEKALI PAKAI">
+<input id="poster-title-input" maxlength="46" type="text" value="KURANGI PLASTIK SEKALI PAKAI"/>
 <label for="poster-desc-input">Pesan pendukung</label>
 <textarea class="studio-textarea" id="poster-desc-input" maxlength="115" rows="3">Bawa tumbler dan tas pakai ulang. Langkah kecilmu membantu menjaga bumi.</textarea>
 <label for="poster-cta-input">Ajakan tindakan</label>
-<input id="poster-cta-input" maxlength="34" type="text" value="MULAI DARI DIRI SENDIRI">
+<input id="poster-cta-input" maxlength="34" type="text" value="MULAI DARI DIRI SENDIRI"/>
 <div class="studio-divider"></div>
 <div class="studio-step-label"><span>02</span><div><b>Pilih sistem visual</b><small>Gunakan warna dan komposisi yang mendukung pesan.</small></div></div>
 <label for="poster-palette">Palet warna</label>
 <select id="poster-palette"><option value="forest">Botanical · Forest</option><option value="ocean">Coastal · Ocean</option><option value="sunset">Pop · Sunset</option><option value="editorial">Editorial · Cream &amp; Ink</option><option value="citrus">Citrus · Lime &amp; Cobalt</option><option value="lavender">Soft · Lavender</option><option value="mono">Monochrome · Black &amp; White</option><option value="coral">Retro · Coral &amp; Sand</option></select>
-<p id="poster-contrast-status" class="studio-contrast-note" aria-live="polite">Kontras warna diperiksa otomatis.</p><label for="poster-layout">Komposisi</label>
+<p aria-live="polite" class="studio-contrast-note" id="poster-contrast-status">Kontras warna diperiksa otomatis.</p><label for="poster-layout">Komposisi</label>
 <select id="poster-layout"><option value="center">01 · Center / Terpusat</option><option value="split">02 · Split / Dua bidang</option><option value="diagonal">03 · Diagonal / Dinamis</option><option value="swiss">04 · Swiss / Grid editorial</option><option value="frame">05 · Frame / Bingkai</option><option value="collage">06 · Collage / Tumpuk bentuk</option><option value="type">07 · Type-led / Tipografi dominan</option><option value="asym">08 · Asimetris / Bebas</option><option value="magazine">09 · Magazine / Sampul editorial</option><option value="sticker">10 · Sticker / Pop art</option></select><p class="studio-field-hint">Setiap layout memiliki hirarki dan karakter visual yang berbeda.</p>
 <label for="poster-motif">Elemen grafis</label>
 <select id="poster-motif"><option value="circles">Lingkaran &amp; orbit</option><option value="lines">Garis &amp; ritme</option><option value="geometry">Geometri berlapis</option><option value="grid">Grid / garis bantu</option><option value="waves">Gelombang organik</option><option value="cutout">Cut-out / bidang potong</option><option value="none">Tanpa motif / minimal</option></select>
@@ -810,7 +793,7 @@
 <label for="scan-mode">Mode warna</label>
 <select id="scan-mode"><option value="color">Color</option><option value="grayscale">Grayscale</option><option value="bw">Black &amp; White</option></select>
 <label for="scan-resolution">Resolusi</label>
-<select id="scan-resolution"><option value="150">150 dpi</option><option selected value="300">300 dpi</option><option value="600">600 dpi</option></select>
+<select id="scan-resolution"><option value="150">150 dpi</option><option selected="" value="300">300 dpi</option><option value="600">600 dpi</option></select>
 <div aria-live="polite" class="studio-result-box" id="scan-advice">Untuk foto berwarna, pilih Color dan 300 dpi sebagai titik awal untuk hasil cetak standar.</div>
 <p class="studio-mission-foot">Setelah mencoba pengaturan, lakukan pemindaian nyata dan simpan file dengan nama yang jelas.</p>
 </article>
@@ -819,9 +802,9 @@
 <h5>Asset Hunter: Kelola Aset Desain</h5>
 <p>Temukan satu gambar yang sesuai dengan tema poster. Pastikan sumber dan izinnya jelas, lalu catat agar aset dapat ditelusuri kembali.</p>
 <label for="asset-name">Nama file aset</label>
-<input id="asset-name" maxlength="60" placeholder="contoh: ilustrasi-daur-ulang.png" type="text">
+<input id="asset-name" maxlength="60" placeholder="contoh: ilustrasi-daur-ulang.png" type="text"/>
 <label for="asset-source">Sumber / URL</label>
-<input id="asset-source" maxlength="160" placeholder="Nama situs atau tautan sumber" type="text">
+<input id="asset-source" maxlength="160" placeholder="Nama situs atau tautan sumber" type="text"/>
 <label for="asset-license">Keterangan lisensi</label>
 <select id="asset-license"><option value="CC BY">Creative Commons – CC BY</option><option value="CC0 / Public Domain">CC0 / Public Domain</option><option value="Izin pembuat">Izin langsung dari pembuat</option><option value="Perlu diperiksa">Belum dipastikan – perlu diperiksa</option></select>
 <button class="studio-secondary-btn" id="asset-add-btn" type="button">＋ Catat aset</button>
@@ -831,71 +814,66 @@
 </div>
 <!-- AREA 2: CHALLENGE - mini lab lama dipertahankan agar alur kuis tetap bekerja -->
 <!-- AREA 3: PROJECT & PORTFOLIO -->
-</div><div class="studio-panel hidden" id="studio-challenge-panel" role="tabpanel" aria-hidden="true">
-
+</div><div aria-hidden="true" class="studio-panel hidden" id="studio-challenge-panel" role="tabpanel">
 <!-- MISSION HUB: tahap pertama pengembangan Creative Quest -->
-<section class="mission-hub" aria-labelledby="mission-hub-title">
-  <div class="mission-hub-hero">
-    <div class="mission-hub-hero-copy">
-      <span class="mission-eyebrow"><span class="mission-live-dot"></span> KREASI DKV / MISSION CONTROL</span>
-      <h3 id="mission-hub-title">Satu misi.<br><em>Satu karya.</em></h3>
-      <p>Masuk ke studio sebagai desainer. Baca brief, pahami kebutuhan klien, lalu selesaikan tantangan visual satu langkah demi satu langkah.</p>
-      <div class="mission-hub-meta"><span>02 misi tersedia</span><span>02 misi dalam tahap ini</span><span>05 bab pembelajaran</span></div>
-    </div>
-    <div class="mission-hero-art" aria-hidden="true">
-      <div class="mission-art-orbit orbit-one"></div><div class="mission-art-orbit orbit-two"></div>
-      <div class="mission-art-sticker sticker-top">IDE → KARYA</div>
-      <div class="mission-art-poster"><small>BRIEF / 001</small><b>MAKE<br>IT<br><i>VISIBLE.</i></b><span>DESIGN WITH PURPOSE</span></div>
-      <div class="mission-art-sticker sticker-bottom">✳ LET'S CREATE</div>
-    </div>
-  </div>
-
-  <div class="mission-hub-heading">
-    <div><span class="mission-section-kicker">PILIH TANTANGANMU</span><h4>Mission board</h4><p>Mulai dari misi yang tersedia. Misi berikutnya akan dibuka bertahap setelah aktivitasnya siap.</p></div>
-    <div class="mission-board-counter"><strong>02<span>/02</span></strong><small>MISSION OPEN</small></div>
-  </div>
-
-  <article class="mission-featured-card">
-    <div class="mission-featured-main">
-      <div class="mission-featured-top"><span class="mission-number">MISSION 01</span><span class="mission-status-open"><i></i> TERSEDIA SEKARANG</span></div>
-      <h4>Layout Architect</h4>
-      <p class="mission-client-line">CLIENT BRIEF <b>— Kampanye kreatif sekolah</b></p>
-      <p class="mission-featured-description">Klien membutuhkan poster kampanye yang pesannya langsung terbaca. Susun judul, visual utama, dan ajakan, lalu uji kontras serta hierarki visualnya.</p>
-      <div class="mission-tags"><span>Bab 01 · Unsur tata letak</span><span>Bab 03 · Prinsip layout</span><span>10–15 menit</span></div>
-      <button class="mission-start-button" data-mission-start="layout" type="button">Mulai misi Layout Architect <span aria-hidden="true">↗</span></button>
-    </div>
-    <div class="mission-featured-side" aria-label="Pratinjau susunan poster">
-      <div class="mission-poster-preview"><span class="preview-kicker">YOUR NEXT PROJECT</span><strong>MAKE<br>THE MESSAGE<br><em>MATTER.</em></strong><div class="preview-shapes"><i></i><b></b><span></span></div><small>PLAN · COMPOSE · COMMUNICATE</small></div>
-      <span class="mission-side-note">DESIGN IS A DECISION.</span>
-    </div>
-  </article>
-
-  <article class="mission-featured-card mission-featured-card-fix">
-    <div class="mission-featured-main">
-      <div class="mission-featured-top"><span class="mission-number">MISSION 02</span><span class="mission-status-open"><i></i> TERSEDIA SEKARANG</span></div>
-      <h4>Fix This Design</h4>
-      <p class="mission-client-line">CLIENT BRIEF <b>— Festival Literasi Sekolah</b></p>
-      <p class="mission-featured-description">Sebuah poster sudah dibuat, tetapi pesan utamanya sulit dibaca. Temukan tiga masalah visual, pilih perbaikannya, dan lihat perubahan desain secara langsung.</p>
-      <div class="mission-tags"><span>Bab 01 · Unsur tata letak</span><span>Bab 03 · Prinsip layout</span><span>8–12 menit</span></div>
-      <button class="mission-start-button" data-mission-start="fix" type="button">Mulai misi Fix This Design <span aria-hidden="true">↗</span></button>
-      <p class="mission-complete-note" id="mission-fix-card-status" aria-live="polite">Belum diselesaikan · 3 keputusan desain</p>
-    </div>
-    <div class="mission-featured-side mission-fix-feature-art" aria-label="Poster festival literasi yang perlu diperbaiki">
-      <div class="fix-card-bad-poster" aria-hidden="true"><small>SEKOLAH HEBAT</small><b>FESTIVAL<br>LITERASI</b><span>BACA BUKU DISINI DATANG JAM 08.00 BAWA TEMANMU</span><i>INFO LEBIH LANJUT</i></div>
-      <span class="mission-side-note">SPOT THE PROBLEM.</span>
-    </div>
-  </article>
-
-  <div class="mission-focus-note" role="note">
-    <span class="mission-focus-icon" aria-hidden="true">✦</span>
-    <div><b>Fokus pada dua misi inti</b><p>Selesaikan Layout Architect untuk membangun komposisi, lalu lanjutkan ke Fix This Design untuk menganalisis dan memperbaiki karya. Misi lain akan ditambahkan setelah dua misi ini matang.</p></div>
-  </div>
-  <p class="mission-hub-feedback" id="mission-hub-feedback" role="status" aria-live="polite">Saat ini tersedia dua misi inti: Layout Architect dan Fix This Design. Selesaikan keduanya untuk membangun kemampuan menyusun dan mengevaluasi desain.</p>
+<section aria-labelledby="mission-hub-title" class="mission-hub">
+<div class="mission-hub-hero">
+<div class="mission-hub-hero-copy">
+<span class="mission-eyebrow"><span class="mission-live-dot"></span> KREASI DKV / MISSION CONTROL</span>
+<h3 id="mission-hub-title">Satu misi.<br/><em>Satu karya.</em></h3>
+<p>Masuk ke studio sebagai desainer. Baca brief, pahami kebutuhan klien, lalu selesaikan tantangan visual satu langkah demi satu langkah.</p>
+<div class="mission-hub-meta"><span>02 misi tersedia</span><span>02 misi dalam tahap ini</span><span>05 bab pembelajaran</span></div>
+</div>
+<div aria-hidden="true" class="mission-hero-art">
+<div class="mission-art-orbit orbit-one"></div><div class="mission-art-orbit orbit-two"></div>
+<div class="mission-art-sticker sticker-top">IDE → KARYA</div>
+<div class="mission-art-poster"><small>BRIEF / 001</small><b>MAKE<br/>IT<br/><i>VISIBLE.</i></b><span>DESIGN WITH PURPOSE</span></div>
+<div class="mission-art-sticker sticker-bottom">✳ LET'S CREATE</div>
+</div>
+</div>
+<div class="mission-hub-heading">
+<div><span class="mission-section-kicker">PILIH TANTANGANMU</span><h4>Mission board</h4><p>Mulai dari misi yang tersedia. Misi berikutnya akan dibuka bertahap setelah aktivitasnya siap.</p></div>
+<div class="mission-board-counter"><strong>02<span>/02</span></strong><small>MISSION OPEN</small></div>
+</div>
+<article class="mission-featured-card">
+<div class="mission-featured-main">
+<div class="mission-featured-top"><span class="mission-number">MISSION 01</span><span class="mission-status-open"><i></i> TERSEDIA SEKARANG</span></div>
+<h4>Layout Architect</h4>
+<p class="mission-client-line">CLIENT BRIEF <b>— Kampanye kreatif sekolah</b></p>
+<p class="mission-featured-description">Klien membutuhkan poster kampanye yang pesannya langsung terbaca. Susun judul, visual utama, dan ajakan, lalu uji kontras serta hierarki visualnya.</p>
+<div class="mission-tags"><span>Bab 01 · Unsur tata letak</span><span>Bab 03 · Prinsip layout</span><span>10–15 menit</span></div>
+<button class="mission-start-button" data-mission-start="layout" type="button">Mulai misi Layout Architect <span aria-hidden="true">↗</span></button>
+</div>
+<div aria-label="Pratinjau susunan poster" class="mission-featured-side">
+<div class="mission-poster-preview"><span class="preview-kicker">YOUR NEXT PROJECT</span><strong>MAKE<br/>THE MESSAGE<br/><em>MATTER.</em></strong><div class="preview-shapes"><i></i><b></b><span></span></div><small>PLAN · COMPOSE · COMMUNICATE</small></div>
+<span class="mission-side-note">DESIGN IS A DECISION.</span>
+</div>
+</article>
+<article class="mission-featured-card mission-featured-card-fix">
+<div class="mission-featured-main">
+<div class="mission-featured-top"><span class="mission-number">MISSION 02</span><span class="mission-status-open"><i></i> TERSEDIA SEKARANG</span></div>
+<h4>Fix This Design</h4>
+<p class="mission-client-line">CLIENT BRIEF <b>— Festival Literasi Sekolah</b></p>
+<p class="mission-featured-description">Sebuah poster sudah dibuat, tetapi pesan utamanya sulit dibaca. Temukan tiga masalah visual, pilih perbaikannya, dan lihat perubahan desain secara langsung.</p>
+<div class="mission-tags"><span>Bab 01 · Unsur tata letak</span><span>Bab 03 · Prinsip layout</span><span>8–12 menit</span></div>
+<button class="mission-start-button" data-mission-start="fix" type="button">Mulai misi Fix This Design <span aria-hidden="true">↗</span></button>
+<p aria-live="polite" class="mission-complete-note" id="mission-fix-card-status">Belum diselesaikan · 3 keputusan desain</p>
+</div>
+<div aria-label="Poster festival literasi yang perlu diperbaiki" class="mission-featured-side mission-fix-feature-art">
+<div aria-hidden="true" class="fix-card-bad-poster"><small>SEKOLAH HEBAT</small><b>FESTIVAL<br/>LITERASI</b><span>BACA BUKU DISINI DATANG JAM 08.00 BAWA TEMANMU</span><i>INFO LEBIH LANJUT</i></div>
+<span class="mission-side-note">SPOT THE PROBLEM.</span>
+</div>
+</article>
+<div class="mission-focus-note" role="note">
+<span aria-hidden="true" class="mission-focus-icon">✦</span>
+<div><b>Fokus pada dua misi inti</b><p>Selesaikan Layout Architect untuk membangun komposisi, lalu lanjutkan ke Fix This Design untuk menganalisis dan memperbaiki karya. Misi lain akan ditambahkan setelah dua misi ini matang.</p></div>
+</div>
+<p aria-live="polite" class="mission-hub-feedback" id="mission-hub-feedback" role="status">Saat ini tersedia dua misi inti: Layout Architect dan Fix This Design. Selesaikan keduanya untuk membangun kemampuan menyusun dan mengevaluasi desain.</p>
 </section>
 <!-- /MISSION HUB -->
 <div class="challenge-welcome-card">
-  <div class="challenge-welcome-copy"><span class="studio-eyebrow">DESIGN CHALLENGE / BAB 01 &amp; 03</span><h4>Susun poster yang komunikatif.</h4><p>Selesaikan tiga tahap singkat. Kamu bisa menyeret elemen ke kotak atau memilih elemen lalu mengetuk kotak tujuan—pilihan kedua lebih nyaman di HP.</p></div>
-  <div class="challenge-progress-card"><b id="challenge-step-status">0 dari 3 elemen tersusun</b><div class="challenge-progress-track"><span id="challenge-step-fill"></span></div><small>LEVEL 01 · STRUKTUR POSTER</small><button id="challenge-reset-btn" class="challenge-reset-btn" type="button">↻ Ulangi tantangan</button></div>
+<div class="challenge-welcome-copy"><span class="studio-eyebrow">DESIGN CHALLENGE / BAB 01 &amp; 03</span><h4>Susun poster yang komunikatif.</h4><p>Selesaikan tiga tahap singkat. Kamu bisa menyeret elemen ke kotak atau memilih elemen lalu mengetuk kotak tujuan—pilihan kedua lebih nyaman di HP.</p></div>
+<div class="challenge-progress-card"><b id="challenge-step-status">0 dari 3 elemen tersusun</b><div class="challenge-progress-track"><span id="challenge-step-fill"></span></div><small>LEVEL 01 · STRUKTUR POSTER</small><button class="challenge-reset-btn" id="challenge-reset-btn" type="button">↻ Ulangi tantangan</button></div>
 </div>
 <div class="studio-section-heading">
 <div><span class="studio-eyebrow">MISSION // APPLY THE PRINCIPLES</span><h4>MISSION 01 / Layout Architect — Susun struktur poster</h4><p>Tempatkan judul, visual utama, dan ajakan pada posisi yang tepat. Setelah itu, selesaikan tantangan kontras dan hierarki visual.</p></div>
@@ -910,98 +888,91 @@
 <div class="rounded-2xl border-2 border-dashed border-slate-300 dark:border-white/20 p-5">
 <p class="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Palet Elemen Poster</p>
 <div class="mt-4 space-y-3">
-<button class="layout-component wireframe-item w-full px-4 py-3 text-left border-2 rounded-xl bg-white dark:bg-slate-800" data-layout="navbar" aria-label="Pilih elemen judul kampanye" draggable="true" type="button">🟩 Judul dan identitas kampanye</button>
-<button class="layout-component wireframe-item w-full px-4 py-3 text-left border-2 rounded-xl bg-white dark:bg-slate-800" data-layout="content" aria-label="Pilih elemen visual utama" draggable="true" type="button">🖼️ Visual utama / ilustrasi</button>
-<button class="layout-component wireframe-item w-full px-4 py-3 text-left border-2 rounded-xl bg-white dark:bg-slate-800" data-layout="footer" aria-label="Pilih elemen informasi dan ajakan" draggable="true" type="button">➡️ Informasi dan ajakan</button>
+<button aria-label="Pilih elemen judul kampanye" class="layout-component wireframe-item w-full px-4 py-3 text-left border-2 rounded-xl bg-white dark:bg-slate-800" data-layout="navbar" draggable="true" type="button">🟩 Judul dan identitas kampanye</button>
+<button aria-label="Pilih elemen visual utama" class="layout-component wireframe-item w-full px-4 py-3 text-left border-2 rounded-xl bg-white dark:bg-slate-800" data-layout="content" draggable="true" type="button">🖼️ Visual utama / ilustrasi</button>
+<button aria-label="Pilih elemen informasi dan ajakan" class="layout-component wireframe-item w-full px-4 py-3 text-left border-2 rounded-xl bg-white dark:bg-slate-800" data-layout="footer" draggable="true" type="button">➡️ Informasi dan ajakan</button>
 </div>
 </div>
 <div class="poster-canvas rounded-2xl p-4 relative min-h-[320px] flex flex-col justify-between">
 <div class="mx-auto h-1.5 w-16 rounded-full bg-slate-500/60"></div>
-<div class="layout-slot slot-zone min-h-16 flex items-center justify-center border-2 border-dashed rounded-2xl text-sm" data-slot="navbar" id="slot-1" role="button" tabindex="0" aria-label="Area judul poster">Letakkan judul di sini</div>
-<div class="layout-slot slot-zone min-h-28 flex items-center justify-center border-2 border-dashed rounded-2xl text-sm" data-slot="content" id="slot-2" role="button" tabindex="0" aria-label="Area visual utama poster">Letakkan visual utama di sini</div>
-<div class="layout-slot slot-zone min-h-16 flex items-center justify-center border-2 border-dashed rounded-2xl text-sm" data-slot="footer" id="slot-3" role="button" tabindex="0" aria-label="Area ajakan poster">Letakkan ajakan/informasi di sini</div>
+<div aria-label="Area judul poster" class="layout-slot slot-zone min-h-16 flex items-center justify-center border-2 border-dashed rounded-2xl text-sm" data-slot="navbar" id="slot-1" role="button" tabindex="0">Letakkan judul di sini</div>
+<div aria-label="Area visual utama poster" class="layout-slot slot-zone min-h-28 flex items-center justify-center border-2 border-dashed rounded-2xl text-sm" data-slot="content" id="slot-2" role="button" tabindex="0">Letakkan visual utama di sini</div>
+<div aria-label="Area ajakan poster" class="layout-slot slot-zone min-h-16 flex items-center justify-center border-2 border-dashed rounded-2xl text-sm" data-slot="footer" id="slot-3" role="button" tabindex="0">Letakkan ajakan/informasi di sini</div>
 </div>
 </div>
 <p aria-live="polite" class="mt-3 text-sm font-semibold" id="layout-feedback"></p>
 <div class="hidden mt-6" id="level-2"><p class="text-slate-600 dark:text-slate-300 mb-3">Level 2: terapkan prinsip kontras dengan memilih pasangan teks dan latar yang mudah dibaca.</p><button class="contrast-choice px-4 py-2" data-correct="false" type="button">Teks kuning muda di atas latar putih</button><button class="contrast-choice px-4 py-2" data-correct="true" type="button">Teks biru tua di atas latar kuning muda</button></div>
 <div class="hidden mt-6" id="level-3"><p class="text-slate-600 dark:text-slate-300 mb-3">Level 3: terapkan hierarki visual dengan memilih bagian yang perlu paling menonjol pada poster ajakan.</p><button class="ux-choice px-4 py-2" data-correct="false" type="button">Hiasan kecil lebih dominan daripada pesan</button><button class="ux-choice px-4 py-2" data-correct="true" type="button">Judul dan pesan utama paling mudah terlihat</button></div>
 </section>
-
 <!-- MISSION 02: FIX THIS DESIGN -->
-<section class="fix-mission-panel hidden" id="fix-this-design-mission" aria-labelledby="fix-mission-title" aria-hidden="true">
-  <div class="fix-mission-topbar">
-    <button class="fix-back-button" id="fix-back-to-hub" type="button">← Kembali ke Mission Board</button>
-    <span class="fix-mission-label">CREATIVE QUEST · MISSION 02 / 06</span>
-  </div>
-  <header class="fix-mission-hero">
-    <div class="fix-mission-hero-copy">
-      <span class="fix-client-chip"><i></i> CLIENT REQUEST · FESTIVAL LITERASI</span>
-      <h4 id="fix-mission-title">Fix This <em>Design.</em></h4>
-      <p>Klien sudah punya poster, tetapi informasi penting belum terbaca dengan baik. Jadilah art director: temukan masalah, pilih solusi, dan perbaiki desainnya.</p>
-      <div class="fix-hero-tags"><span>3 keputusan</span><span>Feedback langsung</span><span>Estimasi 8–12 menit</span></div>
-    </div>
-    <div class="fix-hero-orbit" aria-hidden="true"><div class="fix-orbit-ring"></div><div class="fix-orbit-ring ring-two"></div><div class="fix-orbit-sticker">FIX<br>IT!</div><span class="fix-spark spark-a">✳</span><span class="fix-spark spark-b">✦</span><span class="fix-spark spark-c">✳</span></div>
-  </header>
-
-  <div class="fix-mission-grid">
-    <div class="fix-poster-column">
-      <div class="fix-comparison-heading"><div><span class="fix-overline">DESIGN DIAGNOSIS</span><h5>Bandingkan desain</h5></div><span class="fix-live-pill"><i></i> LIVE PREVIEW</span></div>
-      <div class="fix-poster-comparison">
-        <article class="fix-poster-card"><div class="fix-poster-card-top"><b>BEFORE</b><span>01 / ORIGINAL</span></div><div class="fix-poster-art fix-poster-before" aria-label="Poster awal dengan kontras rendah, hierarki lemah, dan tata letak padat"><div class="bad-poster-stamp">SCHOOL<br>EVENT</div><div class="bad-poster-title">FESTIVAL<br><span>LITERASI</span></div><div class="bad-poster-sub">MARI MEMBACA BERSAMA UNTUK MASA DEPAN YANG LEBIH BAIK</div><div class="bad-poster-date">SABTU · 08.00 WIB · AULA SEKOLAH</div><div class="bad-poster-cta">INFO LENGKAP KLIK DI SINI</div><div class="bad-poster-decoration">★ ✦ ★</div></div><p class="fix-poster-caption">Perhatikan kontras, urutan informasi, dan jarak antar elemen.</p></article>
-        <article class="fix-poster-card"><div class="fix-poster-card-top"><b>AFTER</b><span>02 / YOUR REPAIR</span></div><div class="fix-poster-art fix-poster-after" id="fix-poster-after" aria-label="Pratinjau poster setelah diperbaiki"><span class="after-kicker">KREASI DKV PRESENTS</span><div class="after-shape after-shape-one"></div><div class="after-shape after-shape-two"></div><div class="after-title">FESTIVAL<br><em>LITERASI.</em></div><p class="after-description">Buka ide baru lewat cerita dan pengetahuan.</p><div class="after-date">SABTU · 08.00 WIB</div><div class="after-cta">DATANG &amp; IKUTI</div><small class="after-footer">AULA SEKOLAH · TERBUKA UNTUK SEMUA</small></div><p class="fix-poster-caption" id="fix-after-caption">Hasil akan berubah setiap kali kamu memilih perbaikan.</p></article>
-      </div>
-      <div class="fix-design-note"><span>✳</span><p><b>Catatan art director</b> Desain yang baik bukan sekadar ramai. Setiap unsur harus membantu pembaca memahami pesan.</p></div>
-    </div>
-
-    <div class="fix-decision-column">
-      <div class="fix-decision-header"><span class="fix-overline">YOUR DESIGN DECISIONS</span><h5>Perbaiki 3 masalah</h5><p>Pilih satu solusi terbaik untuk setiap masalah. Feedback akan muncul setelah kamu memilih.</p></div>
-      <div class="fix-progress-card"><div><b id="fix-progress-label">0 dari 3 perbaikan selesai</b><span id="fix-progress-percent">0%</span></div><div class="fix-progress-track"><span id="fix-progress-fill"></span></div><div class="fix-progress-steps"><span class="is-current" data-fix-progress-step="contrast">01 Kontras</span><span data-fix-progress-step="hierarchy">02 Hierarki</span><span data-fix-progress-step="layout">03 Layout</span></div></div>
-
-      <article class="fix-task-card" data-fix-task="contrast">
-        <div class="fix-task-heading"><span>01</span><div><b>Masalah kontras</b><small>Judul poster sulit dibaca karena warna teks dan latar terlalu mirip.</small></div><i>◐</i></div>
-        <p class="fix-question">Pasangan warna mana yang paling membantu keterbacaan?</p>
-        <div class="fix-choice-grid">
-          <button class="fix-choice-button" data-fix-choice="contrast" data-correct="false" type="button"><span class="fix-swatch" style="--swatch-bg:#F2E8C8;--swatch-ink:#D6C99E">Aa</span><span><b>Krem di atas beige</b><small>Perbedaan warna rendah</small></span></button>
-          <button class="fix-choice-button" data-fix-choice="contrast" data-correct="true" type="button"><span class="fix-swatch" style="--swatch-bg:#183A50;--swatch-ink:#FFFFFF">Aa</span><span><b>Putih di atas biru tua</b><small>Kontras lebih kuat</small></span></button>
-          <button class="fix-choice-button" data-fix-choice="contrast" data-correct="false" type="button"><span class="fix-swatch" style="--swatch-bg:#F6B8A9;--swatch-ink:#E8A99A">Aa</span><span><b>Coral di atas coral muda</b><small>Perbedaan warna rendah</small></span></button>
-        </div>
-        <p class="fix-task-feedback" data-fix-feedback="contrast" aria-live="polite">Pilih pasangan warna untuk memperbaiki kontras.</p>
-      </article>
-
-      <article class="fix-task-card" data-fix-task="hierarchy">
-        <div class="fix-task-heading"><span>02</span><div><b>Masalah hierarki</b><small>Judul, tanggal, dan keterangan terlihat sama penting.</small></div><i>Aa</i></div>
-        <p class="fix-question">Bagaimana urutan informasi sebaiknya ditampilkan?</p>
-        <div class="fix-choice-grid">
-          <button class="fix-choice-button" data-fix-choice="hierarchy" data-correct="false" type="button"><span class="fix-type-sample type-sample-flat">Aa<br>Aa<br>Aa</span><span><b>Semua teks berukuran sama</b><small>Tidak ada fokus utama</small></span></button>
-          <button class="fix-choice-button" data-fix-choice="hierarchy" data-correct="true" type="button"><span class="fix-type-sample type-sample-hierarchy">Aa<br><small>Aa · Aa</small></span><span><b>Judul paling menonjol</b><small>Detail menjadi informasi pendukung</small></span></button>
-          <button class="fix-choice-button" data-fix-choice="hierarchy" data-correct="false" type="button"><span class="fix-type-sample type-sample-deco">✳<br>Aa</span><span><b>Hiasan paling dominan</b><small>Pesan utama tersisih</small></span></button>
-        </div>
-        <p class="fix-task-feedback" data-fix-feedback="hierarchy" aria-live="polite">Pilih hierarki yang membantu pembaca memahami pesan.</p>
-      </article>
-
-      <article class="fix-task-card" data-fix-task="layout">
-        <div class="fix-task-heading"><span>03</span><div><b>Masalah tata letak</b><small>Informasi terlalu rapat dan tidak memiliki jarak konsisten.</small></div><i>▦</i></div>
-        <p class="fix-question">Perbaikan tata letak mana yang paling tepat?</p>
-        <div class="fix-choice-grid">
-          <button class="fix-choice-button" data-fix-choice="layout" data-correct="false" type="button"><span class="fix-layout-sample layout-sample-tight"><i></i><i></i><i></i></span><span><b>Semua elemen dirapatkan</b><small>Ruang kosong semakin sedikit</small></span></button>
-          <button class="fix-choice-button" data-fix-choice="layout" data-correct="true" type="button"><span class="fix-layout-sample layout-sample-grid"><i></i><i></i><i></i></span><span><b>Gunakan margin dan grid</b><small>Jarak dan alignment konsisten</small></span></button>
-          <button class="fix-choice-button" data-fix-choice="layout" data-correct="false" type="button"><span class="fix-layout-sample layout-sample-overlap"><i></i><i></i><i></i></span><span><b>Tumpuk elemen tanpa aturan</b><small>Informasi saling menutupi</small></span></button>
-        </div>
-        <p class="fix-task-feedback" data-fix-feedback="layout" aria-live="polite">Pilih komposisi yang memberi ruang dan keteraturan.</p>
-      </article>
-
-      <div class="fix-complete-card hidden" id="fix-complete-card" role="status" aria-live="polite">
-        <div class="fix-confetti" aria-hidden="true"><i>✦</i><i>✳</i><i>✦</i><i>✳</i><i>✦</i></div>
-        <span class="fix-complete-icon">✦</span><span class="fix-overline">MISSION COMPLETED</span><h5>Design rescued!</h5><p>Kamu berhasil memperbaiki kontras, hierarki visual, dan tata letak poster.</p><strong>+100 CREATIVE POINTS</strong>
-        <div class="fix-complete-actions"><button id="fix-retry-btn" type="button">↻ Ulangi misi</button><button id="fix-open-portfolio" type="button">Lanjut ke portofolio ↗</button></div>
-      </div>
-    </div>
-  </div>
-  <div class="fix-mission-footer"><span>LEARN THE RULES · MAKE THE DECISION · SEE THE CHANGE</span><button id="fix-reset-btn" type="button">Reset tantangan</button></div>
+<section aria-hidden="true" aria-labelledby="fix-mission-title" class="fix-mission-panel hidden" id="fix-this-design-mission">
+<div class="fix-mission-topbar">
+<button class="fix-back-button" id="fix-back-to-hub" type="button">← Kembali ke Mission Board</button>
+<span class="fix-mission-label">CREATIVE QUEST · MISSION 02 / 06</span>
+</div>
+<header class="fix-mission-hero">
+<div class="fix-mission-hero-copy">
+<span class="fix-client-chip"><i></i> CLIENT REQUEST · FESTIVAL LITERASI</span>
+<h4 id="fix-mission-title">Fix This <em>Design.</em></h4>
+<p>Klien sudah punya poster, tetapi informasi penting belum terbaca dengan baik. Jadilah art director: temukan masalah, pilih solusi, dan perbaiki desainnya.</p>
+<div class="fix-hero-tags"><span>3 keputusan</span><span>Feedback langsung</span><span>Estimasi 8–12 menit</span></div>
+</div>
+<div aria-hidden="true" class="fix-hero-orbit"><div class="fix-orbit-ring"></div><div class="fix-orbit-ring ring-two"></div><div class="fix-orbit-sticker">FIX<br/>IT!</div><span class="fix-spark spark-a">✳</span><span class="fix-spark spark-b">✦</span><span class="fix-spark spark-c">✳</span></div>
+</header>
+<div class="fix-mission-grid">
+<div class="fix-poster-column">
+<div class="fix-comparison-heading"><div><span class="fix-overline">DESIGN DIAGNOSIS</span><h5>Bandingkan desain</h5></div><span class="fix-live-pill"><i></i> LIVE PREVIEW</span></div>
+<div class="fix-poster-comparison">
+<article class="fix-poster-card"><div class="fix-poster-card-top"><b>BEFORE</b><span>01 / ORIGINAL</span></div><div aria-label="Poster awal dengan kontras rendah, hierarki lemah, dan tata letak padat" class="fix-poster-art fix-poster-before"><div class="bad-poster-stamp">SCHOOL<br/>EVENT</div><div class="bad-poster-title">FESTIVAL<br/><span>LITERASI</span></div><div class="bad-poster-sub">MARI MEMBACA BERSAMA UNTUK MASA DEPAN YANG LEBIH BAIK</div><div class="bad-poster-date">SABTU · 08.00 WIB · AULA SEKOLAH</div><div class="bad-poster-cta">INFO LENGKAP KLIK DI SINI</div><div class="bad-poster-decoration">★ ✦ ★</div></div><p class="fix-poster-caption">Perhatikan kontras, urutan informasi, dan jarak antar elemen.</p></article>
+<article class="fix-poster-card"><div class="fix-poster-card-top"><b>AFTER</b><span>02 / YOUR REPAIR</span></div><div aria-label="Pratinjau poster setelah diperbaiki" class="fix-poster-art fix-poster-after" id="fix-poster-after"><span class="after-kicker">KREASI DKV PRESENTS</span><div class="after-shape after-shape-one"></div><div class="after-shape after-shape-two"></div><div class="after-title">FESTIVAL<br/><em>LITERASI.</em></div><p class="after-description">Buka ide baru lewat cerita dan pengetahuan.</p><div class="after-date">SABTU · 08.00 WIB</div><div class="after-cta">DATANG &amp; IKUTI</div><small class="after-footer">AULA SEKOLAH · TERBUKA UNTUK SEMUA</small></div><p class="fix-poster-caption" id="fix-after-caption">Hasil akan berubah setiap kali kamu memilih perbaikan.</p></article>
+</div>
+<div class="fix-design-note"><span>✳</span><p><b>Catatan art director</b> Desain yang baik bukan sekadar ramai. Setiap unsur harus membantu pembaca memahami pesan.</p></div>
+</div>
+<div class="fix-decision-column">
+<div class="fix-decision-header"><span class="fix-overline">YOUR DESIGN DECISIONS</span><h5>Perbaiki 3 masalah</h5><p>Pilih satu solusi terbaik untuk setiap masalah. Feedback akan muncul setelah kamu memilih.</p></div>
+<div class="fix-progress-card"><div><b id="fix-progress-label">0 dari 3 perbaikan selesai</b><span id="fix-progress-percent">0%</span></div><div class="fix-progress-track"><span id="fix-progress-fill"></span></div><div class="fix-progress-steps"><span class="is-current" data-fix-progress-step="contrast">01 Kontras</span><span data-fix-progress-step="hierarchy">02 Hierarki</span><span data-fix-progress-step="layout">03 Layout</span></div></div>
+<article class="fix-task-card" data-fix-task="contrast">
+<div class="fix-task-heading"><span>01</span><div><b>Masalah kontras</b><small>Judul poster sulit dibaca karena warna teks dan latar terlalu mirip.</small></div><i>◐</i></div>
+<p class="fix-question">Pasangan warna mana yang paling membantu keterbacaan?</p>
+<div class="fix-choice-grid">
+<button class="fix-choice-button" data-correct="false" data-fix-choice="contrast" type="button"><span class="fix-swatch" style="--swatch-bg:#F2E8C8;--swatch-ink:#D6C99E">Aa</span><span><b>Krem di atas beige</b><small>Perbedaan warna rendah</small></span></button>
+<button class="fix-choice-button" data-correct="true" data-fix-choice="contrast" type="button"><span class="fix-swatch" style="--swatch-bg:#183A50;--swatch-ink:#FFFFFF">Aa</span><span><b>Putih di atas biru tua</b><small>Kontras lebih kuat</small></span></button>
+<button class="fix-choice-button" data-correct="false" data-fix-choice="contrast" type="button"><span class="fix-swatch" style="--swatch-bg:#F6B8A9;--swatch-ink:#E8A99A">Aa</span><span><b>Coral di atas coral muda</b><small>Perbedaan warna rendah</small></span></button>
+</div>
+<p aria-live="polite" class="fix-task-feedback" data-fix-feedback="contrast">Pilih pasangan warna untuk memperbaiki kontras.</p>
+</article>
+<article class="fix-task-card" data-fix-task="hierarchy">
+<div class="fix-task-heading"><span>02</span><div><b>Masalah hierarki</b><small>Judul, tanggal, dan keterangan terlihat sama penting.</small></div><i>Aa</i></div>
+<p class="fix-question">Bagaimana urutan informasi sebaiknya ditampilkan?</p>
+<div class="fix-choice-grid">
+<button class="fix-choice-button" data-correct="false" data-fix-choice="hierarchy" type="button"><span class="fix-type-sample type-sample-flat">Aa<br/>Aa<br/>Aa</span><span><b>Semua teks berukuran sama</b><small>Tidak ada fokus utama</small></span></button>
+<button class="fix-choice-button" data-correct="true" data-fix-choice="hierarchy" type="button"><span class="fix-type-sample type-sample-hierarchy">Aa<br/><small>Aa · Aa</small></span><span><b>Judul paling menonjol</b><small>Detail menjadi informasi pendukung</small></span></button>
+<button class="fix-choice-button" data-correct="false" data-fix-choice="hierarchy" type="button"><span class="fix-type-sample type-sample-deco">✳<br/>Aa</span><span><b>Hiasan paling dominan</b><small>Pesan utama tersisih</small></span></button>
+</div>
+<p aria-live="polite" class="fix-task-feedback" data-fix-feedback="hierarchy">Pilih hierarki yang membantu pembaca memahami pesan.</p>
+</article>
+<article class="fix-task-card" data-fix-task="layout">
+<div class="fix-task-heading"><span>03</span><div><b>Masalah tata letak</b><small>Informasi terlalu rapat dan tidak memiliki jarak konsisten.</small></div><i>▦</i></div>
+<p class="fix-question">Perbaikan tata letak mana yang paling tepat?</p>
+<div class="fix-choice-grid">
+<button class="fix-choice-button" data-correct="false" data-fix-choice="layout" type="button"><span class="fix-layout-sample layout-sample-tight"><i></i><i></i><i></i></span><span><b>Semua elemen dirapatkan</b><small>Ruang kosong semakin sedikit</small></span></button>
+<button class="fix-choice-button" data-correct="true" data-fix-choice="layout" type="button"><span class="fix-layout-sample layout-sample-grid"><i></i><i></i><i></i></span><span><b>Gunakan margin dan grid</b><small>Jarak dan alignment konsisten</small></span></button>
+<button class="fix-choice-button" data-correct="false" data-fix-choice="layout" type="button"><span class="fix-layout-sample layout-sample-overlap"><i></i><i></i><i></i></span><span><b>Tumpuk elemen tanpa aturan</b><small>Informasi saling menutupi</small></span></button>
+</div>
+<p aria-live="polite" class="fix-task-feedback" data-fix-feedback="layout">Pilih komposisi yang memberi ruang dan keteraturan.</p>
+</article>
+<div aria-live="polite" class="fix-complete-card hidden" id="fix-complete-card" role="status">
+<div aria-hidden="true" class="fix-confetti"><i>✦</i><i>✳</i><i>✦</i><i>✳</i><i>✦</i></div>
+<span class="fix-complete-icon">✦</span><span class="fix-overline">MISSION COMPLETED</span><h5>Design rescued!</h5><p>Kamu berhasil memperbaiki kontras, hierarki visual, dan tata letak poster.</p><strong>+100 CREATIVE POINTS</strong>
+<div class="fix-complete-actions"><button id="fix-retry-btn" type="button">↻ Ulangi misi</button><button id="fix-open-portfolio" type="button">Lanjut ke portofolio ↗</button></div>
+</div>
+</div>
+</div>
+<div class="fix-mission-footer"><span>LEARN THE RULES · MAKE THE DECISION · SEE THE CHANGE</span><button id="fix-reset-btn" type="button">Reset tantangan</button></div>
 </section>
 <!-- /MISSION 02 -->
 </div>
-<div class="studio-panel hidden" id="studio-project-panel" role="tabpanel" aria-hidden="true">
+<div aria-hidden="true" class="studio-panel hidden" id="studio-project-panel" role="tabpanel">
 <div class="studio-section-heading">
 <div><span class="studio-eyebrow">FINAL PROJECT // BUILD YOUR PORTFOLIO</span><h4>03 / Project &amp; Portfolio — Bangun portofolio</h4><p>Gunakan hasil latihan sebagai bekal. Buat karya final di aplikasi desain pilihanmu, kemudian periksa menggunakan kriteria berikut.</p></div>
 <span class="studio-chapter-tag">PROYEK AKHIR</span>
@@ -1016,43 +987,43 @@
 <div class="project-rubric-card">
 <span class="studio-eyebrow">QUALITY CHECK</span>
 <h5>Periksa sebelum dikumpulkan</h5>
-<label class="project-check"><input class="project-check-input" type="checkbox"><span>Pesan sesuai dengan brief dan target audiens.</span></label>
-<label class="project-check"><input class="project-check-input" type="checkbox"><span>Judul, visual, dan informasi memiliki hierarki yang jelas.</span></label>
-<label class="project-check"><input class="project-check-input" type="checkbox"><span>Warna memiliki kontras dan konsisten.</span></label>
-<label class="project-check"><input class="project-check-input" type="checkbox"><span>Tata letak seimbang dan tidak terlalu padat.</span></label>
-<label class="project-check"><input class="project-check-input" type="checkbox"><span>Ejaan, sumber aset, dan format file sudah diperiksa.</span></label>
+<label class="project-check"><input class="project-check-input" type="checkbox"/><span>Pesan sesuai dengan brief dan target audiens.</span></label>
+<label class="project-check"><input class="project-check-input" type="checkbox"/><span>Judul, visual, dan informasi memiliki hierarki yang jelas.</span></label>
+<label class="project-check"><input class="project-check-input" type="checkbox"/><span>Warna memiliki kontras dan konsisten.</span></label>
+<label class="project-check"><input class="project-check-input" type="checkbox"/><span>Tata letak seimbang dan tidak terlalu padat.</span></label>
+<label class="project-check"><input class="project-check-input" type="checkbox"/><span>Ejaan, sumber aset, dan format file sudah diperiksa.</span></label>
 <div class="project-progress-track"><span id="project-progress-fill"></span></div>
 <p class="studio-feedback" id="project-progress-text">0 dari 5 pemeriksaan selesai.</p>
 </div>
 </div>
 <div class="portfolio-hub-card" id="portfolio-hub">
-  <div class="portfolio-hub-heading"><div><span class="studio-eyebrow">MY CREATIVE ARCHIVE</span><h5>Portofolio karya siswa</h5><p>Simpan hasil karya di perangkat ini, lalu kirim ke ruang pengumpulan guru setelah endpoint portofolio kelas diaktifkan.</p></div><span class="portfolio-count-chip" id="portfolio-count-chip">0 KARYA</span></div>
-  <div class="portfolio-form-grid">
-    <div class="portfolio-form-fields">
-      <label for="portfolio-title">Judul karya</label><input id="portfolio-title" maxlength="70" placeholder="Contoh: Setetes Air, Berarti" type="text">
-      <label for="portfolio-theme">Tema proyek</label><select id="portfolio-theme"><option value="Kampanye lingkungan">Kampanye lingkungan</option><option value="Hemat air">Hemat air</option><option value="Hemat energi">Hemat energi</option><option value="Literasi digital">Literasi digital</option><option value="Budaya lokal">Budaya lokal</option><option value="Kesehatan">Kesehatan</option><option value="Sekolah bersih">Sekolah bersih</option><option value="Tema bebas">Tema bebas</option></select>
-      <label for="portfolio-note">Catatan proses (opsional)</label><textarea id="portfolio-note" rows="3" maxlength="350" placeholder="Ceritakan konsep, palet warna, atau prinsip desain yang kamu terapkan."></textarea>
-      <label class="portfolio-file-picker" for="portfolio-file"><span>＋</span><b>Pilih file karya</b><small>PNG, JPG, WEBP, PDF · Maks. 5 MB</small></label>
-      <input accept="image/png,image/jpeg,image/webp,application/pdf" class="sr-only" id="portfolio-file" type="file">
-      <div class="portfolio-action-row"><button class="portfolio-save-btn" id="portfolio-save-btn" type="button">Simpan ke portofolio</button><button class="portfolio-submit-btn" id="portfolio-submit-btn" type="button" disabled>Kirim ke guru ↗</button></div>
-      <p class="portfolio-system-status" id="portfolio-storage-status" aria-live="polite">Portofolio lokal siap digunakan. Pengiriman guru perlu endpoint kelas.</p>
-    </div>
-    <div class="portfolio-preview-stage"><div class="portfolio-preview-label">PREVIEW KARYA</div>
-      <div class="portfolio-preview-wrap hidden" id="portfolio-preview-wrap"><img alt="Pratinjau karya siswa" class="hidden" id="portfolio-image-preview"><div class="hidden" id="portfolio-pdf-preview"><span>PDF</span><b id="portfolio-pdf-name"></b><a id="portfolio-pdf-open" rel="noopener" target="_blank">Buka file PDF ↗</a></div></div>
-      <div class="portfolio-empty-preview" id="portfolio-empty-preview"><span>✳</span><b>Karya kamu akan tampil di sini</b><small>Unggah desain yang sudah kamu ekspor dari aplikasi pilihanmu.</small></div>
-      <p aria-live="polite" class="studio-feedback" id="portfolio-file-status">Belum ada file yang dipilih.</p>
-    </div>
-  </div>
-  <div class="portfolio-gallery-heading"><div><span class="studio-eyebrow">STUDENT COLLECTION</span><b>Koleksi portofolioku</b></div><span id="portfolio-gallery-total">0 item tersimpan</span></div>
-  <div class="portfolio-gallery-grid" id="portfolio-gallery"><div class="portfolio-gallery-empty">Belum ada karya. Simpan karya pertamamu untuk membangun portofolio.</div></div>
-  <div class="portfolio-teacher-note"><b>Pengumpulan terintegrasi:</b> karya disimpan secara lokal terlebih dahulu. Untuk mengirimnya ke Drive dan daftar pengumpulan guru, administrator kelas perlu menyiapkan endpoint Apps Script terpisah. Pengiriman kuis dan SUS tetap menggunakan endpoint lama yang tidak diubah.</div>
+<div class="portfolio-hub-heading"><div><span class="studio-eyebrow">MY CREATIVE ARCHIVE</span><h5>Portofolio karya siswa</h5><p>Simpan hasil karya di perangkat ini, lalu kirim ke ruang pengumpulan guru setelah endpoint portofolio kelas diaktifkan.</p></div><span class="portfolio-count-chip" id="portfolio-count-chip">0 KARYA</span></div>
+<div class="portfolio-form-grid">
+<div class="portfolio-form-fields">
+<label for="portfolio-title">Judul karya</label><input id="portfolio-title" maxlength="70" placeholder="Contoh: Setetes Air, Berarti" type="text"/>
+<label for="portfolio-theme">Tema proyek</label><select id="portfolio-theme"><option value="Kampanye lingkungan">Kampanye lingkungan</option><option value="Hemat air">Hemat air</option><option value="Hemat energi">Hemat energi</option><option value="Literasi digital">Literasi digital</option><option value="Budaya lokal">Budaya lokal</option><option value="Kesehatan">Kesehatan</option><option value="Sekolah bersih">Sekolah bersih</option><option value="Tema bebas">Tema bebas</option></select>
+<label for="portfolio-note">Catatan proses (opsional)</label><textarea id="portfolio-note" maxlength="350" placeholder="Ceritakan konsep, palet warna, atau prinsip desain yang kamu terapkan." rows="3"></textarea>
+<label class="portfolio-file-picker" for="portfolio-file"><span>＋</span><b>Pilih file karya</b><small>PNG, JPG, WEBP, PDF · Maks. 5 MB</small></label>
+<input accept="image/png,image/jpeg,image/webp,application/pdf" class="sr-only" id="portfolio-file" type="file"/>
+<div class="portfolio-action-row"><button class="portfolio-save-btn" id="portfolio-save-btn" type="button">Simpan ke portofolio</button><button class="portfolio-submit-btn" disabled="" id="portfolio-submit-btn" type="button">Kirim ke guru ↗</button></div>
+<p aria-live="polite" class="portfolio-system-status" id="portfolio-storage-status">Portofolio lokal siap digunakan. Pengiriman guru perlu endpoint kelas.</p>
 </div>
-<form class="hidden" id="portfolio-upload-form" method="post" target="portfolio-upload-frame"><input name="action" value="submitPortfolio"><input id="pf-code" name="studentCode"><input id="pf-class" name="studentClass"><input id="pf-title" name="projectTitle"><input id="pf-theme" name="projectTheme"><input id="pf-note" name="projectNote"><input id="pf-filename" name="fileName"><input id="pf-mime" name="mimeType"><textarea id="pf-data" name="fileData"></textarea></form>
+<div class="portfolio-preview-stage"><div class="portfolio-preview-label">PREVIEW KARYA</div>
+<div class="portfolio-preview-wrap hidden" id="portfolio-preview-wrap"><img alt="Pratinjau karya siswa" class="hidden" id="portfolio-image-preview"/><div class="hidden" id="portfolio-pdf-preview"><span>PDF</span><b id="portfolio-pdf-name"></b><a id="portfolio-pdf-open" rel="noopener" target="_blank">Buka file PDF ↗</a></div></div>
+<div class="portfolio-empty-preview" id="portfolio-empty-preview"><span>✳</span><b>Karya kamu akan tampil di sini</b><small>Unggah desain yang sudah kamu ekspor dari aplikasi pilihanmu.</small></div>
+<p aria-live="polite" class="studio-feedback" id="portfolio-file-status">Belum ada file yang dipilih.</p>
+</div>
+</div>
+<div class="portfolio-gallery-heading"><div><span class="studio-eyebrow">STUDENT COLLECTION</span><b>Koleksi portofolioku</b></div><span id="portfolio-gallery-total">0 item tersimpan</span></div>
+<div class="portfolio-gallery-grid" id="portfolio-gallery"><div class="portfolio-gallery-empty">Belum ada karya. Simpan karya pertamamu untuk membangun portofolio.</div></div>
+<div class="portfolio-teacher-note"><b>Pengumpulan terintegrasi:</b> karya disimpan secara lokal terlebih dahulu. Untuk mengirimnya ke Drive dan daftar pengumpulan guru, administrator kelas perlu menyiapkan endpoint Apps Script terpisah. Pengiriman kuis dan SUS tetap menggunakan endpoint lama yang tidak diubah.</div>
+</div>
+<form class="hidden" id="portfolio-upload-form" method="post" target="portfolio-upload-frame"><input name="action" value="submitPortfolio"/><input id="pf-code" name="studentCode"/><input id="pf-class" name="studentClass"/><input id="pf-title" name="projectTitle"/><input id="pf-theme" name="projectTheme"/><input id="pf-note" name="projectNote"/><input id="pf-filename" name="fileName"/><input id="pf-mime" name="mimeType"/><textarea id="pf-data" name="fileData"></textarea></form>
 <iframe aria-hidden="true" class="hidden" id="portfolio-upload-frame" name="portfolio-upload-frame" title="Pengiriman portofolio"></iframe>
 </div>
 </section>
 <div class="text-right mt-6 pt-4">
-<button class="px-8 py-3.5 rounded-2xl font-bold text-white bg-gradient-to-r from-indigo-300 to-violet-400 transition-all duration-300 disabled:opacity-40" disabled id="btn-to-kuis" type="button">Lanjut ke Kuis</button>
+<button class="px-8 py-3.5 rounded-2xl font-bold text-white bg-gradient-to-r from-indigo-300 to-violet-400 transition-all duration-300 disabled:opacity-40" disabled="" id="btn-to-kuis" type="button">Lanjut ke Kuis</button>
 </div>
 </section>
 <!-- ================= SECTION 2 : KUIS ================= -->
@@ -1074,7 +1045,7 @@
 <button class="opt-btn w-full flex items-center gap-4 text-left px-5 py-3.5 rounded-2xl bg-white/80 dark:bg-white/10 border border-slate-200 dark:border-white/10 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg" data-opt="E"><span class="w-8 h-8 shrink-0 rounded-xl bg-indigo-100 text-indigo-600 font-bold flex items-center justify-center">E</span><span class="opt-text">Opsi E</span></button>
 </div>
 <div class="mt-6 text-right">
-<button class="px-8 py-3 rounded-2xl font-bold text-white bg-gradient-to-r from-indigo-300 to-violet-400 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none" disabled id="btn-next">Soal Berikutnya →</button>
+<button class="px-8 py-3 rounded-2xl font-bold text-white bg-gradient-to-r from-indigo-300 to-violet-400 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none" disabled="" id="btn-next">Soal Berikutnya →</button>
 </div>
 </div>
 </section>
@@ -1108,22 +1079,22 @@
 <li data-sus="10"><p class="font-semibold text-sm">10. Saya perlu mempelajari banyak hal sebelum bisa menggunakan media pembelajaran ini.</p></li>
 </ol>
 <div class="mt-8 text-center">
-<button class="px-10 py-3.5 rounded-2xl font-bold text-white bg-gradient-to-r from-indigo-300 to-violet-400 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none" disabled id="btn-kirim">Kirim Data Riset</button>
+<button class="px-10 py-3.5 rounded-2xl font-bold text-white bg-gradient-to-r from-indigo-300 to-violet-400 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none" disabled="" id="btn-kirim">Kirim Data Riset</button>
 <p class="mt-3 text-sm font-semibold" id="status-kirim"></p>
 </div>
 </div>
 </section>
-  </div>
+</div>
 </div>
 </main>
-<nav class="mobile-quick-nav" id="mobile-quick-nav" aria-label="Navigasi cepat">
-  <button data-shell-nav="overview" type="button"><span>⌂</span><small>Home</small></button>
-  <button data-shell-nav="materials" type="button"><span>▤</span><small>Materi</small></button>
-  <button data-shell-nav="guided" type="button"><span>✳</span><small>Studio</small></button>
-  <button data-shell-nav="portfolio" type="button"><span>▧</span><small>Karya</small></button>
-  <button data-shell-nav="quiz" type="button"><span>✓</span><small>Kuis</small></button>
+<nav aria-label="Navigasi cepat" class="mobile-quick-nav" id="mobile-quick-nav">
+<button data-shell-nav="overview" type="button"><span>⌂</span><small>Home</small></button>
+<button data-shell-nav="materials" type="button"><span>▤</span><small>Materi</small></button>
+<button data-shell-nav="guided" type="button"><span>✳</span><small>Studio</small></button>
+<button data-shell-nav="portfolio" type="button"><span>▧</span><small>Karya</small></button>
+<button data-shell-nav="quiz" type="button"><span>✓</span><small>Kuis</small></button>
 </nav>
-<footer class="py-8 text-center text-xs text-slate-400">© 2026 LMS-DKV · Media Pembelajaran Desain Grafis Kelas X DKV</footer>
+<footer class="py-8 text-center text-xs text-slate-400">© 2026 KREASI DKV · Media Pembelajaran Desain Grafis</footer>
 <!-- Hubungkan file eksternal di akhir body -->
 <script src="script.js"></script>
 <script src="studio.js"></script>
