@@ -1,27 +1,31 @@
-PANDUAN UPLOAD — KREASI DKV / 2 MISI + PORTOFOLIO CONTRAST FIX
+PANDUAN UPLOAD — KREASI DKV / REDESIGN HALAMAN MATERI (PLAYFUL CREATIVE)
 
-1. Download dan ekstrak ZIP.
-2. Buka repository GitHub Pages.
-3. Masuk ke tab Code.
-4. Pilih Add file > Upload files.
-5. Pilih file berikut dari folder hasil ekstrak dan unggah langsung ke root repository:
-   - index.html
-   - style.css
-   - script.js
-   - studio.js
-   - mission-hub.js
-   - fix-this-design.js
-   - app-navigation.js
-   - portfolio.js
-6. Jangan membuat subfolder saat mengunggah.
-7. Klik Commit changes.
-8. Tunggu status deployment GitHub Pages berhasil.
-9. Buka website dan tekan Ctrl+Shift+R.
+FILE BARU / BERUBAH (wajib diunggah)
+  - index.html            (berubah: hero, pemilih bab, kepala bab, penempatan GIF)
+  - materi.css            (BARU: seluruh gaya baru halaman materi)
+  - anim-hero.gif         + anim-hero-still.png
+  - anim-unsur.gif        + anim-unsur-still.png      (Bab 1)
+  - anim-warna.gif        + anim-warna-still.png      (Bab 2)
+  - anim-grid.gif         + anim-grid-still.png       (Bab 3)
+  - anim-scanner.gif      + anim-scanner-still.png    (Bab 4)
+  - anim-aset.gif         + anim-aset-still.png       (Bab 5)
+
+FILE LAMA (tidak berubah, byte-for-byte sama dengan paket sebelumnya)
+  - style.css, script.js, studio.js, mission-hub.js,
+    fix-this-design.js, app-navigation.js, portfolio.js
+  Jika file-file ini sudah ada di repository, tidak perlu diunggah ulang.
+
+LANGKAH
+1. Ekstrak ZIP.
+2. Buka repository GitHub Pages > tab Code > Add file > Upload files.
+3. Unggah file-file di atas LANGSUNG ke root repository (tanpa subfolder).
+   Semua file harus sejajar dengan index.html, termasuk materi.css dan anim-*.
+4. Commit changes, tunggu deploy selesai.
+5. Buka website dan tekan Ctrl+Shift+R.
 
 CATATAN
-- script.js harus tetap menggunakan file dari paket ini. Isinya identik dengan versi sebelumnya.
 - Jangan mengunggah PORTFOLIO_APPS_SCRIPT.gs sebagai file web.
-- Endpoint pengiriman kuis/SUS tidak diubah.
-- Progres Creative Quest dan portofolio lokal tersimpan per browser/perangkat.
-
-Versi ini hanya menampilkan dua misi aktif. Upload semua file frontend dari ZIP langsung ke root repository. Jangan upload file backend/rahasia atau endpoint administrator ke repository publik.
+- File *-still.png dipakai otomatis untuk pengguna yang mengaktifkan
+  "kurangi gerakan" (prefers-reduced-motion), sehingga GIF tidak bergerak.
+- Untuk kembali ke tampilan lama: hapus baris <link href="materi.css"> di
+  index.html dan pakai index.html dari paket sebelumnya.

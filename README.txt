@@ -82,3 +82,36 @@ UPDATE: PROJECT & MATERIALS READABILITY FIX
 - Fixed chapter-specific discussion-card surfaces in dark mode; earlier chapter-ID rules kept pastel backgrounds under light text.
 - Fixed chapter swatch labels/headings, image-use notes, chapter completion controls, and lesson table headers/cells.
 - The quiz/SUS logic, endpoint configuration, and script.js are unchanged.
+
+
+========================================================================
+REDESIGN HALAMAN MATERI & BAB — PLAYFUL CREATIVE
+========================================================================
+Cakupan: Materi & Pembahasan (hero, pemilih bab, 5 bab, pengayaan).
+Tidak diubah: kuis, SUS, Design Studio, Mission Hub, Portofolio, halaman identitas.
+
+Arah visual
+- Bentuk geometris berani, kontur tinta tebal, bayangan keras (hard shadow).
+- Satu warna aksen per bab: Bab 1 koral, Bab 2 matahari, Bab 3 kobalt,
+  Bab 4 mint, Bab 5 violet. Warna yang sama dipakai pada ubin pilih bab
+  dan nomor bab di sidebar.
+- Judul memakai Poppins (dimuat dari Google Fonts), isi tetap Plus Jakarta Sans.
+- Mode terang dan gelap memakai satu set variabel warna (di awal materi.css).
+
+Struktur kode
+- materi.css dimuat SETELAH style.css dan hanya memakai namespace baru:
+  mh-* (hero/ringkasan) dan m-* (bab). Lapisan gaya lama di style.css tidak
+  disentuh; kelas lama pada bagian materi sudah diganti nama sehingga tidak
+  saling menimpa (mis. discussion-card -> m-card, lesson-check -> m-practice).
+- Hook JavaScript dipertahankan: .tab-btn[data-tab], .tab-panel, kelas
+  text-white pada tab aktif, .mark-chapter-btn[data-mark-chapter],
+  #course-chapters, #course-overview.
+
+GIF demo (dibuat dengan Python/Pillow, 640x480 atau 640x400, 75-420 KB)
+- anim-hero    : poster tersusun dari bentuk, huruf, dan garis (hero)
+- anim-unsur   : garis > bidang > tipografi > warna (Bab 1)
+- anim-warna   : RGB aditif vs CMY subtraktif (Bab 2)
+- anim-grid    : elemen acak menjadi sejajar grid (Bab 3)
+- anim-scanner : pemindaian gambar menjadi piksel (Bab 4)
+- anim-aset    : unduh berkas lalu simpan di folder aset (Bab 5)
+Setiap GIF punya poster statis (*-still.png) untuk prefers-reduced-motion.
